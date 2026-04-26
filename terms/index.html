@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Award-winning web design and development for Vancouver businesses. Custom portfolio platforms, e-commerce, and high-performance websites that convert visitors into customers.">
+    <meta name="theme-color" content="#1E3A5F">
+    <meta name="color-scheme" content="light dark">
+    <title>Terms of Service | BC Web Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#D69E2E', // Main Gold
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        dark: {
+                            900: '#0F172A', // Slate-900 for modern deep dark
+                            800: '#1E293B',
+                            700: '#334155',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/images/logo.webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW31X9301H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VW31X9301H');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "BC Web Creator",
+      "image": "https://bcwebcreator.com/images/logo.webp",
+      "url": "https://bcwebcreator.com",
+      "email": "bcwebcreator@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "postalCode": "V6B 1A1",
+        "addressCountry": "CA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 49.2827, "longitude": -123.1207 },
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": ["https://www.linkedin.com/company/bcwebcreator","https://typhoonhub.ca"]
+    }
+    </script>
+    <style>
+        .chat-message {
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typing-indicator span {
+            animation: blink 1.4s infinite both;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .chat-window {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        }
+
+        .chat-window.closed {
+            transform: scale(0.95) translateY(20px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .chat-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(214, 158, 46, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0);
+            }
+        }
+
+        .chat-button.pulse {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        .markdown-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content ul {
+            list-style-type: disc;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content strong {
+            font-weight: 600;
+        }
+
+        /* -- Chatbot (Dialogflow) overrides -- */
+        df-messenger {
+            --df-messenger-bot-message: #1E3A5F;
+            --df-messenger-user-message: #D69E2E;
+            --df-messenger-send-icon: #D69E2E;
+            --df-messenger-button-titlebar-color: #1E3A5F;
+            --df-messenger-chat-bubble-icon-color: #1E3A5F;
+            --df-messenger-font-color: #ffffff;
+            --df-messenger-user-message-font-color: #ffffff;
+            z-index: 999;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans antialiased bg-white dark:bg-dark-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/index.html" class="flex items-center gap-2 group">
+                        <img src="/images/logo.webp" alt="BC Web Creator Logo" class="h-10 w-10 transition-transform group-hover:scale-110">
+                        <span class="font-display font-bold text-2xl tracking-tight text-dark-900 dark:text-white">BC<span class="text-primary-500">WebCreator</span></span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <!-- Services Mega Menu -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 font-semibold text-dark-900 dark:text-white hover:text-primary-500 transition-colors py-8">
+                            Services <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[400px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-[2rem] shadow-2xl p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all transform translate-y-2 group-hover:translate-y-0 grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Industries</h4>
+                                <div class="space-y-3">
+                                    <a href="/contractors.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Contractors</a>
+                                    <a href="/salons.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Salons & Spas</a>
+                                    <a href="/restaurants.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Restaurants</a>
+                                    <a href="/lawyers.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Lawyers</a>
+                                    <a href="/real-estate.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Real Estate</a>
+                                    <a href="/healthcare.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Healthcare</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Locations</h4>
+                                <div class="space-y-3">
+                                    <a href="/locations/vancouver/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Vancouver</a>
+                                    <a href="/locations/surrey/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Surrey</a>
+                                    <a href="/locations/kelowna/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Kelowna</a>
+                                    <a href="/locations/victoria/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Victoria</a>
+                                    <a href="/locations/abbotsford/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Abbotsford</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/index.html#work" class="font-semibold text-dark-900 dark:text-white hover:text-primary-500 transition-colors">Portfolio</a>
+                    <a href="tel:7783478067" class="flex items-center gap-2 font-semibold text-lg hover:text-primary-500 transition-colors">
+                        <span class="text-xl">📞</span> 778-347-8067
+                    </a>
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-dark-900 dark:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass border-b border-slate-200 dark:border-white/10 p-4 space-y-6 max-h-[80vh] overflow-y-auto">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="space-y-3">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Industries</p>
+                    <a href="/contractors.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Contractors</a>
+                    <a href="/salons.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Salons & Spas</a>
+                    <a href="/restaurants.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Restaurants</a>
+                    <a href="/lawyers.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Lawyers</a>
+                    <a href="/real-estate.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Real Estate</a>
+                    <a href="/healthcare.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Healthcare</a>
+                    <a href="/index.html#work" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Portfolio</a>
+                    <a href="/index.html#contact" class="block text-sm font-semibold text-primary-500">Start Project →</a>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Locations</p>
+                    <a href="/locations/vancouver/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Vancouver</a>
+                    <a href="/locations/surrey/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Surrey</a>
+                    <a href="/locations/kelowna/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Kelowna</a>
+                    <a href="/locations/victoria/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Victoria</a>
+                    <a href="/locations/abbotsford/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Abbotsford</a>
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-100 dark:border-white/5 space-y-4">
+                <a href="tel:7783478067" class="block py-2 text-lg font-semibold text-slate-900 dark:text-white">📞 778-347-8067</a>
+                <a href="tel:7783478067" class="block w-full text-center bg-primary-500 text-white py-4 rounded-xl font-bold">Call Victor Now</a>
+            </div>
+        </div>
+    </header>
+    <main class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div
+            class="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-400 dark:border-yellow-600 p-4 rounded-lg mb-8 text-yellow-800 dark:text-yellow-200">
+            ⚠️ <strong>DISCLAIMER:</strong> This is a template draft. BC Web Creator recommends consulting a qualified
+            legal professional in British Columbia before publishing.</div>
+
+        <h1
+            class="font-display font-bold text-4xl text-slate-900 dark:text-white border-b-2 border-primary-500 pb-4 mb-8">
+            Terms of Service — BC Web Creator</h1>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Last Updated: February 26,
+                2026</strong><br>
+            <strong>Company:</strong> Typhoon Entertainment Incorporated (operating as BC Web Creator)<br>
+            <strong>Contact:</strong> bcwebcreator@gmail.com<br>
+            <strong>Location:</strong> Abbotsford, British Columbia, Canada
+        </p>
+
+        <hr class="border-slate-200 dark:border-slate-800 my-8">
+
+        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">1. Acceptance of Terms
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">By accessing or using bcwebcreator.com, you
+            agree to be bound by these Terms of Service. If you do not agree, please do not use this website. These
+            Terms apply to all visitors, clients, and anyone who inquires about or engages our services.</p>
+
+        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">2. Services</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">BC Web Creator (operated by Typhoon
+            Entertainment Incorporated) provides web design, web development, SEO optimization, landing page creation,
+            brand identity, and digital strategy services to businesses primarily in British Columbia, Canada.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">All services are subject to a separate
+            written project agreement or proposal signed by both parties. These Terms govern your general use of this
+            website and serve as a foundation for all client engagements.</p>
+
+        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">3. Project Agreements &
+            Payment Terms</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>3.1 Project Proposals.</strong> All
+            projects begin with a written proposal or statement of work outlining scope, deliverables, timeline, and
+            cost. Work begins only after written approval and receipt of deposit.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>3.2 Payment.</strong> Standard
+            payment structure is 50% deposit upon project commencement and 50% upon project completion prior to final
+            delivery. For Premium projects, a 3-part payment schedule may be arranged. All prices are in Canadian
+            dollars (CAD).</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>3.3 Late Payments.</strong> Invoices
+            unpaid beyond 14 days of the due date may incur a late fee of 2% per month. BC Web Creator reserves the
+            right to pause or suspend work on any project with outstanding unpaid invoices.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>3.4 Refunds.</strong> Deposits are
+            non-refundable once work has commenced. If a project is cancelled by the client after work has begun,
+            payment is due for all work completed to that point.</p>
+
+        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">4. Intellectual Property &
+            Ownership</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>4.1 Client Ownership.</strong> Upon
+            receipt of final payment in full, the client owns all final deliverables including design files, code, and
+            content produced specifically for their project. BC Web Creator will provide all source files and
+            credentials upon final payment.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>4.2 BC Web Creator's IP.</strong> Any
+            pre-existing tools, frameworks, templates, or proprietary processes used in the creation of deliverables
+            remain the intellectual property of Typhoon Entertainment Incorporated. The client receives a perpetual,
+            royalty-free license to use the final deliverables.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>4.3 Portfolio Rights.</strong> BC Web
+            Creator reserves the right to display completed work in its portfolio, on social media, and in marketing
+            materials unless the client requests otherwise in writing.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>4.4 Third-Party Assets.</strong> Any
+            third-party fonts, stock images, plugins, or licensed assets used in a project are subject to their
+            respective licenses. The client is responsible for ensuring continued compliance with those licenses.</p>
+
+        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">5. Revision Policy</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>5.1</strong> Each project package
+            includes a defined number of revision rounds as outlined in the project proposal. Revisions beyond the
+            agreed scope may be billed at BC Web Creator's standard hourly rate.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>5.2</strong> Revisions must be
+            requested in writing (email). Verbal revision requests will not be actioned until confirmed in writing.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>5.3</strong> Revisions requested
+            after final project sign-off are considered new work and will be billed accordingly.</p>
+
+    </main>
+    <footer class="py-12 bg-slate-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <div class="font-display font-bold text-2xl mb-2 text-white">BC<span class="text-primary-500">WebCreator</span></div>
+                    <p class="text-slate-500">Helping new BC businesses get online. Fast. Professional. Affordable.</p>
+                </div>
+                <div class="flex gap-6 text-slate-400 text-sm">
+                    <a href="/terms/index.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="/privacy/index.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="/index.html#pricing" class="hover:text-white transition-colors">Pricing</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+                <p>&copy; 2025 BC Web Creator. Serving Vancouver, Victoria, Kelowna, and all of BC.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+        // Theme toggle
+        const html = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { html.classList.add('dark'); }
+        document.getElementById('theme-toggle').addEventListener('click', () => { html.classList.toggle('dark'); localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light'; });
+
+        // Mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // Scroll navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('shadow-md', window.pageYOffset > 100); });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
+            a.addEventListener('click', e => { e.preventDefault(); const t = document.querySelector(a.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        });
+
+
+
+        // Lightbox
+        const projects = [
+            { tag: 'Film & Streaming', title: 'TyphoonHub', desc: 'A fully custom film streaming and portfolio platform built for Typhoon Entertainment. Features a rich video library, advanced dark mode, Netflix-style UI, and a mobile-first responsive layout. Built with Next.js and Firebase.', pills: ['Next.js', 'Firebase', 'Tailwind CSS', 'Dark Mode'], link: 'https://typhoonhub.ca', img: 'images/mockup_typhoon.webp' },
+            { tag: 'Corporate / Food Service', title: 'Mango Micro Markets', desc: 'A modern corporate lead-generation website for an office micro-market company. Clean branding, strong CTAs, and an informational layout designed to turn visitors into business leads.', pills: ['HTML5', 'CSS', 'JavaScript', 'SEO'], link: 'https://mangomicromarkets.com', img: 'images/mockup_mango.webp' },
+            { tag: 'E-commerce', title: "J1's Audio", desc: 'An e-commerce store for an audio equipment retailer. Includes a full product catalog, shopping cart, and a streamlined checkout experience optimized for conversion.', pills: ['Shopify', 'E-commerce', 'Mobile-First'], link: 'https://j1saudio.com', img: 'images/mockup_j1s.webp' },
+            { tag: 'Custom Apparel', title: 'J. Henley Customs', desc: 'A branded showcase and inquiry website for a custom apparel business. Visual-first layout with a clear contact/order inquiry flow to capture leads.', pills: ['HTML5', 'Tailwind CSS', 'Contact Form'], link: '#contact', img: 'images/mockup_jhenley.webp' },
+            { tag: 'Film Industry', title: 'Check The Gate', desc: 'A content-rich resource website for the BC film industry community. Features a cinematic design aesthetic with editorial-style layout and category navigation.', pills: ['Firebase Hosting', 'Responsive', 'SEO'], link: 'https://check-the-gate-prod.web.app', img: 'images/mockup_checkthegate.webp' },
+            { tag: 'Community / Local Business', title: 'Cowichan Project', desc: 'A warm, community-focused website for a local business, designed to connect with the local audience. Optimized for local SEO and featuring an approachable, friendly design.', pills: ['HTML5', 'Local SEO', 'Responsive'], link: '#contact', img: 'images/mockup_cowichan.webp' },
+            { tag: 'Free Tool', title: 'Pricing Calculator', desc: 'An interactive web-based pricing tool for vinyl decals and custom HTV t-shirts. Enter job details and get real-time cost breakdowns, markup suggestions (2× and 2.5×), and a full Quick Price Reference sheet — all in CAD.', pills: ['HTML5', 'JavaScript', 'Real-time Calc', 'Dark Mode'], link: '/tools/pricing-calculator/index.html', img: 'images/mockup_calculator.webp' }
+        ];
+
+        function openLightbox(i) {
+            const p = projects[i];
+            document.getElementById('lb-image').src = p.img;
+            document.getElementById('lb-image').alt = p.title;
+            document.getElementById('lb-tag').textContent = p.tag;
+            document.getElementById('lb-title').textContent = p.title;
+            document.getElementById('lb-desc').textContent = p.desc;
+            document.getElementById('lb-link').href = p.link;
+            document.getElementById('lb-link').textContent = p.link.startsWith('http') ? 'Visit Live Site' : 'Get in Touch';
+            const pills = document.getElementById('lb-pills');
+            pills.innerHTML = p.pills.map(t => `<span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">${t}</span>`).join('');
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    </script>
+    <!-- Dialogflow Messenger Chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="BCWebCreator-Bot" agent-id="362de2f5-16e4-4666-9a0e-b2dfc0fb09b9"
+        language-code="en"></df-messenger>
+
+</body>
+
+</html>

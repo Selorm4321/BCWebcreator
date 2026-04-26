@@ -1,0 +1,45 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://DOMAIN/#business",
+  "name": "BUSINESS_NAME",
+  "description": "BUSINESS_DESCRIPTION",
+  "image": "https://DOMAIN/images/logo.webp",
+  "logo": "https://DOMAIN/images/logo.webp",
+  "url": "https://DOMAIN",
+  "email": "EMAIL",
+  "telephone": "PHONE",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "STREET_ADDRESS",
+    "addressLocality": "PRIMARY_CITY",
+    "addressRegion": "PROVINCE_STATE",
+    "postalCode": "POSTAL_CODE",
+    "addressCountry": "CA"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "PRIMARY_CITY" },
+    { "@type": "City", "name": "NEARBY_CITY_1" },
+    { "@type": "City", "name": "NEARBY_CITY_2" },
+    { "@type": "AdministrativeArea", "name": "REGION_NAME" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "SERVICE_CATALOG_NAME",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SERVICE_1", "url": "https://DOMAIN/services/SERVICE_1_SLUG/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SERVICE_2", "url": "https://DOMAIN/services/SERVICE_2_SLUG/" } }
+    ]
+  },
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/LINKEDIN_SLUG",
+    "https://www.instagram.com/INSTAGRAM_HANDLE"
+  ]
+}

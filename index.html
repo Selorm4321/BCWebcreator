@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>BC Web Creator | Websites for New BC Businesses | 5-Day Launch</title>
+    <meta name="description"
+        content="Professional websites for newly registered businesses in British Columbia. Fast, affordable, and built in 5 days. Get online today with Vancouver's creative partner.">
+    <link rel="canonical" href="https://bcwebcreator.com/" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://bcwebcreator.com/#business",
+      "name": "BC Web Creator",
+      "description": "Professional web design and development services for businesses in British Columbia. Fast, affordable, and hand-coded from scratch.",
+      "image": "https://bcwebcreator.com/images/logo.webp",
+      "logo": "https://bcwebcreator.com/images/logo.webp",
+      "url": "https://bcwebcreator.com",
+      "email": "bcwebcreator@gmail.com",
+      "telephone": "+1-778-347-8067",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abbotsford",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 49.0504, "longitude": -122.3045 },
+      "areaServed": [
+        { "@type": "City", "name": "Vancouver" },
+        { "@type": "City", "name": "Surrey" },
+        { "@type": "City", "name": "Burnaby" },
+        { "@type": "City", "name": "Richmond" },
+        { "@type": "City", "name": "Coquitlam" },
+        { "@type": "City", "name": "Langley" },
+        { "@type": "City", "name": "Abbotsford" },
+        { "@type": "City", "name": "Victoria" },
+        { "@type": "City", "name": "Kelowna" },
+        { "@type": "City", "name": "Chilliwack" },
+        { "@type": "City", "name": "Maple Ridge" },
+        { "@type": "City", "name": "New Westminster" },
+        { "@type": "City", "name": "Port Moody" },
+        { "@type": "City", "name": "North Vancouver" },
+        { "@type": "City", "name": "West Vancouver" },
+        { "@type": "City", "name": "Mission" },
+        { "@type": "City", "name": "Delta" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Design Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Design", "url": "https://bcwebcreator.com/services/web-design-vancouver/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce Development", "url": "https://bcwebcreator.com/services/ecommerce-website-vancouver/" } }
+        ]
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a custom website cost in BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our essential custom websites start at $997. We offer transparent, one-time pricing with no hidden monthly fees or long-term contracts for BC businesses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in a 5-day launch. From the time we have your content and approval, we can have your professional site live in just one business week."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your websites mobile-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all our websites are built with a mobile-first approach using hand-coded HTML and CSS, ensuring they look stunning on iPhones, Android devices, tablets, and desktops."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- SEO & Social -->
+    <meta property="og:title" content="BC Web Creator | Websites for New BC Businesses">
+    <meta property="og:description" content="Get your BC business online in 5 days. Professional, mobile-friendly websites for contractors, salons, consultants, and more.">
+    <meta property="og:image" content="https://bcwebcreator.com/images/logo.webp">
+    <meta property="og:url" content="https://bcwebcreator.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fefce8',
+                            100: '#fef3c7',
+                            200: '#f9e190',
+                            500: '#D69E2E', // Site Gold
+                            600: '#b7791f',
+                            700: '#92600a',
+                            900: '#78350f',
+                        },
+                        dark: {
+                            900: '#1E3A5F', // Site Navy
+                            800: '#2A4A72',
+                            700: '#2D3748',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW31X9301H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VW31X9301H');
+    </script>
+
+
+
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(30, 58, 95, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(214, 158, 46, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(30, 58, 95, 0.05), transparent);
+        }
+        .dark .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(214, 158, 46, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.5), transparent);
+        }
+    </style>
+</head>
+
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Header -->
+    <header id="navbar" class="fixed w-full z-50 transition-all duration-300 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="/index.html" class="flex items-center gap-2 group">
+                        <img src="images/logo.webp" alt="BC Web Creator Logo" class="h-10 w-10 transition-transform group-hover:scale-110">
+                        <span class="font-display font-bold text-2xl tracking-tight text-dark-900 dark:text-white">BC<span class="text-primary-500">WebCreator</span></span>
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <!-- Services Mega Menu -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 font-semibold text-dark-900 dark:text-white hover:text-primary-500 transition-colors py-8">
+                            Services <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 w-[400px] bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 rounded-[2rem] shadow-2xl p-8 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all transform translate-y-2 group-hover:translate-y-0 grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Industries</h4>
+                                <div class="space-y-3">
+                                    <a href="/contractors.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Contractors</a>
+                                    <a href="/salons.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Salons & Spas</a>
+                                    <a href="/restaurants.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Restaurants</a>
+                                    <a href="/lawyers.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Lawyers</a>
+                                    <a href="/real-estate.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Real Estate</a>
+                                    <a href="/healthcare.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Healthcare</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Locations</h4>
+                                <div class="space-y-3">
+                                    <a href="/locations/vancouver/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Vancouver</a>
+                                    <a href="/locations/surrey/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Surrey</a>
+                                    <a href="/locations/kelowna/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Kelowna</a>
+                                    <a href="/locations/victoria/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Victoria</a>
+                                    <a href="/locations/abbotsford/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Abbotsford</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/index.html#work" class="font-semibold text-dark-900 dark:text-white hover:text-primary-500 transition-colors">Portfolio</a>
+                    <a href="tel:7783478067" class="flex items-center gap-2 font-semibold text-lg hover:text-primary-500 transition-colors">
+                        <span class="text-xl">📞</span> 778-347-8067
+                    </a>
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <a href="tel:7783478067" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-primary-500/25">Call Victor Now</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass border-b border-slate-200 dark:border-white/10 p-4 space-y-6 max-h-[80vh] overflow-y-auto">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="space-y-3">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Industries</p>
+                    <a href="/contractors.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Contractors</a>
+                    <a href="/salons.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Salons</a>
+                    <a href="/restaurants.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Restaurants</a>
+                    <a href="/lawyers.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Lawyers</a>
+                    <a href="/real-estate.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Real Estate</a>
+                    <a href="/healthcare.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Healthcare</a>
+                </div>
+                <div class="space-y-3">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Locations</p>
+                    <a href="/locations/vancouver/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Vancouver</a>
+                    <a href="/locations/surrey/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Surrey</a>
+                    <a href="/locations/kelowna/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Kelowna</a>
+                    <a href="/locations/victoria/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Victoria</a>
+                    <a href="/locations/abbotsford/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Abbotsford</a>
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-100 dark:border-white/5 space-y-4">
+                <a href="tel:7783478067" class="block py-2 text-lg font-semibold">📞 778-347-8067</a>
+                <a href="tel:7783478067" class="block w-full text-center bg-primary-500 text-white py-4 rounded-xl font-bold">Call Victor Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden hero-gradient">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl animate-float"></div>
+                <div class="absolute top-1/2 -left-24 w-72 h-72 bg-dark-900/5 rounded-full blur-3xl animate-pulse"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 lg:py-24">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="animate-slide-up">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400 font-bold text-sm mb-6 border border-primary-500/20">
+                            🚀 BUILT FOR NEW BC BUSINESSES
+                        </div>
+                        <h1 class="font-display font-bold text-5xl md:text-7xl mb-6 leading-[1.1] text-dark-900 dark:text-white">
+                            New BC Business? <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-600">Get Online in 5 Days</span>
+                        </h1>
+                        <p class="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
+                            You just registered your company. Now you need a professional website that brings customers – without the headaches, delays, or high costs.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                            <a href="tel:7783478067" class="inline-flex items-center justify-center px-10 py-5 bg-primary-500 text-white rounded-2xl font-bold text-lg hover:bg-primary-600 transition-all hover:scale-105 shadow-xl shadow-primary-500/25">
+                                📞 Call Victor Now &rarr;
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium">
+                                <span class="text-primary-500 text-xl">✓</span> Free Consultation
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium">
+                                <span class="text-primary-500 text-xl">⚡</span> 5-Day Turnaround
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium">
+                                <span class="text-primary-500 text-xl">💸</span> No Hidden Fees
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-600 dark:text-slate-400 font-medium">
+                                <span class="text-primary-500 text-xl">🇨🇦</span> BC-Based & Local
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative animate-fade-in">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-[3rem] blur-2xl opacity-20 animate-pulse"></div>
+                        <div class="relative glass rounded-[2.5rem] p-8 md:p-12 border border-white/20 shadow-2xl">
+                            <div class="text-center mb-8">
+                                <div class="text-6xl mb-4">🚀</div>
+                                <h3 class="font-display font-bold text-3xl mb-2">Built for growth</h3>
+                                <p class="text-slate-500 dark:text-slate-400">Perfect for: Contractors, Consultants, Salons, Trades & More</p>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="p-6 bg-white/50 dark:bg-white/5 rounded-2xl border border-white/20">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-12 h-12 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold">V</div>
+                                        <div>
+                                            <p class="font-bold text-lg">Work with Victor directly</p>
+                                            <p class="text-sm text-slate-500">15+ years experience in film & tech</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-6 bg-white/50 dark:bg-white/5 rounded-2xl border border-white/20">
+                                    <p class="text-slate-600 dark:text-slate-400 italic">"Victor delivered a stunning site for my salon in under a week. The bookings started coming in immediately."</p>
+                                    <p class="mt-2 font-bold text-sm">— BC Business Owner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section (Victor's Credits) -->
+        <section class="py-12 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-white/5">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <p class="text-sm font-bold tracking-widest text-slate-400 uppercase mb-8">Crafted by an industry veteran who's worked on</p>
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+                    <span class="font-display font-bold text-xl md:text-2xl text-slate-600 dark:text-slate-300">DEADPOOL 2</span>
+                    <span class="font-display font-bold text-xl md:text-2xl text-slate-600 dark:text-slate-300">STAR TREK BEYOND</span>
+                    <span class="font-display font-bold text-xl md:text-2xl text-slate-600 dark:text-slate-300">SUPERGIRL</span>
+                    <span class="font-display font-bold text-xl md:text-2xl text-slate-600 dark:text-slate-300">PERCY JACKSON</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Work Section -->
+        <section id="work" class="py-24 bg-white dark:bg-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 animate-slide-up">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Recent Work</h2>
+                    <p class="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Helping businesses across BC launch professional digital experiences.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- TyphoonHub -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_typhoon.webp" alt="TyphoonHub Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Film & Streaming</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">TyphoonHub</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Custom film streaming and portfolio platform with rich video library and mobile-first design.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Portfolio now accessible 24/7 – no more massive emails.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(0)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://www.typhoonhub.ca" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mango Micro Markets -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_mango.webp" alt="Mango Micro Markets Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Corporate / Food Service</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">Mango Micro Markets</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Lead-generation site for a corporate micro-market company with clean branding and CTAs.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Clear CTAs now drive qualified leads from corporate offices.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(1)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://mangomicromarkets.ca" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- J1's Audio -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_j1s.webp" alt="J1's Audio Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Sound Engineer</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">J1's Audio</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Professional site for Surrey-based sound engineer showcasing gear, services, and bookings.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Mike gets 2–3 booking inquiries per week directly from his site.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(2)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://j1s-audio.firebaseapp.com" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- J. Henley Customs -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_jhenley.webp" alt="J. Henley Customs Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Custom Apparel</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">J. Henley Customs</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Branded showcase and inquiry website for a custom apparel business with a visual-first layout.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Manual DMs replaced with a structured funnel, increasing orders.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(3)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://jhenleycustoms.com" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Check The Gate -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_checkthegate.webp" alt="Check The Gate Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Film Industry</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">Check The Gate</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Content-rich resource website for the BC film industry community with a cinematic aesthetic.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Established as the primary digital resource for local professionals.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(4)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://checkthegate.ca" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wanita's Hair -->
+                    <div class="group relative bg-slate-50 dark:bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-200 dark:border-white/10 transition-all hover:shadow-2xl hover:-translate-y-2">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="images/mockup_wanita.webp" alt="Wanita's Hair Mockup" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-2">Salon / Service</div>
+                            <h3 class="font-display font-bold text-2xl mb-4 text-dark-900 dark:text-white">Wanita's Hair</h3>
+                            <p class="text-slate-500 dark:text-slate-400 mb-6 line-clamp-2">Premium hair artistry website with a dark elegant design highlighting services and portfolio.</p>
+                            <div class="p-4 bg-white dark:bg-slate-800/50 rounded-xl mb-6 border border-slate-100 dark:border-white/5">
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">Real Result</div>
+                                <div class="text-sm font-bold text-dark-900 dark:text-white">📈 Premium branding attracted a higher-value, high-end clientele.</div>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openLightbox(5)" class="flex-1 px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-xl font-bold text-sm hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">Details</button>
+                                <a href="https://wanitas-reel-hair.web.app" target="_blank" class="flex-1 px-4 py-3 bg-primary-500 text-white text-center rounded-xl font-bold text-sm hover:bg-primary-600 transition-all">View Live ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="text-slate-500 mb-6">...and many more local BC businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Simple, Honest Pricing</h2>
+                    <p class="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">No surprises. No monthly contracts. Just a professional site that grows with you.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                    <!-- Essential -->
+                    <div class="relative group p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 transition-all hover:scale-[1.02] hover:shadow-2xl shadow-lg flex flex-col">
+                        <h3 class="font-display font-bold text-2xl mb-2">Essential</h3>
+                        <p class="text-slate-500 mb-6">The perfect starter site</p>
+                        <div class="text-5xl font-bold mb-1">$997</div>
+                        <p class="text-slate-400 text-sm mb-8">One-time payment</p>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> 3-Page Custom Website</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Mobile Responsive</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Contact Form</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Google Maps Integration</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> 1 Month Free Hosting</li>
+                        </ul>
+                        <a href="tel:7783478067" class="w-full py-4 text-center border-2 border-primary-500 text-primary-500 font-bold rounded-xl hover:bg-primary-500 hover:text-white transition-all">Call to Order</a>
+                    </div>
+
+                    <!-- Business Pro -->
+                    <div class="relative group p-8 rounded-3xl bg-dark-900 dark:bg-dark-900 border-2 border-primary-500 text-white transition-all hover:scale-[1.05] hover:shadow-2xl shadow-xl flex flex-col scale-105 z-10">
+                        <div class="absolute -top-5 right-8 bg-primary-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Most Popular</div>
+                        <h3 class="font-display font-bold text-2xl mb-2">Business Pro</h3>
+                        <p class="text-slate-300 mb-6">Built for scale & results</p>
+                        <div class="text-5xl font-bold mb-1">$1,997</div>
+                        <p class="text-slate-400 text-sm mb-8">One-time payment</p>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3"><span class="text-primary-500 text-xl">✓</span> 5-Page Custom Website</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500 text-xl">✓</span> Booking Integration</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500 text-xl">✓</span> Foundational SEO</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500 text-xl">✓</span> Google Analytics 4</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500 text-xl">✓</span> 3 Months Free Hosting</li>
+                        </ul>
+                        <a href="tel:7783478067" class="w-full py-4 text-center bg-primary-500 text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/20">📞 Call Victor</a>
+                    </div>
+
+                    <!-- E-commerce -->
+                    <div class="relative group p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-white/10 transition-all hover:scale-[1.02] hover:shadow-2xl shadow-lg flex flex-col">
+                        <h3 class="font-display font-bold text-2xl mb-2">E-commerce</h3>
+                        <p class="text-slate-500 mb-6">Full online store</p>
+                        <div class="text-5xl font-bold mb-1">$2,997</div>
+                        <p class="text-slate-400 text-sm mb-8">One-time payment</p>
+                        <ul class="space-y-4 mb-10 flex-grow">
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Up to 50 Products</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Payment Gateway Setup</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Inventory Management</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> Premium SEO Package</li>
+                            <li class="flex items-center gap-3"><span class="text-primary-500">✓</span> 6 Months Free Hosting</li>
+                        </ul>
+                        <a href="tel:7783478067" class="w-full py-4 text-center border-2 border-primary-500 text-primary-500 font-bold rounded-xl hover:bg-primary-500 hover:text-white transition-all">Call to Discuss</a>
+                    </div>
+                </div>
+
+                <div class="mt-16 flex flex-wrap justify-center gap-8 md:gap-12">
+                    <div class="flex items-center gap-2 text-slate-500 font-medium">✨ Free .ca Domain</div>
+                    <div class="flex items-center gap-2 text-slate-500 font-medium">🔧 30 Days Post-Launch Support</div>
+                    <div class="flex items-center gap-2 text-slate-500 font-medium">💯 100% Satisfaction Guarantee</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-dark-900 text-white text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-1/2 left-1/4 w-[40rem] h-[40rem] bg-primary-500 rounded-full blur-[120px] -translate-y-1/2"></div>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 relative z-10">
+                <h2 class="font-display font-bold text-4xl md:text-6xl mb-8">Ready to get online this week?</h2>
+                <p class="text-xl text-slate-300 mb-12">Call or text me directly. No voicemail mazes – you get me, Victor.</p>
+                <div class="flex flex-col items-center gap-8">
+                    <div class="text-4xl md:text-6xl font-bold text-primary-500 tracking-tighter">778-347-8067</div>
+                    <a href="tel:7783478067" class="inline-flex items-center justify-center px-12 py-6 bg-white text-dark-900 rounded-2xl font-bold text-xl hover:bg-primary-500 transition-all hover:scale-105">
+                        Call Victor Now &rarr;
+                    </a>
+                </div>
+                <p class="mt-12 text-slate-400">Or email: <a href="mailto:bcwebcreator@gmail.com" class="text-white hover:text-primary-500 underline underline-offset-4">bcwebcreator@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <div class="font-display font-bold text-2xl mb-2 text-white">BC<span class="text-primary-500">WebCreator</span></div>
+                    <p class="text-slate-500">Helping new BC businesses get online. Fast. Professional. Affordable.</p>
+                </div>
+                <div class="flex gap-6 text-slate-400 text-sm">
+                    <a href="/terms/index.html" class="hover:text-white transition-colors">Terms</a>
+                    <a href="/privacy/index.html" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+                <p>&copy; 2025 BC Web Creator. Serving Vancouver, Victoria, Kelowna, and all of BC.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Theme Toggle Logic
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass', 'shadow-lg', 'h-16');
+                navbar.classList.remove('h-20');
+            } else {
+                navbar.classList.remove('glass', 'shadow-lg', 'h-16');
+                navbar.classList.add('h-20');
+            }
+        });
+
+        // Lightbox Logic
+        const projects = [
+            { 
+                tag: 'Film & Streaming', 
+                title: 'TyphoonHub', 
+                problem: 'Large video files were difficult to share with producers and clients, and the previous site was slow and not mobile-ready.',
+                solution: 'A custom streaming platform with cloud video hosting and a "Netflix-style" interface for seamless mobile viewing.',
+                result: 'Portfolio is now accessible 24/7 globally – no more emailing massive files.',
+                desc: 'A fully custom film streaming and portfolio platform built for Typhoon Entertainment. Features a rich video library, advanced dark mode, and a mobile-first responsive layout.', 
+                pills: ['Next.js', 'Firebase', 'Tailwind CSS', 'Dark Mode'], 
+                link: 'https://www.typhoonhub.ca', 
+                caseStudy: 'case-studies/typhoonhub/index.html',
+                img: 'images/mockup_typhoon.webp' 
+            },
+            { 
+                tag: 'Corporate / Food Service', 
+                title: 'Mango Micro Markets', 
+                problem: 'The business relied on cold calls and lacked a professional digital presence to build trust with corporate HR departments.',
+                solution: 'A high-conversion lead generation site with clear value propositions and strong calls to action.',
+                result: 'Professional digital footprint established, driving qualified inquiries from corporate offices.',
+                desc: 'A modern corporate lead-generation website for an office micro-market company. Clean branding, strong CTAs, and an informational layout designed to turn visitors into business leads.', 
+                pills: ['HTML5', 'CSS', 'JavaScript', 'SEO'], 
+                link: 'https://mangomicromarkets.ca', 
+                caseStudy: 'case-studies/mango-micro-markets/index.html',
+                img: 'images/mockup_mango.webp' 
+            },
+            { 
+                tag: 'Sound Engineer', 
+                title: "J1's Audio", 
+                problem: 'Mike had no online presence. Potential clients couldn\'t find his services, listen to samples, or book him easily.',
+                solution: 'A portfolio site with embedded audio samples, service packages, and a streamlined booking inquiry form.',
+                result: 'Mike now receives 2-3 new booking inquiries per week directly through the website.',
+                desc: 'A professional online presence for Surrey-based sound engineer Mikke Jones. Showcasing audio services, gear, and booking — built to attract clients and establish credibility.', 
+                pills: ['HTML5', 'CSS', 'Audio Services', 'Mobile-First'], 
+                link: 'https://j1s-audio.firebaseapp.com', 
+                caseStudy: 'case-studies/j1s-audio/index.html',
+                img: 'images/mockup_j1s.webp' 
+            },
+            { 
+                tag: 'Custom Apparel', 
+                title: 'J. Henley Customs', 
+                problem: 'Custom orders were handled manually via DM, leading to lost inquiries and inconsistent communication.',
+                solution: 'A branded showcase with a dedicated inquiry funnel and structured order request flow.',
+                result: 'Order management streamlined and professional brand image solidified for higher-value clients.',
+                desc: 'A branded showcase and inquiry website for a custom apparel business. Visual-first layout with a clear contact/order inquiry flow to capture leads.', 
+                pills: ['HTML5', 'Tailwind CSS', 'Contact Form'], 
+                link: 'https://jhenleycustoms.com', 
+                caseStudy: 'case-studies/j-henley-customs/index.html',
+                img: 'images/mockup_jhenley.webp' 
+            },
+            { 
+                tag: 'Film Industry', 
+                title: 'Check The Gate', 
+                problem: 'BC film industry resources were scattered and lacked a cohesive, modern platform for community engagement.',
+                solution: 'A content-focused hub with cinematic aesthetics and intuitive category navigation.',
+                result: 'Established as a go-to resource for local industry professionals.',
+                desc: 'A content-rich resource website for the BC film industry community. Features a cinematic design aesthetic with editorial-style layout and category navigation.', 
+                pills: ['Firebase Hosting', 'Responsive', 'SEO'], 
+                link: 'https://checkthegate.ca', 
+                caseStudy: 'case-studies/check-the-gate/index.html',
+                img: 'images/mockup_checkthegate.webp' 
+            },
+            { 
+                tag: 'Salon / Service', 
+                title: "Wanita's Hair", 
+                problem: 'An outdated web presence made it difficult to showcase the artistry of high-end salon services.',
+                solution: 'An elegant, dark-mode portfolio focusing on high-resolution imagery and clear service menus.',
+                result: 'Visual credibility boosted, attracting higher-end clientele looking for premium salon experiences.',
+                desc: 'Premium hair artistry website with a dark elegant design, highlighting services and an expansive beauty portfolio.', 
+                pills: ['HTML5', 'CSS', 'JavaScript', 'Bookings'], 
+                link: 'https://wanitas-reel-hair.web.app', 
+                caseStudy: 'case-studies/wanitas-hair/index.html',
+                img: 'images/mockup_wanita.webp' 
+            }
+        ];
+
+        function openLightbox(i) {
+            const p = projects[i];
+            document.getElementById('lb-image').src = p.img;
+            document.getElementById('lb-image').alt = p.title;
+            document.getElementById('lb-tag').textContent = p.tag;
+            document.getElementById('lb-title').textContent = p.title;
+            
+            // New detailed content
+            document.getElementById('lb-problem').textContent = p.problem;
+            document.getElementById('lb-solution').textContent = p.solution;
+            document.getElementById('lb-result').textContent = p.result;
+            
+            const lbLink = document.getElementById('lb-link');
+            lbLink.href = p.link;
+            
+            const lbCaseStudy = document.getElementById('lb-case-study');
+            lbCaseStudy.href = p.caseStudy;
+            
+            const pills = document.getElementById('lb-pills');
+            pills.innerHTML = p.pills.map(t => `<span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-white/10">${t}</span>`).join('');
+            
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 md:p-8 bg-slate-950/90 backdrop-blur-sm">
+        <div class="relative w-full max-w-6xl bg-white dark:bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 z-10 w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 text-white rounded-full backdrop-blur-md transition-all">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="grid lg:grid-cols-2 h-full max-h-[90vh] overflow-y-auto lg:overflow-hidden">
+                <div class="aspect-video lg:aspect-auto bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <img id="lb-image" src="" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 md:p-12 flex flex-col justify-center overflow-y-auto">
+                    <div id="lb-tag" class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-4">Category</div>
+                    <h2 id="lb-title" class="font-display font-bold text-3xl md:text-4xl mb-8 text-dark-900 dark:text-white">Project Title</h2>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">The Problem</h4>
+                            <p id="lb-problem" class="text-slate-600 dark:text-slate-300">Description of the issue.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">The Solution</h4>
+                            <p id="lb-solution" class="text-slate-600 dark:text-slate-300">Description of the build.</p>
+                        </div>
+                        <div class="p-4 bg-primary-50 dark:bg-primary-900/10 border border-primary-200 dark:border-primary-900/20 rounded-2xl">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400 mb-2">The Result</h4>
+                            <p id="lb-result" class="text-lg font-bold text-dark-900 dark:text-white">Measurable outcome.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="lb-pills" class="flex flex-wrap gap-2 mb-10"></div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                        <a id="lb-link" href="#" target="_blank" class="flex-1 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-white rounded-xl font-bold hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/25">
+                            Visit Live Site ↗
+                        </a>
+                        <a id="lb-case-study" href="#" class="flex-1 inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-slate-800 text-dark-900 dark:text-white rounded-xl font-bold border border-slate-200 dark:border-white/10 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                            Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialogflow Messenger Chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="BCWebCreator-Bot" agent-id="362de2f5-16e4-4666-9a0e-b2dfc0fb09b9" language-code="en"></df-messenger>
+</body>
+
+</html>

@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing | BC Web Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1A1A2E;
+      --navy2: #16213E;
+      --gold: #C9972A;
+      --gold2: #E8B84B;
+      --teal: #0D7377;
+      --teal2: #14A085;
+      --white: #F5F5F0;
+      --gray: #9A9A9A;
+      --light: #E8E8E2;
+      --card: #1E2240;
+      --border: rgba(201, 151, 42, 0.25);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(26, 26, 46, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--light);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      opacity: 0.75;
+      transition: opacity 0.2s, color 0.2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--gold2);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 100px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(13, 115, 119, 0.12), transparent),
+        radial-gradient(ellipse 50% 80% at 10% 20%, rgba(201, 151, 42, 0.08), transparent);
+      pointer-events: none;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--teal2);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: 1px solid rgba(13, 115, 119, 0.4);
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 0.95;
+      color: var(--white);
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 600px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      color: var(--light);
+      font-weight: 500;
+    }
+
+    .pill.teal {
+      border-color: rgba(13, 115, 119, 0.5);
+      color: var(--teal2);
+    }
+
+    /* ── SECTION ── */
+    section {
+      padding: 80px 5%;
+    }
+
+    section:nth-child(even) {
+      background: var(--navy2);
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--teal2);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      letter-spacing: 2px;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+    }
+
+    .section-sub {
+      font-size: 1rem;
+      color: var(--gray);
+      font-weight: 300;
+      max-width: 620px;
+      margin-bottom: 48px;
+    }
+
+    /* ── DIVIDER ── */
+    .gold-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 16px 0 40px;
+      border-radius: 2px;
+    }
+
+    /* ── PRICING TABLE ── */
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 32px;
+      font-size: 0.93rem;
+    }
+
+    .price-table thead tr {
+      background: var(--teal);
+    }
+
+    .price-table thead th {
+      padding: 14px 20px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--white);
+      border: none;
+    }
+
+    .price-table tbody tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      transition: background 0.15s;
+    }
+
+    .price-table tbody tr:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .price-table tbody tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .price-table tbody tr:nth-child(even):hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .price-table td {
+      padding: 14px 20px;
+      vertical-align: top;
+      color: var(--light);
+    }
+
+    .price-table td:first-child {
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    .price-table td.price {
+      font-family: 'DM Mono', monospace;
+      color: var(--gold2);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .price-table td.note {
+      color: var(--gray);
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    /* ── CARDS GRID ── */
+    .cards {
+      display: grid;
+      gap: 20px;
+    }
+
+    .cards.two {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .cards.three {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      padding: 28px;
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      border-radius: 8px 8px 0 0;
+      background: var(--teal);
+    }
+
+    .card-accent.gold {
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+    }
+
+    .card-accent.navy {
+      background: var(--navy2);
+    }
+
+    .card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 1.5px;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .card-price {
+      font-family: 'DM Mono', monospace;
+      color: var(--gold2);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .card-sub {
+      font-size: 0.83rem;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .card ul {
+      list-style: none;
+    }
+
+    .card ul li {
+      font-size: 0.88rem;
+      color: var(--light);
+      padding: 5px 0 5px 20px;
+      position: relative;
+      opacity: 0.9;
+    }
+
+    .card ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--teal2);
+      font-size: 0.8rem;
+    }
+
+    /* ── BUNDLE PACKAGES ── */
+    .bundle-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .bundle {
+      border-radius: 10px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .bundle:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .bundle.starter {
+      background: var(--card);
+      border: 1px solid rgba(13, 115, 119, 0.4);
+    }
+
+    .bundle.launch {
+      background: linear-gradient(135deg, #1a2235 0%, #1e2a40 100%);
+      border: 1px solid rgba(13, 115, 119, 0.5);
+    }
+
+    .bundle.pro {
+      background: linear-gradient(135deg, #1e1a10 0%, #251f0a 100%);
+      border: 1px solid rgba(201, 151, 42, 0.5);
+    }
+
+    .bundle.team {
+      background: linear-gradient(135deg, #14182e 0%, #1a1a2e 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .bundle-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .starter .bundle-tag {
+      color: var(--teal2);
+    }
+
+    .launch .bundle-tag {
+      color: var(--teal2);
+    }
+
+    .pro .bundle-tag {
+      color: var(--gold2);
+    }
+
+    .team .bundle-tag {
+      color: var(--gray);
+    }
+
+    .bundle h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+      color: var(--white);
+    }
+
+    .bundle-price {
+      font-family: 'DM Mono', monospace;
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .starter .bundle-price,
+    .launch .bundle-price {
+      color: var(--teal2);
+    }
+
+    .pro .bundle-price {
+      color: var(--gold2);
+    }
+
+    .team .bundle-price {
+      color: var(--white);
+    }
+
+    .bundle-desc {
+      font-size: 0.85rem;
+      color: var(--gray);
+      font-style: italic;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .bundle ul {
+      list-style: none;
+    }
+
+    .bundle ul li {
+      font-size: 0.87rem;
+      color: var(--light);
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .bundle ul li:last-child {
+      border: none;
+    }
+
+    .bundle ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      font-size: 0.78rem;
+    }
+
+    .starter li::before,
+    .launch li::before {
+      color: var(--teal2);
+    }
+
+    .pro li::before {
+      color: var(--gold2);
+    }
+
+    .team li::before {
+      color: var(--gray);
+    }
+
+    /* ── NOTICE BOXES ── */
+    .notice {
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .notice.warn {
+      background: rgba(255, 80, 80, 0.06);
+      border: 1px solid rgba(255, 80, 80, 0.25);
+    }
+
+    .notice.info {
+      background: rgba(13, 115, 119, 0.08);
+      border: 1px solid rgba(13, 115, 119, 0.3);
+    }
+
+    .notice.gold {
+      background: rgba(201, 151, 42, 0.07);
+      border: 1px solid rgba(201, 151, 42, 0.3);
+    }
+
+    .notice-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .notice-body {
+      flex: 1;
+    }
+
+    .notice-body strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+
+    .notice-body p {
+      font-size: 0.86rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── POLICY GRID ── */
+    .policy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .policy-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-left: 3px solid var(--teal);
+      border-radius: 6px;
+      padding: 18px 20px;
+    }
+
+    .policy-item h4 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gold2);
+      margin-bottom: 6px;
+    }
+
+    .policy-item p {
+      font-size: 0.83rem;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    /* ── WHY US ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 22px;
+      background: rgba(255, 255, 255, 0.025);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .why-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .why-item h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .why-item p {
+      font-size: 0.84rem;
+      color: var(--gray);
+      line-height: 1.55;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--teal) 0%, #0a4f52 100%);
+      padding: 80px 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201, 151, 42, 0.1), transparent);
+    }
+
+    .cta-section h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      letter-spacing: 3px;
+      color: var(--white);
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 36px;
+      font-weight: 300;
+      position: relative;
+    }
+
+    .cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-gold:hover {
+      background: var(--gold2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201, 151, 42, 0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0f0f1e;
+      padding: 40px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer .brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    footer p {
+      font-size: 0.82rem;
+      color: var(--gray);
+    }
+
+    footer a {
+      color: var(--teal2);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--gold2);
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── TABS ── */
+    .tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 0;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .tab-btn {
+      padding: 12px 24px;
+      background: transparent;
+      border: none;
+      color: var(--gray);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .tab-btn.active {
+      color: var(--gold2);
+      border-bottom-color: var(--gold2);
+    }
+
+    .tab-btn:hover:not(.active) {
+      color: var(--light);
+    }
+
+    .tab-panel {
+      display: none;
+      padding-top: 32px;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav {
+        padding: 0 4%;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      section {
+        padding: 60px 4%;
+      }
+
+      .hero {
+        padding: 70px 4% 60px;
+      }
+
+      .price-table {
+        font-size: 0.82rem;
+      }
+
+      .price-table thead th,
+      .price-table td {
+        padding: 10px 12px;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .tabs {
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-brand">BC WEB CREATOR</a>
+    <ul class="nav-links">
+      <li><a href="#web">Web Design</a></li>
+      <li><a href="#logo">Logo & Brand</a></li>
+      <li><a href="#vinyl">Vinyl & Apparel</a></li>
+      <li><a href="#bundles">Bundles</a></li>
+      <li><a href="#contact">Get a Quote</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-tag">2026 Services & Pricing — CAD</div>
+    <h1>BUILD YOUR<br><span>BRAND.</span><br>ALL OF IT.</h1>
+    <p class="hero-sub">Web design, professional logos, custom vinyl decals, and heat-pressed apparel — all in-house,
+      all made to order, all built to the same standard of quality.</p>
+    <div class="hero-pills">
+      <span class="pill teal">💻 Custom Websites</span>
+      <span class="pill teal">🎨 Logo Design</span>
+      <span class="pill">🏷 Vinyl Decals</span>
+      <span class="pill">👕 Heat-Press Apparel</span>
+      <span class="pill">📦 Bundle Packages</span>
+      <span class="pill">📍 Abbotsford, BC</span>
+    </div>
+    <div style="margin-top:28px;">
+      <a href="BCWebCreator_PricingGuide.pdf" download class="btn btn-gold"
+        style="display:inline-flex;align-items:center;gap:8px;">
+        <span>⬇</span> Download Pricing Guide (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- WEB SERVICES -->
+  <section id="web">
+    <div class="reveal">
+      <div class="section-label">Section 01</div>
+      <h2 class="section-title">WEB DESIGN &amp;<br><span>DEVELOPMENT</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">High-performance, SEO-optimized websites built custom for BC businesses. No templates —
+        ever.</p>
+
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Description</th>
+            <th class="price">Starting Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Custom Web Design</td>
+            <td class="note">Fully tailored, mobile-first site — no page builders, no templates</td>
+            <td class="price">From $1,200</td>
+          </tr>
+          <tr>
+            <td>E-Commerce Store</td>
+            <td class="note">Shopify, WooCommerce, or custom platform — built to sell</td>
+            <td class="price">From $2,000</td>
+          </tr>
+          <tr>
+            <td>SEO &amp; Optimization</td>
+            <td class="note">Local search ranking, speed, and content strategy</td>
+            <td class="price">From $500</td>
+          </tr>
+          <tr>
+            <td>WordPress Development</td>
+            <td class="note">Custom themes and plugin integration</td>
+            <td class="price">From $800</td>
+          </tr>
+          <tr>
+            <td>Maintenance &amp; Hosting</td>
+            <td class="note">Secure hosting, updates, and ongoing support</td>
+            <td class="price">From $75/mo</td>
+          </tr>
+          <tr>
+            <td>Landing Page</td>
+            <td class="note">Single-page, conversion-focused design</td>
+            <td class="price">From $400</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="notice info">
+        <div class="notice-icon">ℹ️</div>
+        <div class="notice-body">
+          <strong>What's included in every website</strong>
+          <p>Clean code, mobile-first design, and SEO best practices built in from day one. Every project is
+            custom-built to your brand. All new website projects include 30 days of post-launch support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO -->
+  <section id="logo">
+    <div class="reveal">
+      <div class="section-label">Section 02</div>
+      <h2 class="section-title">LOGO &amp;<br><span>BRAND IDENTITY</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Professional vector logos ready for web, print, vinyl cutting, and apparel. Every file
+        delivered in SVG, PNG, PDF, and EPS.</p>
+
+      <div class="cards three">
+        <div class="card reveal">
+          <div class="card-accent"></div>
+          <h3>Basic Logo</h3>
+          <div class="card-price">$150 – $250</div>
+          <div class="card-sub">Ideal for getting started</div>
+          <ul>
+            <li>1 concept, 2 revisions</li>
+            <li>PNG + SVG files</li>
+            <li>Web-ready delivery</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-accent"></div>
+          <h3>Standard Logo</h3>
+          <div class="card-price">$300 – $450</div>
+          <div class="card-sub">Most popular option</div>
+          <ul>
+            <li>2 concepts, 3 revisions</li>
+            <li>Full file package</li>
+            <li>SVG, PNG, PDF, EPS</li>
+            <li>Print &amp; Cricut ready</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-accent gold"></div>
+          <h3>Brand Identity</h3>
+          <div class="card-price">$500 – $800</div>
+          <div class="card-sub">Complete brand system</div>
+          <ul>
+            <li>Logo + colour palette</li>
+            <li>Typography selection</li>
+            <li>Brand usage guide</li>
+            <li>All file formats</li>
+            <li>5–7 business day turnaround</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VINYL & APPAREL -->
+  <section id="vinyl">
+    <div class="reveal">
+      <div class="section-label">Section 03</div>
+      <h2 class="section-title">VINYL &amp;<br><span>APPAREL</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Hand-crafted in BC using professional-grade equipment. Every order is made-to-order — no
+        inventory, no guesswork, no wasted cost.</p>
+
+      <!-- SUB TABS -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab(event,'decals')">🏷 Vinyl Decals</button>
+        <button class="tab-btn" onclick="switchTab(event,'shirts-supply')">👕 Shirts — We Supply</button>
+        <button class="tab-btn" onclick="switchTab(event,'shirts-csg')">👕 Shirts — You Supply (CSG)</button>
+      </div>
+
+      <!-- DECALS -->
+      <div id="decals" class="tab-panel active">
+        <p style="font-size:0.88rem;color:var(--gray);font-style:italic;margin-bottom:24px;">Perfect for laptops,
+          vehicles, storefronts, windows, and equipment.</p>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Small Batch (10–49)</th>
+              <th>Bulk (50+)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Small (up to 3")</td>
+              <td class="price">$3.50 – $5.00 ea.</td>
+              <td class="price">$1.50 – $2.50 ea.</td>
+            </tr>
+            <tr>
+              <td>Medium (3" – 6")</td>
+              <td class="price">$7.00 – $10.00 ea.</td>
+              <td class="price">$4.00 – $6.00 ea.</td>
+            </tr>
+            <tr>
+              <td>Large (6" – 12")</td>
+              <td class="price">$20.00 – $28.00 ea.</td>
+              <td class="price">$12.00 – $16.00 ea.</td>
+            </tr>
+            <tr>
+              <td>Specialty vinyl <span style="color:var(--gray);font-size:0.8rem">(reflective / holographic)</span>
+              </td>
+              <td class="price">+$2.00–$5.00 ea.</td>
+              <td class="price">+$2.00–$5.00 ea.</td>
+            </tr>
+            <tr>
+              <td>Complex design fee</td>
+              <td class="price">+15%–25%</td>
+              <td class="price">+15%–25%</td>
+            </tr>
+            <tr>
+              <td>Logo setup fee <span style="color:var(--gray);font-size:0.8rem">(non-vector, one-time)</span></td>
+              <td class="price">$15–$30</td>
+              <td class="price">$15–$30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SHIRTS - WE SUPPLY -->
+      <div id="shirts-supply" class="tab-panel">
+        <p style="font-size:0.88rem;color:var(--gray);font-style:italic;margin-bottom:24px;">We order blanks fresh for
+          every job — Budget Cotton (Gildan), Mid-Range (Bella+Canvas), or Premium (Next Level).</p>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Order Quantity</th>
+              <th>Budget Cotton</th>
+              <th>Premium Blend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Individual (1–9)</td>
+              <td class="price">$25 – $35</td>
+              <td class="price">$35 – $50</td>
+            </tr>
+            <tr>
+              <td>Team / Small Biz (10–49)</td>
+              <td class="price">$18 – $22 ea.</td>
+              <td class="price">$25 – $32 ea.</td>
+            </tr>
+            <tr>
+              <td>Bulk (50+)</td>
+              <td class="price">$14 – $16 ea.</td>
+              <td class="price">$18 – $24 ea.</td>
+            </tr>
+            <tr>
+              <td>Front + Back printing</td>
+              <td class="price">+$5–$10/garment</td>
+              <td class="price">+$5–$10/garment</td>
+            </tr>
+            <tr>
+              <td>Oversized print (&gt;12"×12")</td>
+              <td class="price">+$2–$5/shirt</td>
+              <td class="price">+$2–$5/shirt</td>
+            </tr>
+            <tr>
+              <td>Logo setup fee (one-time)</td>
+              <td class="price">$15–$30</td>
+              <td class="price">$15–$30</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="notice gold">
+          <div class="notice-icon">📦</div>
+          <div class="notice-body">
+            <strong>Make-to-Order Process</strong>
+            <p>Confirm your sizes, colours, and quantity — we order blanks specifically for your job. 50% deposit
+              required upfront. Turnaround: 5–10 business days from deposit received. Blanks sourced from S&S Activewear
+              and Gildan direct.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHIRTS - CSG -->
+      <div id="shirts-csg" class="tab-panel">
+        <p style="font-size:0.88rem;color:var(--gray);font-style:italic;margin-bottom:24px;">You bring or ship your own
+          clothing. We cut, weed, and press your design. Lower cost — your choice of garment.</p>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th class="price">Price per Shirt</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Press only (design pre-made)</td>
+              <td class="price">$10 – $15</td>
+              <td class="note">You provide the cut, weeded HTV design</td>
+            </tr>
+            <tr>
+              <td>Design + press (simple, 1-colour)</td>
+              <td class="price">$15 – $20</td>
+              <td class="note">We handle file prep, cut, weed, press</td>
+            </tr>
+            <tr>
+              <td>Design + press (complex / multi-layer)</td>
+              <td class="price">$20 – $30</td>
+              <td class="note">Layered vinyl, intricate detail work</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="notice warn">
+          <div class="notice-icon">⚠️</div>
+          <div class="notice-body">
+            <strong>CSG Requirements — Read Before Sending Garments</strong>
+            <p><strong>Accepted fabrics only:</strong> 100% cotton or 50/50 cotton-poly blends. We do not press
+              polyester, nylon, moisture-wicking, or athletic-wear fabrics — heat damage is likely and BC Web Creator
+              accepts no liability for garment damage. A signed waiver is required before work begins.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BUNDLES -->
+  <section id="bundles">
+    <div class="reveal">
+      <div class="section-label">Section 04</div>
+      <h2 class="section-title">BUNDLE<br><span>PACKAGES</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Combine web, logo, and merch into one package. One team, one consistent brand, one invoice.
+      </p>
+
+      <div class="bundle-grid">
+
+        <div class="bundle starter reveal">
+          <div class="bundle-tag">Starter</div>
+          <h3>BRAND KIT</h3>
+          <div class="bundle-price">From $350</div>
+          <div class="bundle-desc">Perfect for new businesses, side hustles, and pop-up vendors launching their brand.
+          </div>
+          <ul>
+            <li>Custom vector logo (2 concepts, 2 revisions)</li>
+            <li>10 custom vinyl decals with your logo</li>
+            <li>Files in SVG, PNG, PDF — Cricut ready</li>
+          </ul>
+        </div>
+
+        <div class="bundle launch reveal">
+          <div class="bundle-tag">Most Popular</div>
+          <h3>BUSINESS LAUNCH</h3>
+          <div class="bundle-price">From $1,800</div>
+          <div class="bundle-desc">Everything you need to launch a complete digital and physical brand presence.</div>
+          <ul>
+            <li>Custom 5-page website</li>
+            <li>Professional logo design (2 concepts, 3 revisions)</li>
+            <li>25 custom vinyl decals</li>
+            <li>10 heat-pressed T-shirts (budget cotton)</li>
+            <li>Basic SEO + Google Business setup</li>
+            <li>30 days post-launch support</li>
+          </ul>
+        </div>
+
+        <div class="bundle pro reveal">
+          <div class="bundle-tag">Best Value</div>
+          <h3>BRAND &amp; MERCH PRO</h3>
+          <div class="bundle-price">From $3,200</div>
+          <div class="bundle-desc">Maximum visibility — online and on the street. For businesses serious about their
+            brand.</div>
+          <ul>
+            <li>Custom 10-page website with full SEO</li>
+            <li>Logo + complete brand style guide</li>
+            <li>50 custom vinyl decals (specialty vinyl available)</li>
+            <li>25 premium shirts — front + back print</li>
+            <li>E-commerce integration (optional)</li>
+            <li>3 months hosting &amp; maintenance included</li>
+            <li>Priority turnaround — 7–10 business days</li>
+          </ul>
+        </div>
+
+        <div class="bundle team reveal">
+          <div class="bundle-tag">Corporate</div>
+          <h3>TEAM &amp; CORPORATE</h3>
+          <div class="bundle-price">Custom Quote</div>
+          <div class="bundle-desc">Bulk orders for teams, events, and corporate branding campaigns.</div>
+          <ul>
+            <li>50–200 custom apparel pieces</li>
+            <li>100+ vinyl decals for vehicles / storefronts</li>
+            <li>Dedicated account management</li>
+            <li>Bulk pricing across all items</li>
+            <li>Optional website refresh or campaign landing page</li>
+            <li>Contact us for a tailored quote</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAKE-TO-ORDER POLICY -->
+  <section>
+    <div class="reveal">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">MAKE-TO-ORDER<br><span>POLICY</span></h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">We don't keep inventory. Every order is placed fresh — zero dead stock, zero guesswork,
+        zero risk on your end.</p>
+
+      <div class="policy-grid">
+        <div class="policy-item">
+          <h4>📋 Confirm First</h4>
+          <p>Size, colour, and quantity must be confirmed in writing before we place any blank orders. No assumptions
+            made.</p>
+        </div>
+        <div class="policy-item">
+          <h4>💳 50% Deposit</h4>
+          <p>Required upfront before blanks are ordered. Covers materials so every job is committed before we spend a
+            dollar.</p>
+        </div>
+        <div class="policy-item">
+          <h4>⏱ Turnaround</h4>
+          <p>5–10 business days from deposit received. This allows time to source blanks and complete production.</p>
+        </div>
+        <div class="policy-item">
+          <h4>📦 Blank Sourcing</h4>
+          <p>We order from S&S Activewear, Alphabroder, and Gildan direct. Consistent quality, no middleman markups.</p>
+        </div>
+        <div class="policy-item">
+          <h4>🚫 No Cancellations</h4>
+          <p>Deposit is non-refundable once blanks are ordered. Cancellations before ordering receive a full refund.</p>
+        </div>
+        <div class="policy-item">
+          <h4>✏️ Revisions</h4>
+          <p>1 free design revision included on all orders. Additional revisions billed at $25/hr.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section>
+    <div class="reveal">
+      <div class="section-label">Why BC Web Creator</div>
+      <h2 class="section-title">WHAT SETS<br><span>US APART</span></h2>
+      <div class="gold-line"></div>
+
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-icon">🎬</div>
+          <div>
+            <h4>Visual Storytelling</h4>
+            <p>With roots in film production and visual arts, we bring a cinematic discipline to every brand we build.
+              Design that actually tells a story.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">🏠</div>
+          <div>
+            <h4>One Team, Full Service</h4>
+            <p>Web, logo, vinyl, and apparel — all in-house. No juggling vendors. No inconsistent quality. One contact,
+              everything handled.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">🌲</div>
+          <div>
+            <h4>Local BC Quality</h4>
+            <p>Everything is hand-crafted in British Columbia using professional-grade equipment and premium materials.
+              Built for our climate.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">💪</div>
+          <div>
+            <h4>Built to Last</h4>
+            <p>Permanent UV-resistant vinyl for decals. High-tack, wash-safe HTV for apparel. We don't cut corners on
+              materials.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">📊</div>
+          <div>
+            <h4>Transparent Pricing</h4>
+            <p>No hidden fees. You know exactly what you're paying for before we begin. Every quote is itemized and
+              clear.</p>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-icon">⚡</div>
+          <div>
+            <h4>Fast Turnaround</h4>
+            <p>Print orders ready in 3–7 business days (after blanks arrive). Web projects launch in 2–6 weeks depending
+              on scope.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <h2>READY TO BUILD<br>YOUR BRAND?</h2>
+    <p>Let's create something that works for your business — online and in the real world.</p>
+    <div class="cta-btns">
+      <a href="mailto:vsmatnawi@gmail.com" class="btn btn-gold">Get a Free Quote</a>
+      <a href="BCWebCreator_PricingGuide.pdf" download class="btn btn-outline"
+        style="display:inline-flex;align-items:center;gap:8px;"><span>⬇</span> Download PDF Guide</a>
+      <a href="https://bcwebcreator-b959e.firebaseapp.com/#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="brand">BC WEB CREATOR</div>
+      <p style="margin-top:4px">Abbotsford, BC — Serving Vancouver &amp; the Lower Mainland</p>
+    </div>
+    <p style="text-align:right">
+      <a href="mailto:bcwebcreator@gmail.com">bcwebcreator@gmail.com</a><br>
+      <span style="font-size:0.78rem;color:var(--gray)">© 2026 BC Web Creator. All rights reserved.</span>
+    </p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Stagger child cards
+    document.querySelectorAll('.cards, .bundle-grid, .why-grid, .policy-grid').forEach(grid => {
+      grid.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = `${i * 0.08}s`;
+      });
+    });
+
+    // Tabs
+    function switchTab(e, id) {
+      const section = e.target.closest('section') || document;
+      section.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      e.target.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

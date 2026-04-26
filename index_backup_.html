@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Web Creator | Premier Vancouver Web Design & SEO Agency</title>
+    <meta name="description"
+        content="Award-winning Vancouver web design agency. Custom websites, eCommerce, and high-performance SEO services that convert visitors into customers.">
+    <link rel="canonical" href="https://bcwebcreator.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bcwebcreator.com/">
+    <meta property="og:title" content="BC Web Creator | Premier Vancouver Web Design & SEO Agency">
+    <meta property="og:description"
+        content="Award-winning Vancouver web design agency. Custom websites, eCommerce, and high-performance SEO services that convert visitors into customers.">
+    <meta property="og:image" content="https://bcwebcreator.com/images/mockup_typhoon.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bcwebcreator.com/">
+    <meta property="twitter:title" content="BC Web Creator | Premier Vancouver Web Design & SEO Agency">
+    <meta property="twitter:description"
+        content="Award-winning Vancouver web design agency. Custom websites, eCommerce, and high-performance SEO services that convert visitors into customers.">
+    <meta property="twitter:image" content="https://bcwebcreator.com/images/mockup_typhoon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: { 50: '#fefce8', 100: '#fef3c7', 200: '#f9e190', 500: '#D69E2E', 600: '#b7791f', 700: '#92600a', 900: '#78350f' },
+                        dark: { 900: '#1E3A5F', 800: '#2A4A72', 700: '#2D3748' }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        slideUp: { '0%': { transform: 'translateY(30px)', opacity: '0' }, '100%': { transform: 'translateY(0)', opacity: '1' } },
+                        float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW31X9301H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-VW31X9301H');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BC Web Creator",
+      "image": "https://bcwebcreator.com/images/logo.webp",
+      "url": "https://bcwebcreator.com",
+      "email": "bcwebcreator@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "postalCode": "V6B 1A1",
+        "addressCountry": "CA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 49.2827, "longitude": -123.1207 },
+      "areaServed": [
+        "Vancouver",
+        "Abbotsford",
+        "Richmond",
+        "Burnaby",
+        "Surrey",
+        "Coquitlam",
+        "Langley",
+        "New Westminster",
+        "North Vancouver",
+        "West Vancouver",
+        "Maple Ridge",
+        "White Rock",
+        "Delta",
+        "Mission",
+        "Chilliwack"
+      ],
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": ["https://www.linkedin.com/company/bcwebcreator","https://www.typhoonhub.ca"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much does a custom website cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our custom website packages start at $1,200 for a professional starter site. Growth packages start at $3,000, and premium e-commerce solutions start at $6,500."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Starter projects typically take 2-3 weeks. Growth packages run 3-5 weeks, and premium or e-commerce projects can take 6-10 weeks depending on scope."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer SEO services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, foundational SEO is built into every website we create. For deeper results, we offer dedicated SEO packages covering keyword research, content strategy, and local SEO for Vancouver and the Lower Mainland."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Will my website be mobile-friendly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Every website we build is designed with a mobile-first approach, ensuring it looks stunning and functions flawlessly on all devices."
+        }
+      }]
+    }
+    </script>
+    <style>
+        .chat-message {
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typing-indicator span {
+            animation: blink 1.4s infinite both;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0.2;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .chat-window {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        }
+
+        .chat-window.closed {
+            transform: scale(0.95) translateY(20px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .chat-button {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(214, 158, 46, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0);
+            }
+        }
+
+        .chat-button.pulse {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        .markdown-content p {
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content ul {
+            list-style-type: disc;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .markdown-content strong {
+            font-weight: 600;
+        }
+
+        /* -- Chatbot (Dialogflow) overrides -- */
+        df-messenger {
+            --df-messenger-bot-message: #1E3A5F;
+            --df-messenger-user-message: #D69E2E;
+            --df-messenger-send-icon: #D69E2E;
+            --df-messenger-button-titlebar-color: #1E3A5F;
+            --df-messenger-chat-bubble-icon-color: #1E3A5F;
+            --df-messenger-font-color: #ffffff;
+            --df-messenger-user-message-font-color: #ffffff;
+            z-index: 999;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans antialiased bg-white dark:bg-dark-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 dark:bg-dark-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#"
+                    class="font-display font-bold text-2xl tracking-tight text-slate-900 dark:text-white hover:text-primary-600 transition-colors">BC
+                    Web Creator</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Services</a>
+                    <a href="#work"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Work</a>
+                    <a href="#process"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Process</a>
+                    <a href="/services/custom-vinyl-apparel-bc/"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Vinyls</a>
+                    <a href="https://typhoon-marketing.web.app/"
+                        class="text-sm font-bold text-primary-500 hover:text-primary-600 transition-colors">bcwebcreatorMKT</a>
+                    <a href="#about"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">About</a>
+                    <a href="/blog/"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-500 transition-colors">Blog</a>
+                    <a href="#contact"
+                        class="inline-flex items-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all transform hover:scale-105">Get
+                        a Quote</a>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle dark mode">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="md:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    id="mobile-menu-btn" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white dark:bg-dark-900 border-t border-slate-200 dark:border-slate-800"
+            id="mobile-menu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#services"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">Services</a>
+                <a href="#work"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">Work</a>
+                <a href="#process"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">Process</a>
+                <a href="/services/custom-vinyl-apparel-bc/"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">Vinyls</a>
+                <a href="https://typhoon-marketing.web.app/"
+                    class="block px-3 py-2 text-base font-bold text-primary-500 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">bcwebcreatorMKT</a>
+                <a href="#about"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">About</a>
+                <a href="/blog/"
+                    class="block px-3 py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md">Blog</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-primary-600 font-semibold">Start
+                    Project →</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-dark-900 dark:to-dark-800">
+        <div class="absolute inset-0 -z-10">
+            <div
+                class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary-500/10 blur-3xl animate-float">
+            </div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 rounded-full bg-primary-200/30 blur-3xl animate-float"
+                style="animation-delay:2s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+
+                <h1
+                    class="font-display font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight text-dark-900 dark:text-white mb-8 leading-tight animate-slide-up">
+                    Vancouver Web Design Agency That <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-700">Works</span>
+                    While You Sleep.
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up"
+                    style="animation-delay:0.1s;">
+                    We design and build high-performance websites for Vancouver businesses that are ready to grow
+                    &mdash; ones that look stunning, load fast, and turn visitors into paying customers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up"
+                    style="animation-delay:0.2s;">
+                    <a href="#contact"
+                        class="group inline-flex items-center px-8 py-4 text-base font-semibold rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all transform hover:scale-105 hover:shadow-xl">
+                        Get a Free Quote
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                    <a href="#work"
+                        class="inline-flex items-center px-8 py-4 text-base font-semibold rounded-full text-dark-900 border-2 border-dark-900 hover:bg-dark-900 hover:text-white transition-all dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-dark-900">
+                        View Our Work
+                    </a>
+                </div>
+                <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 animate-slide-up"
+                    style="animation-delay:0.3s;">
+                    <div
+                        class="flex flex-wrap justify-center gap-6 lg:gap-12 text-sm md:text-base font-medium text-slate-600 dark:text-slate-400">
+                        <span class="flex items-center"><span class="text-primary-500 mr-2">&starf;</span> 10+ Years
+                            Experience</span>
+                        <span class="flex items-center"><span class="text-primary-500 mr-2">&starf;</span> 50+ Projects
+                            Delivered</span>
+                        <span class="flex items-center"><span class="text-primary-500 mr-2">&starf;</span> Serving
+                            Vancouver &amp; the Lower Mainland</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50 dark:bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-6">What We Do
+                </h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">From custom design to ongoing support &mdash;
+                    we've got your digital presence covered.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Custom Web Design -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">Custom Web Design
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">Every business has a
+                        story worth telling. We design custom websites that capture your brand's personality and create
+                        a memorable experience for every visitor who lands on your page.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Fully
+                                custom design (no cookie-cutter templates)</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Mobile-first, responsive layouts for all screen sizes</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Built
+                                for speed, accessibility, and conversions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Development -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">E-Commerce
+                        Development</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">Ready to sell online? We
+                        build powerful e-commerce experiences that make buying from you easy, trustworthy, and enjoyable
+                        &mdash; so your store earns revenue around the clock.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Secure product pages, cart, and checkout flow</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Payment gateway integration (Stripe, PayPal, and more)</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Inventory management and order tracking setup</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SEO Optimization -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">SEO Optimization</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">A beautiful website means
+                        nothing if no one can find it. We optimize your site so Google ranks you where your customers
+                        are actually looking &mdash; and keeps you there.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                On-page SEO: meta tags, headings, keyword strategy</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Technical SEO: site speed, schema markup, crawlability</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Local
+                                SEO targeting for Vancouver and the Lower Mainland</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Landing Pages -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">Landing Pages</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">When you need results
+                        fast &mdash; for a campaign, product launch, or lead generation &mdash; a focused,
+                        conversion-optimized landing page is your best tool. We build pages that get people to act.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Single-focus design engineered for one specific goal</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                A/B-test-ready structure for ongoing optimization</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Fast
+                                turnaround &mdash; most landing pages delivered within 5-7 business days</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Website Maintenance & Support -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">Website Maintenance
+                        &amp; Support</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">Your website is a living,
+                        breathing asset &mdash; and it needs care to stay secure, fast, and up to date. We offer ongoing
+                        maintenance so you never have to worry about it going dark.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Regular updates, backups, and security monitoring</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Content updates and minor edits as needed</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Priority response time for technical issues</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Brand Identity & Strategy -->
+                <div
+                    class="group bg-white dark:bg-dark-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-3 text-slate-900 dark:text-white">Brand Identity &amp;
+                        Strategy</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm">Before a great website
+                        comes a great brand. We help you define who you are, how you look, and how you sound &mdash; so
+                        every customer interaction feels intentional and cohesive.</p>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-900 dark:text-white mb-2 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Logo
+                                design and visual identity (colours, fonts, style guide)</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Brand
+                                voice and messaging strategy</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Brand
+                                kit delivered in all formats for print and digital use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-slate-50 dark:bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-6">How we work
+                </h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">A clear, collaborative process from first call to
+                    launch day.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="relative">
+                    <div class="text-6xl font-display font-bold text-slate-200 dark:text-slate-700 mb-4">01</div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Discover</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Deep dive into your business goals, audience, and
+                        competitive landscape.</p>
+                    <div
+                        class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-primary-500 to-transparent ml-4">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="text-6xl font-display font-bold text-slate-200 dark:text-slate-700 mb-4">02</div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Design</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Wireframes and visual concepts tailored to your brand
+                        identity.</p>
+                    <div
+                        class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-primary-500 to-transparent ml-4">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="text-6xl font-display font-bold text-slate-200 dark:text-slate-700 mb-4">03</div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Develop</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Clean, scalable code with rigorous testing and
+                        optimization.</p>
+                    <div
+                        class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-primary-500 to-transparent ml-4">
+                    </div>
+                </div>
+                <div>
+                    <div class="text-6xl font-display font-bold text-slate-200 dark:text-slate-700 mb-4">04</div>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Launch</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Deployment, SEO optimization, and ongoing growth
+                        support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-white dark:bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-dark-900 dark:text-white mb-6">Simple,
+                    Transparent Pricing</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-6">No hidden fees. No surprises. Just great work
+                    at a fair price.</p>
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-3 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-800 dark:text-yellow-200 rounded-lg text-sm mb-4">
+                    <span class="text-lg">&warning;</span>
+                    <p class="text-left leading-tight"><strong>Note:</strong> All prices listed are <em>starting
+                            rates</em>. Every project is unique &mdash; contact us for a custom quote tailored to your
+                        specific needs and goals.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Starter Package -->
+                <div
+                    class="flex flex-col bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-2xl">&#128230;</span> STARTER PACKAGE
+                    </h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-3xl font-bold text-slate-900 dark:text-white">Starting at $1,200</span> <span
+                            class="text-slate-500">CAD</span>
+                    </div>
+                    <p
+                        class="text-slate-600 dark:text-slate-400 text-sm mb-6 italic border-b border-slate-200 dark:border-slate-700 pb-6 flex-grow">
+                        Perfect for: small businesses, sole proprietors, service providers, and anyone who needs a clean
+                        professional web presence fast.</p>
+                    <div class="mb-8 font-medium">
+                        <p class="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-3">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Up to
+                                5 custom-designed pages</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Mobile-responsive design</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Contact form integration</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Basic
+                                on-page SEO setup</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Google Analytics integration</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Domain and hosting guidance</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                30-day post-launch support</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Delivered within 2-3 weeks</li>
+                        </ul>
+                    </div>
+                    <a href="#contact"
+                        class="block w-full py-4 px-6 text-center rounded-xl bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-white font-semibold transition-colors mt-auto">Get
+                        Started &rarr;</a>
+                </div>
+
+                <!-- Growth Package -->
+                <div
+                    class="flex flex-col bg-white dark:bg-dark-900 rounded-3xl p-8 border-2 border-primary-500 shadow-xl relative transform md:-translate-y-4">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Most Popular</div>
+                    <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-2xl">&#128640;</span> GROWTH PACKAGE
+                    </h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-3xl font-bold text-slate-900 dark:text-white">Starting at $3,000</span> <span
+                            class="text-slate-500">CAD</span>
+                    </div>
+                    <p
+                        class="text-slate-600 dark:text-slate-400 text-sm mb-6 italic border-b border-slate-200 dark:border-slate-700 pb-6 flex-grow">
+                        Perfect for: established businesses ready to level up, service companies, consultants, and
+                        brands that need a full-featured online presence.</p>
+                    <div class="mb-8">
+                        <p class="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-3">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Up to
+                                10 custom-designed pages</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Mobile-responsive, performance-optimized design</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Blog
+                                or news section setup</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Full
+                                on-page SEO + local SEO optimization</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Google Analytics + Search Console setup</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Social media &amp; Newsletter integration</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                60-day post-launch support</li>
+                        </ul>
+                    </div>
+                    <a href="#contact"
+                        class="block w-full py-4 px-6 text-center rounded-xl bg-primary-500 hover:bg-primary-600 text-white font-semibold transition-colors mt-auto">Scale
+                        Your Business &rarr;</a>
+                </div>
+
+                <!-- Premium Package -->
+                <div
+                    class="flex flex-col bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                        <span class="text-2xl">&#128142;</span> PREMIUM PACKAGE
+                    </h3>
+                    <div class="mt-4 mb-6">
+                        <span class="text-3xl font-bold text-slate-900 dark:text-white">Starting at $6,500</span> <span
+                            class="text-slate-500">CAD</span>
+                    </div>
+                    <p
+                        class="text-slate-600 dark:text-slate-400 text-sm mb-6 italic border-b border-slate-200 dark:border-slate-700 pb-6 flex-grow">
+                        Perfect for: e-commerce stores, custom web applications, high-traffic businesses, and brands
+                        that want a world-class digital experience.</p>
+                    <div class="mb-8">
+                        <p class="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wide">
+                            What's included:</p>
+                        <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-3">
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Unlimited pages &mdash; fully custom</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                E-commerce functionality</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Advanced SEO strategy and implementation</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                Custom animations and interactive UI</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Speed
+                                and performance optimization</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span> Brand
+                                identity package</li>
+                            <li class="flex items-start"><span class="text-primary-500 mr-2 mt-0.5">&starf;</span>
+                                90-day post-launch support</li>
+                        </ul>
+                    </div>
+                    <a href="#contact"
+                        class="block w-full py-4 px-6 text-center rounded-xl bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-white font-semibold transition-colors mt-auto">Build
+                        Something Big &rarr;</a>
+                </div>
+            </div>
+
+            <div
+                class="max-w-3xl mx-auto text-center mt-12 bg-slate-50 dark:bg-dark-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
+                <p class="text-slate-700 dark:text-slate-300"><span class="text-xl mr-2">&#128172;</span> <strong>Not
+                        sure which package is right for you?</strong> Book a free 30-minute discovery call and we'll
+                    figure it out together &mdash; no pressure, no obligation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Work Section -->
+    <section id="work" class="py-24 bg-white dark:bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-primary-500 font-semibold text-sm tracking-wide uppercase mb-2 block">Our Work</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-dark-900 dark:text-white mb-6">Websites
+                    we've built</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Every project is custom-crafted for real
+                    businesses across Vancouver and the Lower Mainland. Click any project to learn more or visit it
+                    live.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- TyphoonHub -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(0)">
+                        <img src="images/mockup_typhoon.webp" alt="TyphoonHub"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Film &amp;
+                            Streaming</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">TyphoonHub
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Custom film streaming &amp; portfolio
+                            platform. Full video library, dark mode, and mobile-first design.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(0)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://www.typhoonhub.ca" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mango Micro Markets -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(1)">
+                        <img src="images/mockup_mango.webp" alt="Mango Micro Markets"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Corporate / Food
+                            Service</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">Mango Micro
+                            Markets</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Lead-generation corporate site with
+                            clean branding and clear CTAs for an office micro-market company.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(1)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://mangomicromarkets.ca" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- J1's Audio -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(2)">
+                        <img src="images/mockup_j1s.webp" alt="J1s Audio"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Sound
+                            Engineer</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">J1's Audio
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Professional site for Surrey-based
+                            sound engineer Mikke Jones, showcasing audio services and bookings.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(2)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://j1s-audio.firebaseapp.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- J. Henley Customs -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(3)">
+                        <img src="images/mockup_jhenley.webp" alt="J Henley Customs"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Custom
+                            Apparel</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">J. Henley
+                            Customs</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Branded showcase site with order
+                            inquiry flow for a custom apparel business.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(3)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://jhenleycustoms.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Check The Gate -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(4)">
+                        <img src="images/mockup_checkthegate.webp" alt="Check The Gate"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Film
+                            Industry</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">Check The
+                            Gate</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Film industry resource site with
+                            cinematic design, built for BC's creative community.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(4)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://checkthegate.ca" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cowichan Valley Red Light -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(5)">
+                        <img src="images/mockup_cowichan.webp" alt="Cowichan Valley Red Light"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Health &
+                            Wellness</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">Cowichan
+                            Valley Red Light</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Informational business website for a
+                            local red light therapy clinic, focusing on wellness and booking generation.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(5)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://cowichanvalleyredlight.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wanita's Hair -->
+                <div
+                    class="group rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-2xl transition-all duration-300 bg-white dark:bg-dark-800">
+                    <div class="relative overflow-hidden h-52 cursor-pointer" onclick="openLightbox(6)">
+                        <img src="images/mockup_wanita.webp" alt="Wanita's Hair"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-dark-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white text-sm font-semibold bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">View
+                                Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-primary-500 uppercase tracking-wide">Salon /
+                            Service</span>
+                        <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mt-1 mb-2">Wanita's
+                            Hair
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Premium hair artistry website with a
+                            dark elegant design, highlighting services and an expansive beauty portfolio.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLightbox(6)"
+                                class="flex-1 py-2 rounded-lg border border-slate-200 dark:border-slate-600 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-primary-500 hover:text-primary-500 transition-colors">Details</button>
+                            <a href="https://wanitashair.com" target="_blank" rel="noopener"
+                                class="flex-1 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium hover:bg-primary-600 transition-colors flex items-center justify-center gap-1">View
+                                Live <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4"
+        onclick="if(event.target===this)closeLightbox()">
+        <div class="bg-white dark:bg-dark-800 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div class="relative">
+                <img id="lb-image" src="" alt="" class="w-full rounded-t-3xl object-cover max-h-72">
+                <button onclick="closeLightbox()"
+                    class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-black/70 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-8">
+                <span id="lb-tag" class="text-xs font-semibold text-primary-500 uppercase tracking-wide"></span>
+                <h3 id="lb-title" class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-1 mb-3"></h3>
+                <p id="lb-desc" class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6"></p>
+                <div class="flex flex-wrap gap-2 mb-6" id="lb-pills"></div>
+                <a id="lb-link" href="#" target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition-colors">Visit
+                    Live Site <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-50 dark:bg-dark-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span
+                    class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-2 block">Testimonials</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-6">What Our
+                    Clients Are Saying</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Real results for real businesses across Vancouver
+                    and the Lower Mainland.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white dark:bg-dark-900 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 relative flex flex-col">
+                    <p class="text-xl mb-4 text-primary-500 font-bold">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+                    <p class="text-slate-600 dark:text-slate-400 italic mb-6 leading-relaxed">"Fast &amp; professional,
+                        he understood what I needed and made it beautiful. Highly recommend!"</p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-800">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Samira Pigeau</h4>
+                        <p class="text-sm text-slate-500 flex items-center gap-1">
+                            Google Review
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-dark-900 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 relative flex flex-col">
+                    <p class="text-xl mb-4 text-primary-500 font-bold">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+                    <p class="text-slate-600 dark:text-slate-400 italic mb-6 leading-relaxed">"We went from page 4 on
+                        Google to page 1 in under two months. Victor was communicative, hit every deadline, and I've
+                        already referred two other business owners to him."</p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-800">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Jhenley</h4>
+                        <p class="text-sm text-slate-500">J. Henley Customs, Abbotsford BC</p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white dark:bg-dark-900 rounded-3xl p-8 shadow-sm border border-slate-200 dark:border-slate-700 relative flex flex-col">
+                    <p class="text-xl mb-4 text-primary-500 font-bold">&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+                    <p class="text-slate-600 dark:text-slate-400 italic mb-6 leading-relaxed">"We finally have a website
+                        we're proud to send people to. On time, on budget, and better than we imagined. The mobile
+                        experience is flawless."</p>
+                    <div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-800">
+                        <h4 class="font-bold text-slate-900 dark:text-white mb-1">Mikke Jones</h4>
+                        <p class="text-sm text-slate-500">J1's Audio, Surrey BC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white dark:bg-dark-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-2 block">FAQ</span>
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mb-4">Frequently
+                    Asked Questions</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400">Got questions? We've got answers.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3 flex items-center justify-between">
+                        How long does it take to build a website?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Starter packages take 2-3
+                        weeks. Growth packages run 3-5 weeks. Premium and e-commerce projects take 6-10 weeks depending
+                        on scope. We give you a firm timeline at kickoff and keep you updated throughout.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Do you offer payment plans?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes. We typically structure
+                        projects as 50% deposit upfront and 50% upon completion. For larger Premium projects, we can
+                        arrange a 3-part payment schedule. We'll work out what fits your budget on the discovery call.
+                    </p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Will my website be
+                        mobile-friendly?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely &mdash; every
+                        website we build is designed mobile-first. With 60%+ of web traffic coming from mobile devices,
+                        this isn't optional. It's standard on every single project.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Do you offer ongoing maintenance?
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes. Monthly maintenance plans
+                        include platform updates, backups, security monitoring, and minor content edits. Think of it as
+                        a dedicated web person on call &mdash; without the cost of hiring one full-time.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">What do you need from me to get
+                        started?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Your logo files, brand
+                        colours, written content, photos, and examples of sites you like. Don't have everything yet? No
+                        problem &mdash; we offer copywriting, photo sourcing, and branding as add-ons.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Do you work with businesses
+                        outside Vancouver?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Absolutely. We're based in
+                        Abbotsford and serve Metro Vancouver, the Fraser Valley, and clients across all of BC.
+                        Everything runs remotely &mdash; video calls, email updates, cloud file sharing. Distance has
+                        never been an obstacle.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Will I own my website when it's
+                        done?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes &mdash; 100%. Once your
+                        project is paid in full, you own everything: the design, code, content, and all files. We hand
+                        over all credentials and logins. No lock-in, no hostage-taking.</p>
+                </div>
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-3xl p-8 border border-slate-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-colors">
+                    <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-3">Do you offer SEO services?</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Yes. Foundational SEO is built
+                        into every website. For deeper work, we offer dedicated SEO packages: keyword research, content
+                        strategy, local SEO, Google Business Profile optimization, and monthly reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900 dark:bg-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute bottom-1/4 left-1/4 w-96 h-96 rounded-full bg-primary-500/10 blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-primary-500 font-semibold text-sm tracking-widest uppercase mb-3 block">About BC
+                        Web Creator</span>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-6 leading-tight">The Story Behind BC Web
+                        Creator</h2>
+                    <p class="text-lg text-slate-300 mb-5 leading-relaxed">Most web designers know how to build a
+                        website. Not everyone knows how to <em class="text-white not-italic font-semibold">tell a
+                            story</em>. That difference is what makes BC Web Creator different.</p>
+                    <p class="text-lg text-slate-300 mb-5 leading-relaxed">I'm Victor Matanawi &mdash; web designer,
+                        filmmaker, and the person behind every project that comes through this studio. With over a
+                        decade of experience as an <strong class="text-white font-semibold">Assistant Director with
+                            the Directors Guild of Canada</strong>, I've worked on some of the biggest productions to
+                        shoot in BC: <strong class="text-white font-semibold">Deadpool 2, Star Trek Beyond, Supergirl,
+                            and Percy Jackson.</strong></p>
+                    <p class="text-lg text-slate-300 mb-5 leading-relaxed">As a Vancouver Film School graduate with a
+                        background in VFX, visual arts, and sound design, I bring a cinematographer's eye to every
+                        website I build. I understand composition, pacing, and how to hold an audience's attention
+                        &mdash; because I've done it on set for 15+ years.</p>
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed">We're based in Abbotsford and proudly serve
+                        businesses across Metro Vancouver, the Fraser Valley, and all of BC. When you work with BC Web
+                        Creator, you're not getting a faceless agency &mdash; you're getting a creative partner who
+                        genuinely cares about your success.</p>
+                    <a href="#contact"
+                        class="inline-flex items-center px-8 py-4 rounded-xl bg-primary-500 text-white font-bold text-lg hover:bg-primary-600 transition-colors">Let's
+                        Work Together &rarr;</a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-6 text-center">
+                    <div class="bg-slate-800/80 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+                        <p class="font-display font-bold text-4xl text-primary-500 mb-2">15+</p>
+                        <p class="text-slate-400 font-medium tracking-wide">Years in Film &amp; Web</p>
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+                        <p class="font-display font-bold text-4xl text-primary-500 mb-2">50+</p>
+                        <p class="text-slate-400 font-medium tracking-wide">Projects Delivered</p>
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+                        <p class="font-display font-bold text-4xl text-primary-500 mb-2">100%</p>
+                        <p class="text-slate-400 font-medium tracking-wide">Client Satisfaction</p>
+                    </div>
+                    <div class="bg-slate-800/80 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+                        <p class="font-display font-bold text-4xl text-primary-500 mb-2">BC</p>
+                        <p class="text-slate-400 font-medium tracking-wide">Based &amp; Proud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <section class="py-24 bg-primary-600 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 max-w-7xl mx-auto overflow-hidden pointer-events-none">
+            <div
+                class="absolute top-1/2 left-1/4 w-[40rem] h-[40rem] bg-white/5 rounded-full blur-3xl -translate-y-1/2">
+            </div>
+            <div
+                class="absolute top-1/2 right-1/4 w-[30rem] h-[30rem] bg-black/10 rounded-full blur-3xl -translate-y-1/2">
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="font-display font-bold text-4xl md:text-5xl mb-6 text-white">Ready to Build Something Great?</h2>
+            <p class="text-lg text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">Every great website starts with a
+                conversation. Tell us about your business and your goals &mdash; we'll handle the rest. Based in
+                Abbotsford, serving all of BC. We respond within 24 hours.</p>
+            <a href="#contact"
+                class="inline-flex items-center justify-center px-10 py-5 text-primary-600 bg-white hover:bg-slate-50 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-xl hover:shadow-2xl">
+                Book Your Free Discovery Call
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 dark:bg-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary-500/20 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-purple-500/20 blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-6">Let's build something great together
+                    </h2>
+                    <p class="text-slate-400 text-lg mb-8">Ready to transform your digital presence? Tell us about your
+                        project and we'll get back to you within 24 hours.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400">Email</div><a href="mailto:bcwebcreator@gmail.com"
+                                    class="text-lg font-semibold hover:text-primary-400 transition-colors">bcwebcreator@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-400">Location</div>
+                                <div class="text-lg font-semibold">Vancouver, BC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6 bg-white/5 p-8 rounded-3xl border border-white/10 backdrop-blur-sm"
+                    name="contact" method="POST" action="https://formsubmit.co/bcwebcreator@gmail.com">
+                    <input type="hidden" name="_subject" value="New Website Contact Form Lead">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://bcwebcreator.com/">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
+                                placeholder="john@company.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="type" class="block text-sm font-medium mb-2">Project Type</label>
+                        <select id="type" name="type"
+                            class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all">
+                            <option value="new" class="bg-slate-900">New Website</option>
+                            <option value="redesign" class="bg-slate-900">Redesign</option>
+                            <option value="ecommerce" class="bg-slate-900">E-commerce</option>
+                            <option value="maintenance" class="bg-slate-900">Maintenance</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all resize-none"
+                            placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full py-4 px-8 rounded-xl bg-white text-slate-900 font-bold text-lg hover:bg-slate-100 transform hover:scale-[1.02] transition-all focus:outline-none focus:ring-2 focus:ring-white/20">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 dark:bg-black border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <a href="#" class="font-display font-bold text-2xl text-white mb-4 block">BC Web Creator</a>
+                    <p class="text-slate-400 mb-6 max-w-sm">Professional web design and development for Vancouver and
+                        the Lower Mainland. Building digital experiences that convert.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.typhoonhub.ca" target="_blank"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-all">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Services</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Web Design</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">E-commerce</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">SEO Optimization</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Maintenance</a></li>
+                        <li><a href="/blog/" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#work" class="hover:text-white transition-colors">Work</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="/terms/" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="/privacy/" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-sm">&copy; 2025 BC Web Creator. All rights reserved.</p>
+                <p class="text-slate-500 text-sm">Built with passion in Vancouver, BC</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+
+        // Theme toggle
+        const html = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { html.classList.add('dark'); }
+        document.getElementById('theme-toggle').addEventListener('click', () => { html.classList.toggle('dark'); localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light'; });
+
+        // Mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        // Scroll navbar
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('shadow-md', window.pageYOffset > 100); });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
+            a.addEventListener('click', e => { e.preventDefault(); const t = document.querySelector(a.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        });
+
+
+
+        // Lightbox
+        const projects = [
+            { tag: 'Film & Streaming', title: 'TyphoonHub', desc: 'A fully custom film streaming and portfolio platform built for Typhoon Entertainment. Features a rich video library, advanced dark mode, Netflix-style UI, and a mobile-first responsive layout. Built with Next.js and Firebase.', pills: ['Next.js', 'Firebase', 'Tailwind CSS', 'Dark Mode'], link: 'https://www.typhoonhub.ca', img: 'images/mockup_typhoon.webp' },
+            { tag: 'Corporate / Food Service', title: 'Mango Micro Markets', desc: 'A modern corporate lead-generation website for an office micro-market company. Clean branding, strong CTAs, and an informational layout designed to turn visitors into business leads.', pills: ['HTML5', 'CSS', 'JavaScript', 'SEO'], link: 'https://mangomicromarkets.ca', img: 'images/mockup_mango.webp' },
+            { tag: 'Sound Engineer', title: "J1's Audio", desc: 'A professional online presence for Surrey-based sound engineer Mikke Jones. Showcasing audio services, gear, and booking — built to attract clients and establish credibility in the audio industry.', pills: ['HTML5', 'CSS', 'Audio Services', 'Mobile-First'], link: 'https://j1s-audio.firebaseapp.com', img: 'images/mockup_j1s.webp' },
+            { tag: 'Custom Apparel', title: 'J. Henley Customs', desc: 'A branded showcase and inquiry website for a custom apparel business. Visual-first layout with a clear contact/order inquiry flow to capture leads.', pills: ['HTML5', 'Tailwind CSS', 'Contact Form'], link: 'https://jhenleycustoms.com', img: 'images/mockup_jhenley.webp' },
+            { tag: 'Film Industry', title: 'Check The Gate', desc: 'A content-rich resource website for the BC film industry community. Features a cinematic design aesthetic with editorial-style layout and category navigation.', pills: ['Firebase Hosting', 'Responsive', 'SEO'], link: 'https://checkthegate.ca', img: 'images/mockup_checkthegate.webp' },
+            { tag: 'Health & Wellness', title: 'Cowichan Valley Red Light', desc: 'Informational business website for a local red light therapy clinic, focusing on wellness and booking generation.', pills: ['HTML5', 'Local SEO', 'Responsive'], link: 'https://cowichanvalleyredlight.com', img: 'images/mockup_cowichan.webp' },
+            { tag: 'Salon / Service', title: 'Wanita\'s Hair', desc: 'Premium hair artistry website with a dark elegant design, highlighting services and an expansive beauty portfolio.', pills: ['HTML5', 'CSS', 'JavaScript', 'Bookings'], link: 'https://wanitas-reel-hair.web.app', img: 'images/mockup_wanita.webp' }
+        ];
+
+        function openLightbox(i) {
+            const p = projects[i];
+            document.getElementById('lb-image').src = p.img;
+            document.getElementById('lb-image').alt = p.title;
+            document.getElementById('lb-tag').textContent = p.tag;
+            document.getElementById('lb-title').textContent = p.title;
+            document.getElementById('lb-desc').textContent = p.desc;
+            const lbLink = document.getElementById('lb-link');
+            lbLink.href = p.link;
+            lbLink.target = p.link.startsWith('http') ? '_blank' : '_self';
+            lbLink.innerHTML = p.link.startsWith('http')
+                ? 'Visit Live Site <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>'
+                : 'Get in Touch &#8594;';
+            const pills = document.getElementById('lb-pills');
+            pills.innerHTML = p.pills.map(t => `<span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">${t}</span>`).join('');
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    </script>
+    <!-- Dialogflow Messenger Chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="BCWebCreator-Bot" agent-id="362de2f5-16e4-4666-9a0e-b2dfc0fb09b9"
+        language-code="en"></df-messenger>
+</body>
+
+</html>

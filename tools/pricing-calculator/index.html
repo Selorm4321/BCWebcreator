@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BC Web Creator Pricing Calculator — get instant estimates for vinyl decals and custom HTV t-shirts. Transparent, fair pricing for Vancouver businesses.">
+    <meta name="theme-color" content="#1E3A5F">
+    <title>Pricing Calculator | BC Web Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Space Grotesk', 'sans-serif'] },
+                    colors: {
+                        primary: { 50: '#fefce8', 100: '#fef3c7', 200: '#f9e190', 500: '#D69E2E', 600: '#b7791f', 700: '#92600a' },
+                        dark: { 900: '#1E3A5F', 800: '#2A4A72', 700: '#2D3748' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .tab-btn {
+            transition: all .2s;
+        }
+
+        .tab-btn.active {
+            background: #D69E2E;
+            color: white;
+        }
+
+        .tab-btn:not(.active) {
+            background: transparent;
+            color: #64748b;
+        }
+
+        .dark .tab-btn:not(.active) {
+            color: #94a3b8;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: .5rem .75rem;
+            border-radius: .5rem;
+            border: 1.5px solid #e2e8f0;
+            background: white;
+            font-size: .95rem;
+            transition: border-color .2s;
+            outline: none;
+        }
+
+        .dark .input-field {
+            background: #1e293b;
+            border-color: #334155;
+            color: white;
+        }
+
+        .input-field:focus {
+            border-color: #D69E2E;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, #1E3A5F, #2A4A72);
+            color: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            padding: .25rem .75rem;
+            border-radius: 9999px;
+            font-size: .75rem;
+            font-weight: 600;
+            background: #fef3c7;
+            color: #92600a;
+        }
+
+        .dark .tag-pill {
+            background: #1e293b;
+            color: #D69E2E;
+        }
+
+        /* table stripes */
+        .price-table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .dark .price-table tbody tr:nth-child(even) {
+            background: #1e293b;
+        }
+
+        .price-table tbody tr:hover {
+            background: #fef3c7;
+        }
+
+        .dark .price-table tbody tr:hover {
+            background: #2A4A72;
+        }
+    </style>
+</head>
+
+<body
+    class="font-sans antialiased bg-white dark:bg-dark-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+
+    <!-- Nav -->
+    <nav
+        class="fixed w-full z-50 bg-white/90 dark:bg-dark-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/"
+                    class="font-display font-bold text-2xl tracking-tight text-slate-900 dark:text-white hover:text-primary-500 transition-colors">BC
+                    Web Creator</a>
+                <div class="flex items-center gap-6">
+                    <a href="/"
+                        class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-500 transition-colors">←
+                        Back to Site</a>
+                    <a href="/#contact"
+                        class="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-full text-white bg-primary-500 hover:bg-primary-600 transition-all">Get
+                        a Quote</a>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle dark mode">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-12 px-4 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-dark-900 dark:to-dark-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="tag-pill mb-4 inline-block">Free Tool</span>
+            <h1 class="font-display font-bold text-4xl md:text-5xl text-dark-900 dark:text-white mb-4">Pricing
+                Calculator</h1>
+            <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Get instant, transparent estimates
+                for vinyl decals and custom HTV t-shirts. All prices in <strong>CAD</strong>. Results are estimates —
+                contact us for a firm quote.</p>
+        </div>
+    </section>
+
+    <!-- Tab Bar -->
+    <div
+        class="sticky top-20 z-40 bg-white/95 dark:bg-dark-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 flex gap-2 py-3">
+            <button class="tab-btn active px-5 py-2 rounded-full font-semibold text-sm" id="tab-decal"
+                onclick="showTab('decal')">🎨 Vinyl Decal</button>
+            <button class="tab-btn px-5 py-2 rounded-full font-semibold text-sm" id="tab-shirt"
+                onclick="showTab('shirt')">👕 Custom T-Shirt</button>
+            <button class="tab-btn px-5 py-2 rounded-full font-semibold text-sm" id="tab-prices"
+                onclick="showTab('prices')">📋 Quick Price Reference</button>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 pb-20 pt-8">
+
+        <!-- ===== DECAL CALCULATOR ===== -->
+        <div id="panel-decal">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Inputs -->
+                <div
+                    class="bg-white dark:bg-dark-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h2 class="font-display font-bold text-xl mb-1 text-dark-900 dark:text-white">Vinyl Decal Details
+                    </h2>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">Enter your job details — costs update
+                        instantly.</p>
+
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Decal
+                                Size</label>
+                            <select id="d-size" class="input-field" onchange="calcDecal()">
+                                <option value="small">Small (up to 3")</option>
+                                <option value="medium" selected>Medium (3"–6")</option>
+                                <option value="large">Large (6"–12")</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Quantity</label>
+                            <input type="number" id="d-qty" class="input-field" value="10" min="1"
+                                oninput="calcDecal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Design
+                                Complexity</label>
+                            <select id="d-complexity" class="input-field" onchange="calcDecal()">
+                                <option value="simple">Simple (clean shapes, few borders)</option>
+                                <option value="complex">Complex (intricate, fine detail)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Vinyl
+                                Type</label>
+                            <select id="d-vinyl" class="input-field" onchange="calcDecal()">
+                                <option value="standard">Standard permanent vinyl</option>
+                                <option value="specialty">Specialty (reflective / holographic / metallic)</option>
+                            </select>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-slate-50 dark:bg-dark-900 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <input type="checkbox" id="d-newlogo" class="w-4 h-4 accent-[#D69E2E]"
+                                onchange="calcDecal()">
+                            <label for="d-newlogo" class="text-sm font-medium text-slate-700 dark:text-slate-300">New
+                                logo / first-time client needing file setup</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="space-y-4">
+                    <div class="result-card">
+                        <div class="text-sm text-white/70 font-medium mb-1">Total Job Cost (materials + labour)</div>
+                        <div class="text-4xl font-display font-bold mb-1" id="d-total">$0.00</div>
+                        <div class="text-white/60 text-sm">All in, before markup</div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mb-1">Cost per decal</div>
+                            <div class="text-2xl font-display font-bold text-dark-900 dark:text-white" id="d-per">$0.00
+                            </div>
+                        </div>
+                        <div
+                            class="bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mb-1">Suggested sell (2× markup)
+                            </div>
+                            <div class="text-2xl font-display font-bold text-primary-500" id="d-sell2x">$0.00</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Cost Breakdown</div>
+                        <div class="space-y-2 text-sm" id="d-breakdown"></div>
+                    </div>
+
+                    <div
+                        class="bg-primary-50 dark:bg-dark-800 rounded-xl p-4 border border-primary-200 dark:border-slate-700">
+                        <div
+                            class="text-xs font-bold text-primary-600 dark:text-primary-400 uppercase tracking-wide mb-2">
+                            Suggested Job Totals</div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-600 dark:text-slate-400">2× markup (job total)</span>
+                            <span class="font-bold text-slate-900 dark:text-white" id="d-job2x">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-600 dark:text-slate-400">2.5× markup (job total)</span>
+                            <span class="font-bold text-slate-900 dark:text-white" id="d-job25x">$0.00</span>
+                        </div>
+                    </div>
+
+                    <a href="/#contact"
+                        class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition-colors">
+                        Get a Firm Quote <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Assumptions note -->
+            <div
+                class="mt-6 bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 text-sm text-slate-500 dark:text-slate-400">
+                <strong class="text-slate-700 dark:text-slate-300">Assumptions used:</strong> Labour @ $25/hr · Cut
+                time: 3 min/decal · Weeding: 5 min (simple) / 18 min (complex) · Packing: 3 min · Admin: 10 min/order ·
+                Vinyl: $0.80/sq ft standard, $2.50 specialty · Transfer tape: $0.15/sq ft · Logo setup: $8.33 one-time
+            </div>
+        </div>
+
+        <!-- ===== SHIRT CALCULATOR ===== -->
+        <div id="panel-shirt" class="hidden">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Inputs -->
+                <div
+                    class="bg-white dark:bg-dark-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <h2 class="font-display font-bold text-xl mb-1 text-dark-900 dark:text-white">Custom T-Shirt Details
+                    </h2>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-6">HTV heat-press printing estimate (CAD).
+                    </p>
+
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Garment
+                                Blank</label>
+                            <select id="s-blank" class="input-field" onchange="calcShirt()">
+                                <option value="4.50">Budget cotton — Gildan 5000 ($4.50)</option>
+                                <option value="7.50" selected>Mid-range — Bella+Canvas 3001 ($7.50)</option>
+                                <option value="10.00">Premium — Next Level 6210 ($10.00)</option>
+                                <option value="14.00">Hoodie — Gildan 18500 ($14.00)</option>
+                                <option value="6.00">Toque / beanie ($6.00)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Quantity</label>
+                            <input type="number" id="s-qty" class="input-field" value="12" min="1"
+                                oninput="calcShirt()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Print
+                                Location</label>
+                            <select id="s-print" class="input-field" onchange="calcShirt()">
+                                <option value="front">Front only</option>
+                                <option value="both">Front + Back (+$5–$10/shirt)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1">Design
+                                Complexity (weeding)</label>
+                            <select id="s-complexity" class="input-field" onchange="calcShirt()">
+                                <option value="simple">Simple design</option>
+                                <option value="complex">Complex design</option>
+                            </select>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-slate-50 dark:bg-dark-900 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <input type="checkbox" id="s-csg" class="w-4 h-4 accent-[#D69E2E]" onchange="calcShirt()">
+                            <div>
+                                <label for="s-csg"
+                                    class="text-sm font-medium text-slate-700 dark:text-slate-300 block">Customer
+                                    Supplies Garment (CSG)</label>
+                                <span class="text-xs text-slate-500 dark:text-slate-400">Removes blank cost. Liability
+                                    waiver required.</span>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 bg-slate-50 dark:bg-dark-900 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <input type="checkbox" id="s-newlogo" class="w-4 h-4 accent-[#D69E2E]"
+                                onchange="calcShirt()">
+                            <label for="s-newlogo" class="text-sm font-medium text-slate-700 dark:text-slate-300">New
+                                logo / file setup required ($8.33 once)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="space-y-4">
+                    <div class="result-card">
+                        <div class="text-sm text-white/70 font-medium mb-1">Total Job Cost (all in)</div>
+                        <div class="text-4xl font-display font-bold mb-1" id="s-total">$0.00</div>
+                        <div class="text-white/60 text-sm">Materials + Labour (before markup)</div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mb-1">Cost per shirt</div>
+                            <div class="text-2xl font-display font-bold text-dark-900 dark:text-white" id="s-per">$0.00
+                            </div>
+                        </div>
+                        <div
+                            class="bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+                            <div class="text-xs text-slate-500 dark:text-slate-400 mb-1">Suggested sell (2× markup)
+                            </div>
+                            <div class="text-2xl font-display font-bold text-primary-500" id="s-sell2x">$0.00</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-dark-800 rounded-xl p-5 border border-slate-200 dark:border-slate-700">
+                        <div class="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-3">Cost Breakdown</div>
+                        <div class="space-y-2 text-sm" id="s-breakdown"></div>
+                    </div>
+
+                    <div
+                        class="bg-primary-50 dark:bg-dark-800 rounded-xl p-4 border border-primary-200 dark:border-slate-700">
+                        <div
+                            class="text-xs font-bold text-primary-600 dark:text-primary-400 uppercase tracking-wide mb-2">
+                            Suggested Job Totals</div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-slate-600 dark:text-slate-400">2× markup (job total)</span>
+                            <span class="font-bold text-slate-900 dark:text-white" id="s-job2x">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-600 dark:text-slate-400">2.5× markup (job total)</span>
+                            <span class="font-bold text-slate-900 dark:text-white" id="s-job25x">$0.00</span>
+                        </div>
+                    </div>
+
+                    <div id="s-csg-warning"
+                        class="hidden bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 rounded-xl p-4 text-sm text-amber-800 dark:text-amber-300">
+                        ⚠️ <strong>CSG Mode:</strong> Customer supplies garments — always get a signed liability waiver.
+                        You are not responsible for fabric damage. Polyester, nylon, and athletic-wear fabrics are HIGH
+                        RISK — test before pressing.
+                    </div>
+
+                    <a href="/#contact"
+                        class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition-colors">
+                        Get a Firm Quote <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="mt-6 bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 text-sm text-slate-500 dark:text-slate-400">
+                <strong class="text-slate-700 dark:text-slate-300">Policy reminders:</strong> Orders are made-to-order —
+                no inventory kept on hand · Customer must confirm size, colour &amp; quantity BEFORE blank order is
+                placed · 50% deposit required upfront · Turnaround: 5–10 business days from deposit · Inspect fabric
+                content before accepting CSG jobs
+            </div>
+        </div>
+
+        <!-- ===== QUICK PRICE REFERENCE ===== -->
+        <div id="panel-prices" class="hidden">
+            <div class="space-y-8">
+
+                <!-- Vinyl Decals table -->
+                <div
+                    class="bg-white dark:bg-dark-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+                    <div class="p-6 border-b border-slate-200 dark:border-slate-700">
+                        <h2 class="font-display font-bold text-xl text-dark-900 dark:text-white">Vinyl Decals — Quick
+                            Reference</h2>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Permanent vinyl · Standard weeding ·
+                            No logo setup · All prices CAD</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="price-table w-full text-sm">
+                            <thead class="bg-dark-900 text-white">
+                                <tr>
+                                    <th class="text-left px-5 py-3 font-semibold">Size</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Small Batch (10–49)</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Bulk (50+)</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Small (up to 3")</td>
+                                    <td class="px-5 py-3">$3.50 – $5.00 ea.</td>
+                                    <td class="px-5 py-3">$1.50 – $2.50 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500">Standard permanent vinyl</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Medium (3"–6")</td>
+                                    <td class="px-5 py-3">$7.00 – $10.00 ea.</td>
+                                    <td class="px-5 py-3">$4.00 – $6.00 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500"></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Large (6"–12")</td>
+                                    <td class="px-5 py-3">$20.00 – $28.00 ea.</td>
+                                    <td class="px-5 py-3">$12.00 – $16.00 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500"></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Specialty vinyl add-on</td>
+                                    <td class="px-5 py-3">+$2.00–$5.00 ea.</td>
+                                    <td class="px-5 py-3">+$2.00–$5.00 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500">Reflective / holographic / metallic</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Complex design fee</td>
+                                    <td class="px-5 py-3">+15%–25%</td>
+                                    <td class="px-5 py-3">+15%–25%</td>
+                                    <td class="px-5 py-3 text-slate-500">Intricate weeding required</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Logo setup fee</td>
+                                    <td class="px-5 py-3">$15.00–$30.00</td>
+                                    <td class="px-5 py-3">$15.00–$30.00</td>
+                                    <td class="px-5 py-3 text-slate-500">One-time, non-vector files only</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- T-Shirt table — You Supply Garment -->
+                <div
+                    class="bg-white dark:bg-dark-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+                    <div class="p-6 border-b border-slate-200 dark:border-slate-700">
+                        <h2 class="font-display font-bold text-xl text-dark-900 dark:text-white">Custom T-Shirts — You
+                            Supply Garment</h2>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">HTV pressing + design · Incl. weeding
+                            · CAD</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="price-table w-full text-sm">
+                            <thead class="bg-dark-900 text-white">
+                                <tr>
+                                    <th class="text-left px-5 py-3 font-semibold">Quantity</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Budget Cotton</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Premium Blend</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Individual (1–9)</td>
+                                    <td class="px-5 py-3">$25 – $35</td>
+                                    <td class="px-5 py-3">$35 – $50</td>
+                                    <td class="px-5 py-3 text-slate-500">Includes HTV, pressing, weeding</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Team / Small Biz (10–49)</td>
+                                    <td class="px-5 py-3">$18 – $22 ea.</td>
+                                    <td class="px-5 py-3">$25 – $32 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500">Bulk rate applied</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Bulk (50+)</td>
+                                    <td class="px-5 py-3">$14 – $16 ea.</td>
+                                    <td class="px-5 py-3">$18 – $24 ea.</td>
+                                    <td class="px-5 py-3 text-slate-500">Best per-unit rate</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Front + Back add-on</td>
+                                    <td class="px-5 py-3">+$5–$10/garment</td>
+                                    <td class="px-5 py-3">+$5–$10/garment</td>
+                                    <td class="px-5 py-3 text-slate-500">Double press and HTV</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Oversized (&gt;12"×12")</td>
+                                    <td class="px-5 py-3">+$2–$5/shirt</td>
+                                    <td class="px-5 py-3">+$2–$5/shirt</td>
+                                    <td class="px-5 py-3 text-slate-500">Extra material and time</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Logo setup fee</td>
+                                    <td class="px-5 py-3">$15–$30 (once)</td>
+                                    <td class="px-5 py-3">$15–$30 (once)</td>
+                                    <td class="px-5 py-3 text-slate-500">First time / non-vector file</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- T-Shirt CSG table -->
+                <div
+                    class="bg-white dark:bg-dark-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden">
+                    <div class="p-6 border-b border-amber-200 dark:border-amber-700 bg-amber-50 dark:bg-amber-900/20">
+                        <h2 class="font-display font-bold text-xl text-dark-900 dark:text-white">Custom T-Shirts —
+                            Customer Supplies Garment (CSG)</h2>
+                        <p class="text-amber-700 dark:text-amber-400 text-sm mt-1">⚠️ Liability waiver required. No
+                            responsibility for fabric damage.</p>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="price-table w-full text-sm">
+                            <thead class="bg-dark-900 text-white">
+                                <tr>
+                                    <th class="text-left px-5 py-3 font-semibold">Service</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Price per Shirt</th>
+                                    <th class="text-left px-5 py-3 font-semibold">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Simple design (front only)</td>
+                                    <td class="px-5 py-3">$12 – $18/shirt</td>
+                                    <td class="px-5 py-3 text-slate-500">Includes HTV + pressing</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Complex design</td>
+                                    <td class="px-5 py-3">$18 – $28/shirt</td>
+                                    <td class="px-5 py-3 text-slate-500">Intricate weeding</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium">Front + Back</td>
+                                    <td class="px-5 py-3">+$8–12/shirt</td>
+                                    <td class="px-5 py-3 text-slate-500">Double press</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-5 py-3 font-medium text-primary-600">Logo setup (if needed)</td>
+                                    <td class="px-5 py-3">+$15–$30 (once)</td>
+                                    <td class="px-5 py-3 text-slate-500">One-time per design</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-dark-800 rounded-xl p-4 border border-slate-200 dark:border-slate-700 text-sm text-slate-500 dark:text-slate-400">
+                    For internal use and client quotes. All prices make-to-order. Contact us for a custom quote on large
+                    or complex orders.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 dark:bg-black text-white py-10 mt-0">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <a href="/" class="font-display font-bold text-xl text-white hover:text-primary-400 transition-colors">BC
+                Web Creator</a>
+            <p class="text-slate-400 text-sm mt-2">Vancouver Web Design Agency · All prices in CAD · Estimates only</p>
+            <p class="text-slate-600 text-xs mt-3">© 2025 BC Web Creator. <a href="/#contact"
+                    class="hover:text-primary-400 transition-colors">Contact us</a> for a firm quote.</p>
+        </div>
+    </footer>
+
+    <script>
+        // ── Dark mode ──
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme:dark)').matches)) document.documentElement.classList.add('dark');
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // ── Tab switching ──
+        function showTab(name) {
+            ['decal', 'shirt', 'prices'].forEach(t => {
+                document.getElementById('panel-' + t).classList.toggle('hidden', t !== name);
+                document.getElementById('tab-' + t).classList.toggle('active', t === name);
+            });
+        }
+
+        // ── Helpers ──
+        const $ = id => document.getElementById(id);
+        const fmt = n => '$' + n.toFixed(2);
+        const HOURLY = 25;
+
+        function row(label, amount, note = '') {
+            return `<div class="flex justify-between items-baseline py-1 border-b border-slate-100 dark:border-slate-700 last:border-0">
+            <span class="text-slate-600 dark:text-slate-400">${label}${note ? '<span class="text-xs text-slate-400 ml-1">' + note + '</span>' : ''}</span>
+            <span class="font-semibold text-slate-900 dark:text-white">${amount}</span>
+        </div>`;
+        }
+
+        // ══════════════════════════════
+        // DECAL CALCULATOR
+        // ══════════════════════════════
+        const DECAL_SQFT = { small: 0.10, medium: 0.25, large: 0.70 };
+        const WEED_MIN = { simple: 5, complex: 18 };
+        const CUT_MIN = 3;
+        const PACK_MIN = 3;
+        const ADMIN_MIN = 10;
+        const VINYL_STD = 0.80;
+        const VINYL_SPEC_EXTRA = 2.50;
+        const TAPE = 0.15;
+
+        function calcDecal() {
+            const size = $('d-size').value;
+            const qty = Math.max(1, parseInt($('d-qty').value) || 1);
+            const complex = $('d-complexity').value === 'complex';
+            const specialty = $('d-vinyl').value === 'specialty';
+            const newLogo = $('d-newlogo').checked;
+
+            const sqft = DECAL_SQFT[size];
+            const vinylCost = VINYL_STD * sqft * qty;
+            const specialtyCost = specialty ? VINYL_SPEC_EXTRA * sqft * qty : 0;
+            const tapeCost = TAPE * sqft * qty;
+            const cutLabour = (CUT_MIN * qty / 60) * HOURLY;
+            const weedLabour = (WEED_MIN[complex ? 'complex' : 'simple'] * qty / 60) * HOURLY;
+            const packLabour = (PACK_MIN * qty / 60) * HOURLY;
+            const adminLabour = (ADMIN_MIN / 60) * HOURLY;
+            const logoSetup = newLogo ? (20 / 60) * HOURLY : 0; // 8.33 = 20min
+
+            const total = vinylCost + specialtyCost + tapeCost + cutLabour + weedLabour + packLabour + adminLabour + logoSetup;
+            const perDecal = total / qty;
+
+            $('d-total').textContent = fmt(total);
+            $('d-per').textContent = fmt(perDecal);
+            $('d-sell2x').textContent = fmt(perDecal * 2);
+            $('d-job2x').textContent = fmt(total * 2);
+            $('d-job25x').textContent = fmt(total * 2.5);
+
+            $('d-breakdown').innerHTML =
+                row('Vinyl material', fmt(vinylCost)) +
+                (specialty ? row('Specialty vinyl upcharge', fmt(specialtyCost)) : '') +
+                row('Transfer tape', fmt(tapeCost)) +
+                row('Cut labour', fmt(cutLabour), `(${CUT_MIN} min × ${qty})`) +
+                row('Weeding labour', fmt(weedLabour), `(${WEED_MIN[complex ? 'complex' : 'simple']} min × ${qty})`) +
+                row('Packing & apply', fmt(packLabour)) +
+                row('Order admin', fmt(adminLabour)) +
+                (logoSetup ? row('Logo setup (one-time)', fmt(logoSetup)) : '');
+        }
+
+        // ══════════════════════════════
+        // SHIRT CALCULATOR
+        // ══════════════════════════════
+        const S_WEED = { simple: 2.08, complex: 7.58 }; // (5min and 18min at $25/hr)
+        const HTV_FRONT_SQFT = 0.55;
+        const HTV_BOTH_SQFT = 1.10;
+        const HTV_COST_PER_SQFT = 1.20;
+        const PRESS_MIN = 8;
+        const S_ADMIN_MIN = 10;
+        const S_LOGO_MIN = 20;
+
+        function calcShirt() {
+            const blankCost = parseFloat($('s-blank').value);
+            const qty = Math.max(1, parseInt($('s-qty').value) || 1);
+            const bothSides = $('s-print').value === 'both';
+            const complex = $('s-complexity').value === 'complex';
+            const csg = $('s-csg').checked;
+            const newLogo = $('s-newlogo').checked;
+
+            const htv = (bothSides ? HTV_BOTH_SQFT : HTV_FRONT_SQFT) * HTV_COST_PER_SQFT * qty;
+            const garmentTotal = csg ? 0 : blankCost * qty;
+            const shipping = csg ? 0 : 1.25 * qty;
+            const weedLab = (complex ? 18 : 5) / 60 * HOURLY * qty;
+            const pressLab = (PRESS_MIN * (bothSides ? 1.5 : 1) * qty / 60) * HOURLY;
+            const designLab = (8.33 / 60 * 60) / 60 * HOURLY; // ~3.3 min design/file per order, absorbed in logo setup
+            const adminLab = (S_ADMIN_MIN / 60) * HOURLY;
+            const logoSetup = newLogo ? (S_LOGO_MIN / 60) * HOURLY : 0;
+
+            const total = garmentTotal + shipping + htv + weedLab + pressLab + adminLab + logoSetup;
+            const perShirt = total / qty;
+
+            $('s-total').textContent = fmt(total);
+            $('s-per').textContent = fmt(perShirt);
+            $('s-sell2x').textContent = fmt(perShirt * 2);
+            $('s-job2x').textContent = fmt(total * 2);
+            $('s-job25x').textContent = fmt(total * 2.5);
+
+            $('s-csg-warning').classList.toggle('hidden', !csg);
+
+            $('s-breakdown').innerHTML =
+                (!csg ? row('Blank garment ×' + qty, fmt(garmentTotal)) : row('CSG — no blank cost', '$0.00')) +
+                (!csg ? row('Shipping to you', fmt(shipping)) : '') +
+                row('HTV material', fmt(htv), `(${bothSides ? 'front+back' : 'front only'})`) +
+                row('Weeding labour', fmt(weedLab)) +
+                row('Heat press labour', fmt(pressLab), `(${(PRESS_MIN * (bothSides ? 1.5 : 1)).toFixed(0)} min × ${qty})`) +
+                row('Order admin', fmt(adminLab)) +
+                (logoSetup ? row('Logo / file setup (once)', fmt(logoSetup)) : '');
+        }
+
+        // Init
+        calcDecal();
+        calcShirt();
+    </script>
+</body>
+
+</html>

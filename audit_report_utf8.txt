@@ -1,0 +1,40 @@
+﻿
+=======================================================
+  SEO AUDIT: bcwebcreator.com
+=======================================================
+
+[ www Redirect ]
+
+[ robots.txt ]
+  [PASS] robots.txt exists
+  [PASS] robots.txt references sitemap
+  [FAIL] robots.txt uses non-www URLs ù www found
+
+[ sitemap.xml ]
+  [PASS] sitemap.xml exists and has URLs
+  [FAIL] sitemap.xml uses non-www URLs ù www URLs found
+  [PASS] sitemap has multiple pages ù 12 URL(s) found
+
+[ Homepage ]
+  [PASS] Has <title> tag
+  [PASS] Title length 30û65 chars ù 58 chars: 'BC Web Creator | Premier Vancouver Web Design & SEO Agency'
+  [PASS] Has meta description
+  [PASS] Meta description 80û165 chars ù 142 chars
+  [PASS] Has canonical tag
+  [FAIL] Canonical uses non-www ù https://www.bcwebcreator.com/
+  [PASS] Has Open Graph tags
+  [PASS] Has structured data (schema.org)
+  [PASS] Schema uses LocalBusiness type ù upgrade from ProfessionalService if needed
+  [FAIL] Schema includes areaServed
+  [FAIL] FAQPage schema present
+
+=======================================================
+  5 issue(s) to fix:
+
+  1. Update robots.txt sitemap URL to use non-www domain.
+  2. Replace all 'www.' URLs in sitemap.xml with non-www versions, then resubmit in Search Console.
+  3. Update canonical tag to use non-www URL: https://bcwebcreator.com/
+  4. Add 'areaServed' to your LocalBusiness schema listing the cities/regions you serve.
+  5. Add a FAQPage schema block ù it can trigger rich FAQ results in Google search.
+=======================================================
+
