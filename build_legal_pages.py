@@ -13,16 +13,19 @@ with open(index_path, "r", encoding="utf-8") as f:
     index_html = f.read()
 
 # Extract header and footer
-nav_end_idx = index_html.find("</nav>") + len("</nav>")
-header_raw = index_html[:nav_end_idx]
+header_end_idx = index_html.find("</header>") + len("</header>")
+header_raw = index_html[:header_end_idx]
 
 footer_start_idx = index_html.find("<!-- Footer -->")
 footer_raw = index_html[footer_start_idx:]
 
 def fix_links(htmlStr):
+    # Fix relative paths to images and other assets to be absolute from root
     htmlStr = re.sub(r'href="#([a-zA-Z0-9_-]+)"', r'href="/#\1"', htmlStr)
     htmlStr = re.sub(r'href="images/', r'href="/images/', htmlStr)
     htmlStr = re.sub(r'src="images/', r'src="/images/', htmlStr)
+    htmlStr = re.sub(r'href="css/', r'href="/css/', htmlStr)
+    htmlStr = re.sub(r'src="js/', r'src="/js/', htmlStr)
     htmlStr = htmlStr.replace('href="manifest.json"', 'href="/manifest.json"')
     return htmlStr
 
