@@ -3,15 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>BC Web Creator | Websites for New BC Businesses | 5-Day Launch</title>
     <meta name="description"
-        content="Award-winning web design and development for Vancouver businesses. Custom portfolio platforms, e-commerce, and high-performance websites that convert visitors into customers.">
-    <meta name="theme-color" content="#1E3A5F">
-    <meta name="color-scheme" content="light dark">
-    <title>Privacy Policy | BC Web Creator</title>
+        content="Professional websites for newly registered businesses in British Columbia. Fast, affordable, and built in 5 days. Get online today with Vancouver's creative partner.">
+    <link rel="canonical" href="https://bcwebcreator.com/" />
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://bcwebcreator.com/#business",
+      "name": "BC Web Creator",
+      "description": "Professional web design and development services for businesses in British Columbia. Fast, affordable, and hand-coded from scratch.",
+      "image": "https://bcwebcreator.com/images/logo.webp",
+      "logo": "https://bcwebcreator.com/images/logo.webp",
+      "url": "https://bcwebcreator.com",
+      "email": "bcwebcreator@gmail.com",
+      "telephone": "+1-778-347-8067",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abbotsford",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 49.0504, "longitude": -122.3045 },
+      "areaServed": [
+        { "@type": "City", "name": "Vancouver" },
+        { "@type": "City", "name": "Surrey" },
+        { "@type": "City", "name": "Burnaby" },
+        { "@type": "City", "name": "Richmond" },
+        { "@type": "City", "name": "Coquitlam" },
+        { "@type": "City", "name": "Langley" },
+        { "@type": "City", "name": "Abbotsford" },
+        { "@type": "City", "name": "Victoria" },
+        { "@type": "City", "name": "Kelowna" },
+        { "@type": "City", "name": "Chilliwack" },
+        { "@type": "City", "name": "Maple Ridge" },
+        { "@type": "City", "name": "New Westminster" },
+        { "@type": "City", "name": "Port Moody" },
+        { "@type": "City", "name": "North Vancouver" },
+        { "@type": "City", "name": "West Vancouver" },
+        { "@type": "City", "name": "Mission" },
+        { "@type": "City", "name": "Delta" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Web Design Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Design", "url": "https://bcwebcreator.com/services/web-design-vancouver/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce Development", "url": "https://bcwebcreator.com/services/ecommerce-website-vancouver/" } }
+        ]
+      },
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a custom website cost in BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our essential custom websites start at $997. We offer transparent, one-time pricing with no hidden monthly fees or long-term contracts for BC businesses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in a 5-day launch. From the time we have your content and approval, we can have your professional site live in just one business week."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your websites mobile-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all our websites are built with a mobile-first approach using hand-coded HTML and CSS, ensuring they look stunning on iPhones, Android devices, tablets, and desktops."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- SEO & Social -->
+    <meta property="og:title" content="BC Web Creator | Websites for New BC Businesses">
+    <meta property="og:description" content="Get your BC business online in 5 days. Professional, mobile-friendly websites for contractors, salons, consultants, and more.">
+    <meta property="og:image" content="https://bcwebcreator.com/images/logo.webp">
+    <meta property="og:url" content="https://bcwebcreator.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="/images/logo.webp">
+    <link rel="apple-touch-icon" href="/images/logo.webp">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,33 +125,49 @@
                 extend: {
                     colors: {
                         primary: {
-                            50: '#fffbeb',
+                            50: '#fefce8',
                             100: '#fef3c7',
-                            200: '#fde68a',
-                            300: '#fcd34d',
-                            400: '#fbbf24',
-                            500: '#D69E2E', // Main Gold
-                            600: '#d97706',
-                            700: '#b45309',
-                            800: '#92400e',
+                            200: '#f9e190',
+                            500: '#D69E2E', // Site Gold
+                            600: '#b7791f',
+                            700: '#92600a',
                             900: '#78350f',
                         },
                         dark: {
-                            900: '#0F172A', // Slate-900 for modern deep dark
-                            800: '#1E293B',
-                            700: '#334155',
+                            900: '#1E3A5F', // Site Navy
+                            800: '#2A4A72',
+                            700: '#2D3748',
                         }
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.5s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
                     }
                 }
             }
         }
     </script>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/images/logo.webp">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VW31X9301H"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -54,144 +175,34 @@
         gtag('js', new Date());
         gtag('config', 'G-VW31X9301H');
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "BC Web Creator",
-      "image": "https://bcwebcreator.com/images/logo.webp",
-      "url": "https://bcwebcreator.com",
-      "email": "bcwebcreator@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Vancouver",
-        "addressRegion": "BC",
-        "postalCode": "V6B 1A1",
-        "addressCountry": "CA"
-      },
-      "geo": { "@type": "GeoCoordinates", "latitude": 49.2827, "longitude": -123.1207 },
-      "priceRange": "$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      "sameAs": ["https://www.linkedin.com/company/bcwebcreator","https://typhoonhub.ca"]
-    }
-    </script>
+
+
+
     <style>
-        .chat-message {
-            animation: slideIn 0.3s ease-out;
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .dark .glass {
+            background: rgba(30, 58, 95, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .typing-indicator span {
-            animation: blink 1.4s infinite both;
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(214, 158, 46, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(30, 58, 95, 0.05), transparent);
         }
-
-        .typing-indicator span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .typing-indicator span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 0.2;
-            }
-
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .chat-window {
-            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
-        }
-
-        .chat-window.closed {
-            transform: scale(0.95) translateY(20px);
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .chat-button {
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .chat-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-
-        @keyframes pulse-ring {
-            0% {
-                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 20px rgba(214, 158, 46, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(214, 158, 46, 0);
-            }
-        }
-
-        .chat-button.pulse {
-            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        }
-
-        .markdown-content p {
-            margin-bottom: 0.5rem;
-        }
-
-        .markdown-content ul {
-            list-style-type: disc;
-            padding-left: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .markdown-content strong {
-            font-weight: 600;
-        }
-
-        /* -- Chatbot (Dialogflow) overrides -- */
-        df-messenger {
-            --df-messenger-bot-message: #1E3A5F;
-            --df-messenger-user-message: #D69E2E;
-            --df-messenger-send-icon: #D69E2E;
-            --df-messenger-button-titlebar-color: #1E3A5F;
-            --df-messenger-chat-bubble-icon-color: #1E3A5F;
-            --df-messenger-font-color: #ffffff;
-            --df-messenger-user-message-font-color: #ffffff;
-            z-index: 999;
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
+        .dark .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(214, 158, 46, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.5), transparent);
         }
     </style>
 </head>
 
-<body
-    class="font-sans antialiased bg-white dark:bg-dark-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
 
+    <!-- Header -->
     <header id="navbar" class="fixed w-full z-50 transition-all duration-300 border-b border-transparent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -237,185 +248,104 @@
                         <span class="text-xl">📞</span> 778-347-8067
                     </a>
                     <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
-                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                     </button>
+                    <a href="tel:7783478067" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-xl font-bold transition-all hover:scale-105 shadow-lg shadow-primary-500/25">Call Victor Now</a>
                 </nav>
+<main class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-dark-900 dark:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </div>
-        </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden glass border-b border-slate-200 dark:border-white/10 p-4 space-y-6 max-h-[80vh] overflow-y-auto">
-            <div class="grid grid-cols-2 gap-8">
-                <div class="space-y-3">
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Industries</p>
-                    <a href="/contractors.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Contractors</a>
-                    <a href="/salons.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Salons & Spas</a>
-                    <a href="/restaurants.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Restaurants</a>
-                    <a href="/lawyers.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Lawyers</a>
-                    <a href="/real-estate.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Real Estate</a>
-                    <a href="/healthcare.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Healthcare</a>
-                    <a href="/index.html#work" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Portfolio</a>
-                    <a href="/index.html#contact" class="block text-sm font-semibold text-primary-500">Start Project →</a>
-                </div>
-                <div class="space-y-3">
-                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Locations</p>
-                    <a href="/locations/vancouver/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Vancouver</a>
-                    <a href="/locations/surrey/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Surrey</a>
-                    <a href="/locations/kelowna/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Kelowna</a>
-                    <a href="/locations/victoria/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Victoria</a>
-                    <a href="/locations/abbotsford/index.html" class="block text-sm font-semibold hover:text-primary-500 transition-colors">Abbotsford</a>
-                </div>
-            </div>
-            <div class="pt-4 border-t border-slate-100 dark:border-white/5 space-y-4">
-                <a href="tel:7783478067" class="block py-2 text-lg font-semibold text-slate-900 dark:text-white">📞 778-347-8067</a>
-                <a href="tel:7783478067" class="block w-full text-center bg-primary-500 text-white py-4 rounded-xl font-bold">Call Victor Now</a>
-            </div>
-        </div>
-    </header>
-    <main class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div
-            class="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-400 dark:border-yellow-600 p-4 rounded-lg mb-8 text-yellow-800 dark:text-yellow-200">
-            ⚠️ <strong>DISCLAIMER:</strong> This is a template draft. BC Web Creator recommends consulting a qualified
-            legal professional in British Columbia before publishing.</div>
+<h1 class="font-display font-bold text-4xl text-slate-900 dark:text-white border-b-2 border-primary-500 pb-4 mb-8">Privacy Policy — BC Web Creator</h1>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Last Updated: February 26, 2026</strong><br>
+<strong>Company:</strong> Typhoon Entertainment Incorporated (operating as BC Web Creator)<br>
+<strong>Contact:</strong> bcwebcreator@gmail.com<br>
+<strong>Location:</strong> Abbotsford, British Columbia, Canada</p>
 
-        <h1
-            class="font-display font-bold text-4xl text-slate-900 dark:text-white border-b-2 border-primary-500 pb-4 mb-8">
-            Privacy Policy — BC Web Creator</h1>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Last Updated: February 26,
-                2026</strong><br>
-            <strong>Company:</strong> Typhoon Entertainment Incorporated (operating as BC Web Creator)<br>
-            <strong>Contact:</strong> bcwebcreator@gmail.com<br>
-            <strong>Location:</strong> Abbotsford, British Columbia, Canada
-        </p>
+<hr class="border-slate-200 dark:border-slate-800 my-8">
 
-        <hr class="border-slate-200 dark:border-slate-800 my-8">
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Typhoon Entertainment Incorporated ("BC Web Creator," "we," "us," or "our") is committed to protecting your personal information in accordance with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and British Columbia's <em>Personal Information Protection Act</em> (PIPA).</p>
 
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Typhoon Entertainment Incorporated ("BC Web
-            Creator," "we," "us," or "our") is committed to protecting your personal information in accordance with
-            Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and British
-            Columbia's <em>Personal Information Protection Act</em> (PIPA).</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">1. Information We Collect</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>1.1 Information You Provide Directly:</strong></p>
+<ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
+<li>Name and contact information (email, phone number)</li>
+<li>Business name and details</li>
+<li>Project inquiries and messages submitted via our contact form</li>
+<li>Any other information you voluntarily provide when contacting us</li>
+</ul>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">1. Information We Collect
-        </h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>1.1 Information You Provide
-                Directly:</strong></p>
-        <ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
-            <li>Name and contact information (email, phone number)</li>
-            <li>Business name and details</li>
-            <li>Project inquiries and messages submitted via our contact form</li>
-            <li>Any other information you voluntarily provide when contacting us</li>
-        </ul>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>1.2 Information Collected Automatically:</strong></p>
+<ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
+<li>IP address and general location data</li>
+<li>Browser type, device type, and operating system</li>
+<li>Pages visited, time spent on site, and referring URLs</li>
+<li>Interaction data collected via Google Analytics and Google Firebase</li>
+</ul>
 
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>1.2 Information Collected
-                Automatically:</strong></p>
-        <ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
-            <li>IP address and general location data</li>
-            <li>Browser type, device type, and operating system</li>
-            <li>Pages visited, time spent on site, and referring URLs</li>
-            <li>Interaction data collected via Google Analytics and Google Firebase</li>
-        </ul>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">2. How We Use Your Information</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We use the information we collect to:</p>
+<ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
+<li>Respond to your inquiries and communicate about potential or active projects;</li>
+<li>Deliver services as agreed in project proposals;</li>
+<li>Send project updates, invoices, and relevant communications;</li>
+<li>Improve our website and services using aggregated analytics data;</li>
+<li>Comply with applicable legal obligations;</li>
+<li>Send occasional marketing emails (only with your express or implied consent under CASL).</li>
+</ul>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">2. How We Use Your
-            Information</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We use the information we collect to:</p>
-        <ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
-            <li>Respond to your inquiries and communicate about potential or active projects;</li>
-            <li>Deliver services as agreed in project proposals;</li>
-            <li>Send project updates, invoices, and relevant communications;</li>
-            <li>Improve our website and services using aggregated analytics data;</li>
-            <li>Comply with applicable legal obligations;</li>
-            <li>Send occasional marketing emails (only with your express or implied consent under CASL).</li>
-        </ul>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">3. Cookies & Analytics</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Our website uses cookies and similar tracking technologies. We use Google Analytics to understand how visitors interact with our site. This data is aggregated and anonymized — it does not personally identify you.</p>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">You can control cookie settings through your browser. Disabling cookies may affect certain website functionality.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">3. Cookies & Analytics
-        </h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Our website uses cookies and similar tracking
-            technologies. We use Google Analytics to understand how visitors interact with our site. This data is
-            aggregated and anonymized — it does not personally identify you.</p>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">You can control cookie settings through your
-            browser. Disabling cookies may affect certain website functionality.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">4. Third-Party Services</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We use trusted third-party services to operate our business including:</p>
+<ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
+<li><strong>Google Analytics & Firebase</strong> — website analytics and performance (data may be stored on servers in the United States)</li>
+<li><strong>Email providers</strong> — for project and client communications</li>
+<li><strong>Payment processors</strong> — for invoicing and payment collection</li>
+</ul>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">These services have their own privacy policies. We do not sell your personal information to any third party.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">4. Third-Party Services
-        </h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We use trusted third-party services to
-            operate our business including:</p>
-        <ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
-            <li><strong>Google Analytics & Firebase</strong> — website analytics and performance (data may be stored on
-                servers in the United States)</li>
-            <li><strong>Email providers</strong> — for project and client communications</li>
-            <li><strong>Payment processors</strong> — for invoicing and payment collection</li>
-        </ul>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">These services have their own privacy
-            policies. We do not sell your personal information to any third party.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">5. Cross-Border Data Transfers</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Some of our third-party service providers (including Google) store data on servers located outside of Canada, including in the United States. By using our website and services, you consent to your information being transferred to and processed in these jurisdictions. We take reasonable steps to ensure your data is protected in accordance with this Privacy Policy.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">5. Cross-Border Data
-            Transfers</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Some of our third-party service providers
-            (including Google) store data on servers located outside of Canada, including in the United States. By using
-            our website and services, you consent to your information being transferred to and processed in these
-            jurisdictions. We take reasonable steps to ensure your data is protected in accordance with this Privacy
-            Policy.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">6. Data Retention</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We retain your personal information only as long as necessary to fulfill the purposes for which it was collected, or as required by law. Client project information is typically retained for 7 years for accounting and legal compliance purposes. You may request deletion of your data at any time (subject to legal retention requirements).</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">6. Data Retention</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We retain your personal information only as
-            long as necessary to fulfill the purposes for which it was collected, or as required by law. Client project
-            information is typically retained for 7 years for accounting and legal compliance purposes. You may request
-            deletion of your data at any time (subject to legal retention requirements).</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">7. Your Rights</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Under PIPEDA and BC PIPA, you have the right to:</p>
+<ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
+<li><strong>Access</strong> the personal information we hold about you;</li>
+<li><strong>Correct</strong> any inaccurate or incomplete information;</li>
+<li><strong>Request deletion</strong> of your personal information (subject to legal exceptions);</li>
+<li><strong>Withdraw consent</strong> to marketing communications at any time;</li>
+<li><strong>Lodge a complaint</strong> with the Office of the Privacy Commissioner of Canada (OPC) at priv.gc.ca or the BC Office of the Information and Privacy Commissioner at oipc.bc.ca.</li>
+</ul>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">To exercise any of these rights, contact us at bcwebcreator@gmail.com.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">7. Your Rights</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Under PIPEDA and BC PIPA, you have the right
-            to:</p>
-        <ul class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed list-disc list-inside">
-            <li><strong>Access</strong> the personal information we hold about you;</li>
-            <li><strong>Correct</strong> any inaccurate or incomplete information;</li>
-            <li><strong>Request deletion</strong> of your personal information (subject to legal exceptions);</li>
-            <li><strong>Withdraw consent</strong> to marketing communications at any time;</li>
-            <li><strong>Lodge a complaint</strong> with the Office of the Privacy Commissioner of Canada (OPC) at
-                priv.gc.ca or the BC Office of the Information and Privacy Commissioner at oipc.bc.ca.</li>
-        </ul>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">To exercise any of these rights, contact us
-            at bcwebcreator@gmail.com.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">8. Children's Privacy</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Our website and services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately and we will delete it.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">8. Children's Privacy</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">Our website and services are not directed to
-            individuals under the age of 13. We do not knowingly collect personal information from children. If you
-            believe we have inadvertently collected information from a child, please contact us immediately and we will
-            delete it.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">9. Security</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We take reasonable technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">9. Security</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We take reasonable technical and
-            organizational measures to protect your personal information from unauthorized access, disclosure,
-            alteration, or destruction. However, no method of transmission over the internet is 100% secure, and we
-            cannot guarantee absolute security.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">10. CASL Compliance</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We comply with Canada's Anti-Spam Legislation (CASL). We will only send commercial electronic messages with your express or implied consent. You may unsubscribe from marketing emails at any time by clicking the unsubscribe link in any email or by contacting us at bcwebcreator@gmail.com.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">10. CASL Compliance</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We comply with Canada's Anti-Spam Legislation
-            (CASL). We will only send commercial electronic messages with your express or implied consent. You may
-            unsubscribe from marketing emails at any time by clicking the unsubscribe link in any email or by contacting
-            us at bcwebcreator@gmail.com.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">11. Changes to This Policy</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised "Last Updated" date. We encourage you to review this policy periodically.</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">11. Changes to This Policy
-        </h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">We may update this Privacy Policy from time
-            to time. The updated version will be posted on this page with a revised "Last Updated" date. We encourage
-            you to review this policy periodically.</p>
+<h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">12. Contact Us</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">For any privacy-related questions, requests, or concerns:</p>
+<p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Typhoon Entertainment Incorporated</strong> (operating as BC Web Creator)<br>
+Abbotsford, British Columbia, Canada<br>
+Email: bcwebcreator@gmail.com<br>
+Website: bcwebcreator.com</p>
 
-        <h2 class="font-display font-bold text-2xl text-slate-900 dark:text-white mt-12 mb-4">12. Contact Us</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">For any privacy-related questions, requests,
-            or concerns:</p>
-        <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Typhoon Entertainment
-                Incorporated</strong> (operating as BC Web Creator)<br>
-            Abbotsford, British Columbia, Canada<br>
-            Email: bcwebcreator@gmail.com<br>
-            Website: bcwebcreator.com</p>
-
-    </main>
+</main>
+<!-- Footer -->
     <footer class="py-12 bg-slate-950 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center gap-8">
@@ -426,7 +356,7 @@
                 <div class="flex gap-6 text-slate-400 text-sm">
                     <a href="/terms/index.html" class="hover:text-white transition-colors">Terms</a>
                     <a href="/privacy/index.html" class="hover:text-white transition-colors">Privacy</a>
-                    <a href="/index.html#pricing" class="hover:text-white transition-colors">Pricing</a>
+                    <a href="/#pricing" class="hover:text-white transition-colors">Pricing</a>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
@@ -435,41 +365,136 @@
         </div>
     </footer>
 
-
-
+    <!-- Scripts -->
     <script>
+        // Theme Toggle Logic
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
 
-        // Theme toggle
-        const html = document.documentElement;
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { html.classList.add('dark'); }
-        document.getElementById('theme-toggle').addEventListener('click', () => { html.classList.toggle('dark'); localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light'; });
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
 
-        // Mobile menu
-        const mobileMenu = document.getElementById('mobile-menu');
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-
-        // Scroll navbar
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => { navbar.classList.toggle('shadow-md', window.pageYOffset > 100); });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
-            a.addEventListener('click', e => { e.preventDefault(); const t = document.querySelector(a.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
         });
 
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass', 'shadow-lg', 'h-16');
+                navbar.classList.remove('h-20');
+            } else {
+                navbar.classList.remove('glass', 'shadow-lg', 'h-16');
+                navbar.classList.add('h-20');
+            }
+        });
 
-        // Lightbox
+        // Lightbox Logic
         const projects = [
-            { tag: 'Film & Streaming', title: 'TyphoonHub', desc: 'A fully custom film streaming and portfolio platform built for Typhoon Entertainment. Features a rich video library, advanced dark mode, Netflix-style UI, and a mobile-first responsive layout. Built with Next.js and Firebase.', pills: ['Next.js', 'Firebase', 'Tailwind CSS', 'Dark Mode'], link: 'https://typhoonhub.ca', img: 'images/mockup_typhoon.webp' },
-            { tag: 'Corporate / Food Service', title: 'Mango Micro Markets', desc: 'A modern corporate lead-generation website for an office micro-market company. Clean branding, strong CTAs, and an informational layout designed to turn visitors into business leads.', pills: ['HTML5', 'CSS', 'JavaScript', 'SEO'], link: 'https://mangomicromarkets.com', img: 'images/mockup_mango.webp' },
-            { tag: 'E-commerce', title: "J1's Audio", desc: 'An e-commerce store for an audio equipment retailer. Includes a full product catalog, shopping cart, and a streamlined checkout experience optimized for conversion.', pills: ['Shopify', 'E-commerce', 'Mobile-First'], link: 'https://j1saudio.com', img: 'images/mockup_j1s.webp' },
-            { tag: 'Custom Apparel', title: 'J. Henley Customs', desc: 'A branded showcase and inquiry website for a custom apparel business. Visual-first layout with a clear contact/order inquiry flow to capture leads.', pills: ['HTML5', 'Tailwind CSS', 'Contact Form'], link: '#contact', img: 'images/mockup_jhenley.webp' },
-            { tag: 'Film Industry', title: 'Check The Gate', desc: 'A content-rich resource website for the BC film industry community. Features a cinematic design aesthetic with editorial-style layout and category navigation.', pills: ['Firebase Hosting', 'Responsive', 'SEO'], link: 'https://check-the-gate-prod.web.app', img: 'images/mockup_checkthegate.webp' },
-            { tag: 'Community / Local Business', title: 'Cowichan Project', desc: 'A warm, community-focused website for a local business, designed to connect with the local audience. Optimized for local SEO and featuring an approachable, friendly design.', pills: ['HTML5', 'Local SEO', 'Responsive'], link: '#contact', img: 'images/mockup_cowichan.webp' },
-            { tag: 'Free Tool', title: 'Pricing Calculator', desc: 'An interactive web-based pricing tool for vinyl decals and custom HTV t-shirts. Enter job details and get real-time cost breakdowns, markup suggestions (2× and 2.5×), and a full Quick Price Reference sheet — all in CAD.', pills: ['HTML5', 'JavaScript', 'Real-time Calc', 'Dark Mode'], link: '/tools/pricing-calculator/index.html', img: 'images/mockup_calculator.webp' }
+            { 
+                tag: 'Film & Streaming', 
+                title: 'TyphoonHub', 
+                problem: 'Large video files were difficult to share with producers and clients, and the previous site was slow and not mobile-ready.',
+                solution: 'A custom streaming platform with cloud video hosting and a "Netflix-style" interface for seamless mobile viewing.',
+                result: 'Portfolio is now accessible 24/7 globally – no more emailing massive files.',
+                desc: 'A fully custom film streaming and portfolio platform built for Typhoon Entertainment. Features a rich video library, advanced dark mode, and a mobile-first responsive layout.', 
+                pills: ['Next.js', 'Firebase', 'Tailwind CSS', 'Dark Mode'], 
+                link: 'https://www.typhoonhub.ca', 
+                caseStudy: 'case-studies/typhoonhub/index.html',
+                img: 'images/mockup_typhoon.webp' 
+            },
+            { 
+                tag: 'Corporate / Food Service', 
+                title: 'Mango Micro Markets', 
+                problem: 'The business relied on cold calls and lacked a professional digital presence to build trust with corporate HR departments.',
+                solution: 'A high-conversion lead generation site with clear value propositions and strong calls to action.',
+                result: 'Professional digital footprint established, driving qualified inquiries from corporate offices.',
+                desc: 'A modern corporate lead-generation website for an office micro-market company. Clean branding, strong CTAs, and an informational layout designed to turn visitors into business leads.', 
+                pills: ['HTML5', 'CSS', 'JavaScript', 'SEO'], 
+                link: 'https://mangomicromarkets.ca', 
+                caseStudy: 'case-studies/mango-micro-markets/index.html',
+                img: 'images/mockup_mango.webp' 
+            },
+            { 
+                tag: 'Sound Engineer', 
+                title: "J1's Audio", 
+                problem: 'Mike had no online presence. Potential clients couldn\'t find his services, listen to samples, or book him easily.',
+                solution: 'A portfolio site with embedded audio samples, service packages, and a streamlined booking inquiry form.',
+                result: 'Mike now receives 2-3 new booking inquiries per week directly through the website.',
+                desc: 'A professional online presence for Surrey-based sound engineer Mikke Jones. Showcasing audio services, gear, and booking — built to attract clients and establish credibility.', 
+                pills: ['HTML5', 'CSS', 'Audio Services', 'Mobile-First'], 
+                link: 'https://j1s-audio.firebaseapp.com', 
+                caseStudy: 'case-studies/j1s-audio/index.html',
+                img: 'images/mockup_j1s.webp' 
+            },
+            { 
+                tag: 'Custom Apparel', 
+                title: 'J. Henley Customs', 
+                problem: 'Custom orders were handled manually via DM, leading to lost inquiries and inconsistent communication.',
+                solution: 'A branded showcase with a dedicated inquiry funnel and structured order request flow.',
+                result: 'Order management streamlined and professional brand image solidified for higher-value clients.',
+                desc: 'A branded showcase and inquiry website for a custom apparel business. Visual-first layout with a clear contact/order inquiry flow to capture leads.', 
+                pills: ['HTML5', 'Tailwind CSS', 'Contact Form'], 
+                link: 'https://jhenleycustoms.com', 
+                caseStudy: 'case-studies/j-henley-customs/index.html',
+                img: 'images/mockup_jhenley.webp' 
+            },
+            { 
+                tag: 'Film Industry', 
+                title: 'Check The Gate', 
+                problem: 'BC film industry resources were scattered and lacked a cohesive, modern platform for community engagement.',
+                solution: 'A content-focused hub with cinematic aesthetics and intuitive category navigation.',
+                result: 'Established as a go-to resource for local industry professionals.',
+                desc: 'A content-rich resource website for the BC film industry community. Features a cinematic design aesthetic with editorial-style layout and category navigation.', 
+                pills: ['Firebase Hosting', 'Responsive', 'SEO'], 
+                link: 'https://checkthegate.ca', 
+                caseStudy: 'case-studies/check-the-gate/index.html',
+                img: 'images/mockup_checkthegate.webp' 
+            },
+            { 
+                tag: 'Salon / Service', 
+                title: "Wanita's Hair", 
+                problem: 'An outdated web presence made it difficult to showcase the artistry of high-end salon services.',
+                solution: 'An elegant, dark-mode portfolio focusing on high-resolution imagery and clear service menus.',
+                result: 'Visual credibility boosted, attracting higher-end clientele looking for premium salon experiences.',
+                desc: 'Premium hair artistry website with a dark elegant design, highlighting services and an expansive beauty portfolio.', 
+                pills: ['HTML5', 'CSS', 'JavaScript', 'Bookings'], 
+                link: 'https://wanitas-reel-hair.web.app', 
+                caseStudy: 'case-studies/wanitas-hair/index.html',
+                img: 'images/mockup_wanita.webp' 
+            }
         ];
 
         function openLightbox(i) {
@@ -478,11 +503,21 @@
             document.getElementById('lb-image').alt = p.title;
             document.getElementById('lb-tag').textContent = p.tag;
             document.getElementById('lb-title').textContent = p.title;
-            document.getElementById('lb-desc').textContent = p.desc;
-            document.getElementById('lb-link').href = p.link;
-            document.getElementById('lb-link').textContent = p.link.startsWith('http') ? 'Visit Live Site' : 'Get in Touch';
+            
+            // New detailed content
+            document.getElementById('lb-problem').textContent = p.problem;
+            document.getElementById('lb-solution').textContent = p.solution;
+            document.getElementById('lb-result').textContent = p.result;
+            
+            const lbLink = document.getElementById('lb-link');
+            lbLink.href = p.link;
+            
+            const lbCaseStudy = document.getElementById('lb-case-study');
+            lbCaseStudy.href = p.caseStudy;
+            
             const pills = document.getElementById('lb-pills');
-            pills.innerHTML = p.pills.map(t => `<span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300">${t}</span>`).join('');
+            pills.innerHTML = p.pills.map(t => `<span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-white/10">${t}</span>`).join('');
+            
             const lb = document.getElementById('lightbox');
             lb.classList.remove('hidden');
             lb.classList.add('flex');
@@ -497,13 +532,56 @@
         }
 
         document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
     </script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 md:p-8 bg-slate-950/90 backdrop-blur-sm">
+        <div class="relative w-full max-w-6xl bg-white dark:bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/10">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 z-10 w-12 h-12 flex items-center justify-center bg-black/20 hover:bg-black/40 text-white rounded-full backdrop-blur-md transition-all">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="grid lg:grid-cols-2 h-full max-h-[90vh] overflow-y-auto lg:overflow-hidden">
+                <div class="aspect-video lg:aspect-auto bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <img id="lb-image" src="" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-8 md:p-12 flex flex-col justify-center overflow-y-auto">
+                    <div id="lb-tag" class="text-xs font-bold tracking-widest text-primary-500 uppercase mb-4">Category</div>
+                    <h2 id="lb-title" class="font-display font-bold text-3xl md:text-4xl mb-8 text-dark-900 dark:text-white">Project Title</h2>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">The Problem</h4>
+                            <p id="lb-problem" class="text-slate-600 dark:text-slate-300">Description of the issue.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">The Solution</h4>
+                            <p id="lb-solution" class="text-slate-600 dark:text-slate-300">Description of the build.</p>
+                        </div>
+                        <div class="p-4 bg-primary-50 dark:bg-primary-900/10 border border-primary-200 dark:border-primary-900/20 rounded-2xl">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400 mb-2">The Result</h4>
+                            <p id="lb-result" class="text-lg font-bold text-dark-900 dark:text-white">Measurable outcome.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="lb-pills" class="flex flex-wrap gap-2 mb-10"></div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-auto">
+                        <a id="lb-link" href="#" target="_blank" class="flex-1 inline-flex items-center justify-center px-8 py-4 bg-primary-500 text-white rounded-xl font-bold hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/25">
+                            Visit Live Site ↗
+                        </a>
+                        <a id="lb-case-study" href="#" class="flex-1 inline-flex items-center justify-center px-8 py-4 bg-white dark:bg-slate-800 text-dark-900 dark:text-white rounded-xl font-bold border border-slate-200 dark:border-white/10 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all">
+                            Full Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Dialogflow Messenger Chatbot -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="BCWebCreator-Bot" agent-id="362de2f5-16e4-4666-9a0e-b2dfc0fb09b9"
-        language-code="en"></df-messenger>
-
+    <df-messenger intent="WELCOME" chat-title="BCWebCreator-Bot" agent-id="362de2f5-16e4-4666-9a0e-b2dfc0fb09b9" language-code="en"></df-messenger>
 </body>
 
 </html>

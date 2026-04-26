@@ -30,7 +30,7 @@ header_fixed = fix_links(header_raw)
 footer_fixed = fix_links(footer_raw)
 
 terms_raw = """
-<div class="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-400 dark:border-yellow-600 p-4 rounded-lg mb-8 text-yellow-800 dark:text-yellow-200">⚠️ <strong>DISCLAIMER:</strong> This is a template draft. BC Web Creator recommends consulting a qualified legal professional in British Columbia before publishing.</div>
+
 
 <h1 class="font-display font-bold text-4xl text-slate-900 dark:text-white border-b-2 border-primary-500 pb-4 mb-8">Terms of Service — BC Web Creator</h1>
 <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Last Updated: February 26, 2026</strong><br>
@@ -66,7 +66,7 @@ terms_raw = """
 """
 
 privacy_raw = """
-<div class="bg-yellow-50 dark:bg-yellow-900/30 border border-yellow-400 dark:border-yellow-600 p-4 rounded-lg mb-8 text-yellow-800 dark:text-yellow-200">⚠️ <strong>DISCLAIMER:</strong> This is a template draft. BC Web Creator recommends consulting a qualified legal professional in British Columbia before publishing.</div>
+
 
 <h1 class="font-display font-bold text-4xl text-slate-900 dark:text-white border-b-2 border-primary-500 pb-4 mb-8">Privacy Policy — BC Web Creator</h1>
 <p class="text-slate-600 dark:text-slate-400 mb-4 leading-relaxed"><strong>Last Updated: February 26, 2026</strong><br>
