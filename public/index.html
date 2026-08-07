@@ -8,26 +8,57 @@
   <meta name="keywords" content="BC Web Creator, web design BC, website developer British Columbia, small business websites, SEO, web design Vancouver, WordPress, custom websites">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="BC Web Creator">
-  <link rel="canonical" href="https://bcwebcreator-b959e.web.app/">
+  <link rel="canonical" href="https://bcwebcreator.com/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_CA">
-  <meta property="og:url" content="https://bcwebcreator-b959e.web.app/">
+  <meta property="og:url" content="https://bcwebcreator.com/">
   <meta property="og:title" content="BC Web Creator | Custom Websites for British Columbia Businesses">
   <meta property="og:description" content="Fast, modern, SEO-ready websites built for BC small businesses. Get a free quote today.">
   <meta property="og:site_name" content="BC Web Creator">
+  <meta property="og:image" content="https://bcwebcreator.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BC Web Creator — Custom websites for British Columbia small businesses">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BC Web Creator | Custom Websites for British Columbia Businesses">
   <meta name="twitter:description" content="Fast, modern, SEO-ready websites built for BC small businesses. Get a free quote today.">
+  <meta name="twitter:image" content="https://bcwebcreator.com/og-image.jpg">
+  <meta name="twitter:image:alt" content="BC Web Creator — Custom websites for British Columbia small businesses">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f172a'/%3E%3Ctext x='50' y='62' font-family='Arial, sans-serif' font-size='36' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3EBC%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='32' fill='%230f172a'/%3E%3Ctext x='90' y='112' font-family='Arial, sans-serif' font-size='64' font-weight='700' fill='%2338bdf8' text-anchor='middle'%3EBC%3C/text%3E%3C/svg%3E">
 
   <!-- Theme Colour -->
   <meta name="theme-color" content="#0f172a">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BC Web Creator",
+    "url": "https://bcwebcreator.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bcwebcreator.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -36,29 +67,96 @@
     "@type": "LocalBusiness",
     "name": "BC Web Creator",
     "description": "Custom web design and development for small businesses across British Columbia.",
-    "url": "https://bcwebcreator-b959e.web.app/",
+    "url": "https://bcwebcreator.com/",
     "email": "bcwebcreator@gmail.com",
-    "priceRange": "$",
-    "areaServed": {
-      "@type": "State",
-      "name": "British Columbia",
-      "containedInPlace": {
-        "@type": "Country",
-        "name": "Canada"
-      }
-    },
+    "telephone": "+1-778-347-8067",
+    "priceRange": "$$",
+    "areaServed": [
+      { "@type": "City", "name": "Abbotsford" },
+      { "@type": "City", "name": "Surrey" },
+      { "@type": "City", "name": "Delta" },
+      { "@type": "City", "name": "Langley" },
+      { "@type": "City", "name": "Vancouver" },
+      { "@type": "City", "name": "Burnaby" },
+      { "@type": "City", "name": "Richmond" },
+      { "@type": "City", "name": "Coquitlam" }
+    ],
     "address": {
       "@type": "PostalAddress",
+      "addressLocality": "Abbotsford",
       "addressRegion": "BC",
       "addressCountry": "CA"
     },
-    "sameAs": [],
+    "sameAs": [
+      "https://business.google.com/locations/05858980731223624021",
+      "https://www.yelp.ca/biz/bc-web-creator-abbotsford"
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "09:00",
       "closes": "17:00"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Design Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & Performance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ongoing Support" } }
+      ]
     }
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a new website cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pricing depends on the number of pages, features, and integrations you need. Most small business sites fall into an affordable, fixed-price package. Contact us for a free, no-pressure quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A typical brochure or small business site takes 2–4 weeks from design approval to launch. Larger projects with custom features may take longer, and we always keep you informed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with businesses outside British Columbia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are based in BC and love supporting local businesses, but we are happy to work with clients across Canada and beyond."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my website show up on Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every site we build includes technical SEO fundamentals, fast load times, mobile optimization, and structured data to help search engines understand your content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I update the website myself?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We build sites that are easy to edit, and we provide training or documentation so you can make updates confidently."
+        }
+      }
+    ]
   }
   </script>
 
