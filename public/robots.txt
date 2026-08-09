@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bcwebcreator.com/sitemap.xml
+
+# Allow Googlebot full access
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot full access
+User-agent: Bingbot
+Allow: /
+
+# Block common spam bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
