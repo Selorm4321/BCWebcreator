@@ -51,12 +51,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "BC Web Creator",
-    "url": "https://bcwebcreator.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://bcwebcreator.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "url": "https://bcwebcreator.com/"
   }
   </script>
 
@@ -64,22 +59,22 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
+    "@id": "https://bcwebcreator.com/#business",
     "name": "BC Web Creator",
-    "description": "Custom web design and development for small businesses across British Columbia.",
+    "description": "Custom web design and development for small businesses. Based in Abbotsford, BC, serving British Columbia and clients across Canada, the United States and the United Kingdom.",
     "url": "https://bcwebcreator.com/",
     "email": "bcwebcreator@gmail.com",
-    "telephone": "+1-778-347-8067",
     "priceRange": "$$",
     "areaServed": [
+      { "@type": "AdministrativeArea", "name": "British Columbia" },
       { "@type": "City", "name": "Abbotsford" },
-      { "@type": "City", "name": "Surrey" },
-      { "@type": "City", "name": "Delta" },
-      { "@type": "City", "name": "Langley" },
       { "@type": "City", "name": "Vancouver" },
-      { "@type": "City", "name": "Burnaby" },
-      { "@type": "City", "name": "Richmond" },
-      { "@type": "City", "name": "Coquitlam" }
+      { "@type": "City", "name": "Surrey" },
+      { "@type": "City", "name": "Langley" },
+      { "@type": "Country", "name": "Canada" },
+      { "@type": "Country", "name": "United States" },
+      { "@type": "Country", "name": "United Kingdom" }
     ],
     "address": {
       "@type": "PostalAddress",
@@ -137,7 +132,7 @@
         "name": "Do you work with businesses outside British Columbia?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We are based in BC and love supporting local businesses, but we are happy to work with clients across Canada and beyond."
+          "text": "Yes. We are based in Abbotsford, BC, and love supporting local businesses, and we also work with clients across Canada, the United States and the United Kingdom. Everything can be done remotely by email and video call."
         }
       },
       {
@@ -165,7 +160,7 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" aria-label="BC Web Creator home">
+      <a href="/" class="logo" aria-label="BC Web Creator home">
         <span class="logo-mark">BC</span>
         <span class="logo-text">Web Creator</span>
       </a>
@@ -178,6 +173,7 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#areas">Areas</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
         </ul>
@@ -400,6 +396,34 @@
       </div>
     </section>
 
+    <!-- Areas We Serve -->
+    <section id="areas" class="section" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Where We Work</p>
+          <h2 id="areas-title">Web design across the Fraser Valley and Metro Vancouver</h2>
+        </div>
+        <div class="grid services-grid">
+          <article class="service-card">
+            <h3><a href="/abbotsford-web-design.html">Web design in Abbotsford</a></h3>
+            <p>Our home base. In-person meetings in Abbotsford and across the Fraser Valley, including Mission, Chilliwack and Aldergrove.</p>
+          </article>
+          <article class="service-card">
+            <h3><a href="/vancouver-web-design.html">Web design in Vancouver</a></h3>
+            <p>Sites built to compete in a crowded market, for businesses in Vancouver, Burnaby, Richmond, Coquitlam and the North Shore.</p>
+          </article>
+          <article class="service-card">
+            <h3><a href="/surrey-langley-web-design.html">Web design in Surrey and Langley</a></h3>
+            <p>For trades, retail and service businesses in Surrey, Langley, Cloverdale, Walnut Grove and Fort Langley.</p>
+          </article>
+          <article class="service-card">
+            <h3>Outside BC</h3>
+            <p>We also work remotely with clients across Canada, the United States and the United Kingdom. See the FAQ below.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials section section-alt" aria-labelledby="testimonials-title">
       <div class="container">
@@ -448,7 +472,7 @@
           </details>
           <details class="faq-item">
             <summary>Do you work with businesses outside British Columbia?</summary>
-            <p>We are based in BC and love supporting local businesses, but we are happy to work with clients across Canada and beyond.</p>
+            <p>Yes. We are based in Abbotsford, BC, and love supporting local businesses, and we also work with clients across Canada, the United States and the United Kingdom. Everything can be done remotely by email and video call.</p>
           </details>
           <details class="faq-item">
             <summary>Will my website show up on Google?</summary>
@@ -473,7 +497,7 @@
           <a href="mailto:bcwebcreator@gmail.com?subject=Book%20a%20Call" class="btn btn-secondary">Book a Call</a>
         </div>
         <address class="contact-address">
-          Serving businesses across British Columbia, Canada
+          Based in Abbotsford, BC. Serving businesses across British Columbia, with clients across Canada, the US and the UK.
         </address>
       </div>
     </section>
@@ -483,6 +507,7 @@
     <div class="container footer-inner">
       <p>&copy; <span id="year"></span> BC Web Creator. All rights reserved.</p>
       <p class="footer-email"><a href="mailto:bcwebcreator@gmail.com">bcwebcreator@gmail.com</a></p>
+      <p class="footer-areas"><a href="/abbotsford-web-design.html">Abbotsford</a> &middot; <a href="/vancouver-web-design.html">Vancouver</a> &middot; <a href="/surrey-langley-web-design.html">Surrey &amp; Langley</a></p>
     </div>
   </footer>
 

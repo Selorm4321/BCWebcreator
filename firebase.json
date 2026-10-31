@@ -1,1 +1,13 @@
-{ "hosting": { "public": "public", "ignore": ["firebase.json", "**/.*", "**/node_modules/**"] } } 
+{
+  "hosting": {
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "regex": "^/(?P<path>.*)$",
+        "destination": "https://bcwebcreator.com/:path",
+        "type": 301
+      }
+    ]
+  }
+}
