@@ -1,0 +1,30 @@
+# BC Web Creator
+
+> BC Web Creator builds custom, fast, mobile-friendly, SEO-ready websites for small businesses. Based in Abbotsford, British Columbia, Canada. Serves businesses across British Columbia, and works with clients across Canada, the United States and the United Kingdom.
+
+- Services: custom web design, web development, SEO and performance, e-commerce, ongoing support
+- Process: Discovery Call, Design & Review, Build & Test, Launch & Support
+- Timeline: a typical small business site takes 2–4 weeks from design approval to launch
+- Pricing: depends on pages, features and integrations; most small business sites are a fixed-price package; free quote on request
+- Response time: within one business day. Hours: Monday–Friday, 09:00–17:00 Pacific
+- Contact: email bcwebcreator@gmail.com (email first)
+
+## Pages
+
+- [Home](https://bcwebcreator.com/): services, portfolio, process, FAQ
+- [Web design in Abbotsford](https://bcwebcreator.com/abbotsford-web-design.html): home base, Fraser Valley businesses
+- [Web design in Vancouver](https://bcwebcreator.com/vancouver-web-design.html): Vancouver, Burnaby, Richmond, Coquitlam, North Shore
+- [Web design in Surrey and Langley](https://bcwebcreator.com/surrey-langley-web-design.html): trades, shops and service businesses
+
+## Portfolio
+
+- [TyphoonHub](https://www.typhoonhub.ca/): independent film streaming platform
+- [Mango Micro Markets](https://mangomicromarkets.ca/): smart vending and micromarket provider
+- [J1S Audio](https://j1s-audio.firebaseapp.com/): audio production and web services
+- [Jhenley Customs](https://jhenleycustoms.com/): handcrafted knitwear e-commerce
+- [Samira Pigeau](https://checkthegate.ca/): filmmaker and producer portfolio
+- [Wanita's Reel Hair](https://wanitashair.com/): Vancouver hair salon with online booking
+- [CLC Inc.](https://adre-chauvin-web.vercel.app/): BC land clearing and construction
+- [Red Light Therapy](https://v0-red-light-therapy.vercel.app/): wellness service
+- [Fusion Flow Radio](https://v0-fusion-flow-radio.vercel.app/home): radio streaming platform
+- [Garth Buzzard Art](https://buzzardgraphics.com/): wildlife art and prints
