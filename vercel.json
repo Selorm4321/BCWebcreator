@@ -7,8 +7,7 @@
       "permanent": true
     },
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/surrey-web-design.html", "destination": "/surrey-langley-web-design.html", "permanent": true },
-    { "source": "/langley-web-design.html", "destination": "/surrey-langley-web-design.html", "permanent": true }
+    { "source": "/surrey-web-design.html", "destination": "/surrey-langley-web-design.html", "permanent": true }
   ],
   "headers": [
     {
