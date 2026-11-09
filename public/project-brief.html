@@ -111,7 +111,7 @@ details.help{border:1px solid var(--line);border-radius:10px;padding:12px 16px;f
 details.help summary{cursor:pointer;font-weight:700;color:var(--ink)}
 details.help p{margin:8px 0 0}
 .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
-@media(max-width:980px){.grid{grid-template-columns:1fr}.aside{position:static;order:-1}.summary,.submit-card{display:none}.pair{grid-template-columns:1fr}}
+@media(max-width:980px){.grid{grid-template-columns:1fr}.aside{position:static;order:-1}.aside .summary,.aside .submit-card{display:none}#mobileSubmit{display:block!important}.pair{grid-template-columns:1fr}}#mobileSubmit{display:none}
 @media(max-width:680px){.wrap{width:calc(100% - 34px)}.nav{height:66px}.nav-links{display:none}.section{padding:52px 0}.header-band{padding:40px 0 30px}.step{padding:20px 18px 4px}.chips{gap:7px}.chip{font-size:12px;padding:8px 11px}.done{padding:20px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
 </style>
@@ -315,7 +315,7 @@ details.help p{margin:8px 0 0}
       <p>Your brief arrives at our inbox immediately. We read it, price the scope, and email you back with a fixed price and what's included — usually the same day, within one business day at the latest. No dollar figure is generated on this page, because two projects that look alike on paper rarely cost the same to build.</p>
     </details>
 
-    <div class="submit-card" style="display:none" id="mobileSubmit">
+    <div class="submit-card" id="mobileSubmit">
       <h3>Send your brief</h3>
       <p>We reply by email with a fixed price within one business day.</p>
       <button class="button" type="submit">Send project brief <span>↗</span></button>
@@ -477,11 +477,11 @@ function fallback(){
 function done(sent){
   try{ if(window.gtag) gtag('event','generate_lead',{event_category:'project_brief',event_label:val('projecttype')||'unspecified',value:1,send_to:'G-620PWJ2YLC',delivery:sent?'api':'fallback'}); }catch(_){}
   try{ if(window.gtag) gtag('event',(sent?'brief_submitted':'brief_fallback'),{project_type:(val('projecttype')||'unspecified'),budget:(val('budget')||'unspecified'),timeline:(val('timeline')||'unspecified'),delivery:(sent?'api':'fallback')}); }catch(_){}
-  $('#desktopSubmit').style.display='none';
-  $('#mobileSubmit').style.display='none';
-  $$('.step').forEach(s=>s.style.display='none');
-  $$('details.help').forEach(s=>s.style.display='none');
-  $('#summary').style.display='none';
+  // hide the whole form body in one move (an !important rule governs #mobileSubmit on mobile)
+  const bodyEl=$('#formBody'); if(bodyEl) bodyEl.style.display='none';
+  $('#desktopSubmit') && ($('#desktopSubmit').style.display='none');
+  $('#mobileSubmit') && ($('#mobileSubmit').style.display='none');
+  const sumEl=$('#summary'); if(sumEl) sumEl.style.display='none';
   const p=$('#donePanel');
   p.style.display='block';
   p.innerHTML=`<div class="done">
