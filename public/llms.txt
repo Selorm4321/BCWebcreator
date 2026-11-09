@@ -29,3 +29,5 @@
 - [Red Light Therapy](https://v0-red-light-therapy.vercel.app/): wellness service
 - [Fusion Flow Radio](https://v0-fusion-flow-radio.vercel.app/home): radio streaming platform
 - [Garth Buzzard Art](https://buzzardgraphics.com/): wildlife art and prints
+- [Pure Peak](https://thepurepeak.ca/): wholesale blank organic cotton and hemp shirts and shorts, single-page site, quote by email
+- [Organic Activewear](https://organicactivewear.ca/): apparel brand site for organic cotton and hemp pieces, made in Vancouver
