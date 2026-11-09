@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Brief — Start a Project | BC Web Creator</title>
+<meta name="description" content="Tell BC Web Creator about your website project. Pick what fits, add anything custom, and we reply by email with a fixed price within one business day.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://bcwebcreator.com/project-brief.html">
+<meta property="og:title" content="Project Brief — BC Web Creator">
+<meta property="og:description" content="Answer a few questions about your website project and get a fixed price by email within one business day.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bcwebcreator.com/project-brief.html">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#172334;--muted:#59687a;--blue:#2563eb;--blue-dark:#1d4ed8;--sky:#eaf2ff;--paper:#f8fafc;--white:#fff;--line:#e2e8f0;--navy:#0f172a;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;--max:1180px;--ease:cubic-bezier(.2,.75,.25,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;color:var(--ink);background:#fff;font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+.nav{position:sticky;top:0;z-index:30;height:76px;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e8edf2}
+.nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:760;letter-spacing:-.045em}
+.brand-mark{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:var(--blue);color:#fff;font-weight:800;font-size:17px}
+.nav-links{display:flex;align-items:center;gap:27px;color:#526174;font-size:13px}
+.nav-links a:hover{color:var(--blue)}
+.button{min-height:46px;display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:0 18px;background:var(--blue);border:1px solid var(--blue);border-radius:8px;color:#fff;font-size:13px;font-weight:700;box-shadow:0 6px 16px #2563eb24;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s,background .2s}
+.button:hover{transform:translateY(-2px);background:var(--blue-dark);box-shadow:0 10px 22px #2563eb33}
+.button.secondary{color:var(--ink);background:#fff;border-color:#d4deea;box-shadow:none}
+.button.secondary:hover{background:#f8fafc}
+.button.dark{background:var(--navy);border-color:var(--navy);box-shadow:none}
+.button[disabled]{opacity:.55;cursor:not-allowed;transform:none}
+.eyebrow{display:flex;align-items:center;gap:9px;color:var(--blue);font-size:11px;line-height:1.2;font-weight:780;letter-spacing:.13em;text-transform:uppercase}
+.eyebrow:before{content:'';width:20px;height:1px;background:currentColor}
+.section{padding:76px 0}
+.header-band{padding:58px 0 40px;background:linear-gradient(180deg,#f6f9ff 0%,#fff 100%);border-bottom:1px solid var(--line)}
+.header-band h1{font-size:clamp(38px,5vw,58px);line-height:1.03;letter-spacing:-.035em;margin:16px 0 14px;max-width:19ch}
+.header-band h1 span{color:var(--blue)}
+.header-band p.lead{max-width:56ch;color:var(--muted);font-size:17px;margin:0}
+.header-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.header-meta span{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border:1px solid #dbe5f3;background:#fff;border-radius:999px;font-size:11.5px;font-weight:700;color:#41516483}
+.header-meta span{color:#415164}
+.header-meta span:before{content:'✓';color:var(--blue);font-weight:800}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:34px;align-items:start}
+.step{border:1px solid var(--line);border-radius:14px;padding:26px 26px 8px;margin-bottom:18px;background:#fff;transition:border-color .25s,box-shadow .25s}
+.step:focus-within{border-color:#bcd3f7;box-shadow:0 8px 26px #1723340d}
+.step-top{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
+.step-num{font-size:11px;font-weight:800;letter-spacing:.13em;color:var(--blue);text-transform:uppercase}
+.step h2{font-size:20px;letter-spacing:-.02em;margin:0}
+.step-hint{color:var(--muted);font-size:13.5px;margin:0 0 18px;max-width:62ch}
+.q{margin-bottom:22px}
+.q > .q-label{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:750;color:#2b3a4d;margin-bottom:8px}
+.q > .q-label .opt{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#92a0b1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid #d7e1ee;border-radius:999px;background:#fff;font-size:12.5px;font-weight:650;color:#3a4a5e;cursor:pointer;transition:border-color .18s,background .18s,color .18s,transform .18s}
+.chip:hover{border-color:#a9c5ef;background:#f6faff}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip .dot{width:15px;height:15px;border-radius:4px;border:1.5px solid #c3d0e0;display:grid;place-items:center;font-size:10px;color:#fff;background:#fff;transition:background .15s,border-color .15s}
+.chip input:checked ~ .dot{background:var(--blue);border-color:var(--blue)}
+.chip:has(input:checked){border-color:var(--blue);background:#f2f7ff;color:#10366f}
+.chip:has(input:focus-visible){outline:2px solid #2563eb66;outline-offset:2px}
+.chip.custom{border-style:dashed;color:#415164}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:11px;color:#53647a;font-weight:750}
+.field input,.field select,.field textarea{width:100%;border:1px solid #d5dfec;background:#fff;color:var(--ink);border-radius:8px;padding:11px 12px;font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#6d99ed;box-shadow:0 0 0 3px #2563eb17}
+.field textarea{resize:vertical;min-height:84px}
+.field.error input,.field.error textarea{border-color:#d9534f;box-shadow:0 0 0 3px #d9534f1a}
+.err{font-size:11.5px;color:#b3403c;min-height:0}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.custom-block{margin:2px 0 22px;padding:16px;border:1px dashed #bfd3ee;border-radius:12px;background:#f8fbff}
+.custom-block strong{display:block;font-size:13px;margin-bottom:2px}
+.custom-block small{display:block;color:var(--muted);font-size:12.5px;margin-bottom:12px}
+/* sidebar */
+.aside{position:sticky;top:96px;display:flex;flex-direction:column;gap:16px}
+.summary{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--paper)}
+.summary h3{margin:0 0 14px;font-size:15px;letter-spacing:-.01em}
+.summary .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #e6ecf3;font-size:12.5px}
+.summary .row:first-of-type{border-top:0}
+.summary .row b{font-weight:700;color:#2b3a4d}
+.summary .row span{color:var(--muted);text-align:right;max-width:60%}
+.summary .row.empty span{color:#9aa7b6;font-style:italic}
+.summary .note{margin-top:14px;padding-top:14px;border-top:1px solid #e6ecf3;font-size:11.5px;color:var(--muted)}
+.summary .note b{color:var(--ink)}
+.submit-card{border:1px solid #cdddf3;border-radius:14px;padding:22px;background:linear-gradient(180deg,#f3f8ff,#fff)}
+.submit-card h3{margin:0 0 6px;font-size:15px}
+.submit-card p{margin:0 0 14px;font-size:12.5px;color:var(--muted)}
+.submit-card .button{width:100%}
+.submit-card .status{margin-top:10px;font-size:12px;min-height:16px}
+.submit-card .status.ok{color:#1d6a47}
+.submit-card .status.bad{color:#b3403c}
+.alt-contact{font-size:12px;color:var(--muted);text-align:center}
+.alt-contact a{color:var(--blue);font-weight:700}
+/* validation banner */
+.step-alert{margin:0 0 14px;padding:10px 12px;border:1px solid #f0c6c4;background:#fdf3f2;color:#a8403c;border-radius:8px;font-size:12.5px;font-weight:650}
+/* confirmation */
+.done{border:1px solid #cfe3d6;background:#f4fbf6;border-radius:14px;padding:30px}
+.done h2{margin:0 0 8px;font-size:26px;letter-spacing:-.02em}
+.done p{color:var(--muted);margin:0 0 16px;max-width:60ch}
+.done pre{white-space:pre-wrap;font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#fff;border:1px solid #dfe9e2;border-radius:10px;padding:16px;max-height:340px;overflow:auto;color:#2b3a4d}
+.done .row{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 0}
+details.help{border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:12.5px;color:var(--muted);background:#fff}
+details.help summary{cursor:pointer;font-weight:700;color:var(--ink)}
+details.help p{margin:8px 0 0}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+@media(max-width:980px){.grid{grid-template-columns:1fr}.aside{position:static;order:-1}.summary,.submit-card{display:none}.pair{grid-template-columns:1fr}}
+@media(max-width:680px){.wrap{width:calc(100% - 34px)}.nav{height:66px}.nav-links{display:none}.section{padding:52px 0}.header-band{padding:40px 0 30px}.step{padding:20px 18px 4px}.chips{gap:7px}.chip{font-size:12px;padding:8px 11px}.done{padding:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+  <a class="brand" href="/" aria-label="BC Web Creator home"><span class="brand-mark">B</span><span>BC Web Creator</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="/#work">Work</a><a href="/#services">Services</a><a href="/#process">Process</a><a href="/#faq">FAQ</a><a href="mailto:bcwebcreator@gmail.com?subject=Website%20project%20inquiry">Email</a></nav>
+  <a class="button nav-cta" href="#brief">Start the brief <span>↗</span></a>
+</div></header>
+
+<div class="header-band"><div class="wrap">
+  <div class="eyebrow">Project brief</div>
+  <h1>Tell us what you need.<br><span>We'll price it for you.</span></h1>
+  <p class="lead">Pick the options that fit your business — or write in something completely custom. Your answers land straight in our inbox and you get a fixed price by email within one business day. No call required.</p>
+  <div class="header-meta"><span>About 4 minutes</span><span>Fixed price, not a range</span><span>Reply within 1 business day</span><span>No obligation</span></div>
+</div></div>
+
+<main class="section" id="brief"><div class="wrap">
+<form class="grid" id="briefForm" novalidate autocomplete="on">
+
+  <div id="formBody">
+
+    <div class="step">
+      <div class="step-top"><span class="step-num">01</span><h2>About you</h2></div>
+      <p class="step-hint">So we know who we're replying to and what to look up before we quote.</p>
+      <div class="pair">
+        <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required><span class="err" data-for="name"></span></div>
+        <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@business.com" required><span class="err" data-for="email"></span></div>
+      </div>
+      <div class="pair" style="margin:14px 0 18px">
+        <div class="field"><label for="business">Business / project name</label><input id="business" name="business" autocomplete="organization" placeholder="What it's called"></div>
+        <div class="field"><label for="phone">Phone <em style="font-style:normal;color:#92a0b1">(optional)</em></label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="If you'd rather talk live"></div>
+      </div>
+      <div class="q" style="margin-bottom:4px">
+        <div class="q-label">Do you have a website now? <span class="opt">Optional</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="existingsite" value="No website yet"><span class="dot">✓</span>No site yet</label>
+          <label class="chip"><input type="radio" name="existingsite" value="Yes — redesign me"><span class="dot">✓</span>Yes, needs a rebuild</label>
+          <label class="chip"><input type="radio" name="existingsite" value="Yes — but it's fine"><span class="dot">✓</span>Yes, mostly fine</label>
+        </div>
+      </div>
+      <div class="field" style="margin:14px 0 18px"><label for="siteurl">Current website address (if any)</label><input id="siteurl" name="siteurl" placeholder="yourbusiness.ca"></div>
+    </div>
+
+    <div class="step">
+      <div class="step-top"><span class="step-num">02</span><h2>What are we building?</h2></div>
+      <p class="step-hint">This tells us the shape of the project. If it doesn't match any option, the custom box at the bottom takes anything.</p>
+      <div class="q">
+        <div class="q-label">Project type *</div>
+        <div class="chips" data-required="projecttype">
+          <label class="chip"><input type="radio" name="projecttype" value="One-page site / landing page"><span class="dot">✓</span>One-page site</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Multi-page business website"><span class="dot">✓</span>Multi-page business site</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Online store / e-commerce"><span class="dot">✓</span>Online store</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Booking & appointment site"><span class="dot">✓</span>Booking &amp; appointments</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Portfolio or artist site"><span class="dot">✓</span>Portfolio / artist</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Streaming / media platform"><span class="dot">✓</span>Streaming / media</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Redesign of an existing site"><span class="dot">✓</span>Redesign</label>
+          <label class="chip"><input type="radio" name="projecttype" value="Something else (see custom request)"><span class="dot">✓</span>Something else</label>
+        </div>
+        <span class="err" data-for="projecttype"></span>
+      </div>
+      <div class="q">
+        <div class="q-label">Roughly how many pages? <span class="opt">Optional</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="pages" value="1 page"><span class="dot">✓</span>1</label>
+          <label class="chip"><input type="radio" name="pages" value="2–3 pages"><span class="dot">✓</span>2–3</label>
+          <label class="chip"><input type="radio" name="pages" value="4–6 pages"><span class="dot">✓</span>4–6</label>
+          <label class="chip"><input type="radio" name="pages" value="7–10 pages"><span class="dot">✓</span>7–10</label>
+          <label class="chip"><input type="radio" name="pages" value="10+ pages"><span class="dot">✓</span>10+</label>
+          <label class="chip"><input type="radio" name="pages" value="Not sure yet"><span class="dot">✓</span>Not sure</label>
+        </div>
+      </div>
+      <div class="q">
+        <div class="q-label">What has to happen on it? <span class="opt">Tick all that apply</span></div>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="features" value="Contact form"><span class="dot">✓</span>Contact form</label>
+          <label class="chip"><input type="checkbox" name="features" value="Online booking / scheduling"><span class="dot">✓</span>Online booking</label>
+          <label class="chip"><input type="checkbox" name="features" value="Payments / checkout"><span class="dot">✓</span>Payments &amp; checkout</label>
+          <label class="chip"><input type="checkbox" name="features" value="Product catalogue"><span class="dot">✓</span>Product catalogue</label>
+          <label class="chip"><input type="checkbox" name="features" value="Blog / news"><span class="dot">✓</span>Blog / news</label>
+          <label class="chip"><input type="checkbox" name="features" value="Photo or video galleries"><span class="dot">✓</span>Galleries</label>
+          <label class="chip"><input type="checkbox" name="features" value="Video / audio player"><span class="dot">✓</span>Video / audio player</label>
+          <label class="chip"><input type="checkbox" name="features" value="Customer accounts / login"><span class="dot">✓</span>Logins &amp; accounts</label>
+          <label class="chip"><input type="checkbox" name="features" value="Newsletter signup"><span class="dot">✓</span>Newsletter signup</label>
+          <label class="chip"><input type="checkbox" name="features" value="Reviews / testimonials"><span class="dot">✓</span>Reviews</label>
+          <label class="chip"><input type="checkbox" name="features" value="Menu / pricing listed"><span class="dot">✓</span>Menu / price list</label>
+          <label class="chip"><input type="checkbox" name="features" value="Multi-language"><span class="dot">✓</span>Multi-language</label>
+          <label class="chip"><input type="checkbox" name="features" value="Booking calendar sync"><span class="dot">✓</span>Calendar sync</label>
+          <label class="chip"><input type="checkbox" name="features" value="Custom forms / quoting flow"><span class="dot">✓</span>Custom forms</label>
+          <label class="chip"><input type="checkbox" name="features" value="Membership / subscriptions"><span class="dot">✓</span>Memberships</label>
+          <label class="chip"><input type="checkbox" name="features" value="Something not listed (see custom request)"><span class="dot">✓</span>Something not listed</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-top"><span class="step-num">03</span><h2>The look</h2></div>
+      <p class="step-hint">No design skills needed — plain words are enough.</p>
+      <div class="q">
+        <div class="q-label">Design direction <span class="opt">Pick the closest</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="design" value="Clean & minimal"><span class="dot">✓</span>Clean &amp; minimal</label>
+          <label class="chip"><input type="radio" name="design" value="Bold & colourful"><span class="dot">✓</span>Bold &amp; colourful</label>
+          <label class="chip"><input type="radio" name="design" value="Warm & friendly"><span class="dot">✓</span>Warm &amp; friendly</label>
+          <label class="chip"><input type="radio" name="design" value="Premium & luxe"><span class="dot">✓</span>Premium &amp; luxe</label>
+          <label class="chip"><input type="radio" name="design" value="Dark & cinematic"><span class="dot">✓</span>Dark &amp; cinematic</label>
+          <label class="chip"><input type="radio" name="design" value="Rugged / trades"><span class="dot">✓</span>Rugged / trades</label>
+          <label class="chip"><input type="radio" name="design" value="Match an example site"><span class="dot">✓</span>Match a site I like</label>
+          <label class="chip"><input type="radio" name="design" value="Not sure — recommend one"><span class="dot">✓</span>Not sure — advise me</label>
+        </div>
+      </div>
+      <div class="field" style="margin-bottom:22px"><label for="inspiration">Sites or brands you like (links are fine)</label><textarea id="inspiration" name="inspiration" placeholder="e.g. wanitas.ca — like their gallery; anything from your portfolio that fits"></textarea></div>
+      <div class="q" style="margin-bottom:4px">
+        <div class="q-label">What do you already have? <span class="opt">Tick all that apply</span></div>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="assets" value="Logo"><span class="dot">✓</span>Logo</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Photos"><span class="dot">✓</span>Photos</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Video"><span class="dot">✓</span>Video</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Written copy"><span class="dot">✓</span>Written copy</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Brand colours / fonts"><span class="dot">✓</span>Brand colours</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Domain name"><span class="dot">✓</span>Domain name</label>
+          <label class="chip"><input type="checkbox" name="assets" value="Business email"><span class="dot">✓</span>Business email</label>
+          <label class="chip"><input type="checkbox" name="assets" value="None of these yet"><span class="dot">✓</span>None of these</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-top"><span class="step-num">04</span><h2>Practical details</h2></div>
+      <p class="step-hint">Timeline and budget shape the quote more than anything else.</p>
+      <div class="q">
+        <div class="q-label">When do you need it live?</div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="timeline" value="ASAP (under 2 weeks)"><span class="dot">✓</span>ASAP</label>
+          <label class="chip"><input type="radio" name="timeline" value="2–4 weeks"><span class="dot">✓</span>2–4 weeks</label>
+          <label class="chip"><input type="radio" name="timeline" value="1–2 months"><span class="dot">✓</span>1–2 months</label>
+          <label class="chip"><input type="radio" name="timeline" value="2–3 months"><span class="dot">✓</span>2–3 months</label>
+          <label class="chip"><input type="radio" name="timeline" value="Flexible / just exploring"><span class="dot">✓</span>Flexible</label>
+          <label class="chip"><input type="radio" name="timeline" value="Hard deadline (date given in notes)"><span class="dot">✓</span>Hard deadline</label>
+        </div>
+      </div>
+      <div class="q">
+        <div class="q-label">Budget you have in mind <span class="opt">Helps us size the scope</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="budget" value="Under $500"><span class="dot">✓</span>Under $500</label>
+          <label class="chip"><input type="radio" name="budget" value="$500–$1,000"><span class="dot">✓</span>$500–$1,000</label>
+          <label class="chip"><input type="radio" name="budget" value="$1,000–$2,500"><span class="dot">✓</span>$1,000–$2,500</label>
+          <label class="chip"><input type="radio" name="budget" value="$2,500–$5,000"><span class="dot">✓</span>$2,500–$5,000</label>
+          <label class="chip"><input type="radio" name="budget" value="$5,000+"><span class="dot">✓</span>$5,000+</label>
+          <label class="chip"><input type="radio" name="budget" value="Open — quote it properly"><span class="dot">✓</span>Open — quote it</label>
+          <label class="chip"><input type="radio" name="budget" value="Not sure — advise me"><span class="dot">✓</span>Not sure</label>
+        </div>
+      </div>
+      <div class="q">
+        <div class="q-label">After launch <span class="opt">Optional</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="support" value="Ongoing support / maintenance plan"><span class="dot">✓</span>Ongoing support</label>
+          <label class="chip"><input type="radio" name="support" value="I'll update it myself — show me how"><span class="dot">✓</span>Teach me to run it</label>
+          <label class="chip"><input type="radio" name="support" value="Occasional updates as needed"><span class="dot">✓</span>Occasional updates</label>
+          <label class="chip"><input type="radio" name="support" value="Nothing for now"><span class="dot">✓</span>Nothing for now</label>
+        </div>
+      </div>
+      <div class="q">
+        <div class="q-label">How did you find us? <span class="opt">Optional</span></div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="source" value="Google search"><span class="dot">✓</span>Google</label>
+          <label class="chip"><input type="radio" name="source" value="Referral / word of mouth"><span class="dot">✓</span>Referral</label>
+          <label class="chip"><input type="radio" name="source" value="Another site in the portfolio"><span class="dot">✓</span>A site in the portfolio</label>
+          <label class="chip"><input type="radio" name="source" value="Social media"><span class="dot">✓</span>Social media</label>
+          <label class="chip"><input type="radio" name="source" value="Repeat client"><span class="dot">✓</span>Worked together before</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-top"><span class="step-num">05</span><h2>In your words</h2></div>
+      <p class="step-hint">Everything here is read by a person, not a template. Be as vague or as specific as you like.</p>
+      <div class="custom-block">
+        <strong>Anything custom? Build your own scope.</strong>
+        <small>Not on any list above? Describe it — a members' area, a booking engine, a store with 400 products, a page that does something nobody else's does. It's priced by what it actually takes to build.</small>
+        <div class="field"><label for="custom">Custom request / anything we missed</label><textarea id="custom" name="custom" placeholder="e.g. I need a members' area where clients sign in, see their bookings and get invoices emailed automatically. Also a short page for hiring."></textarea></div>
+      </div>
+      <div class="field" style="margin-bottom:22px"><label for="goals">What should the website actually do for the business?</label><textarea id="goals" name="goals" placeholder="e.g. Get calls from homeowners in Langley. Sell my knitwear without DMs. Look credible before a wholesale pitch."></textarea></div>
+      <div class="pair" style="margin-bottom:22px">
+        <div class="field"><label for="deadline">Any date we should know about</label><input id="deadline" name="deadline" type="date"></div>
+        <div class="field"><label for="location">Where you're based</label><input id="location" name="location" placeholder="e.g. Abbotsford, BC"></div>
+      </div>
+      <div class="q" style="margin-bottom:22px">
+        <div class="q-label">Best way to reach you with the price</div>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="contactpref" value="Email" checked><span class="dot">✓</span>Email</label>
+          <label class="chip"><input type="radio" name="contactpref" value="Email, then a short call"><span class="dot">✓</span>Email + short call</label>
+          <label class="chip"><input type="radio" name="contactpref" value="Call me first"><span class="dot">✓</span>Call me first</label>
+        </div>
+      </div>
+      <div class="hp" aria-hidden="true"><label for="company_website">Leave this empty</label><input id="company_website" name="company_website" tabindex="-1" autocomplete="off"></div>
+    </div>
+
+    <details class="help" style="margin-bottom:22px"><summary>What happens after you send this?</summary>
+      <p>Your brief arrives at our inbox immediately. We read it, price the scope, and email you back with a fixed price and what's included — usually the same day, within one business day at the latest. No dollar figure is generated on this page, because two projects that look alike on paper rarely cost the same to build.</p>
+    </details>
+
+    <div class="submit-card" style="display:none" id="mobileSubmit">
+      <h3>Send your brief</h3>
+      <p>We reply by email with a fixed price within one business day.</p>
+      <button class="button" type="submit">Send project brief <span>↗</span></button>
+      <div class="status" aria-live="polite" data-status></div>
+    </div>
+  </div>
+
+  <aside class="aside" aria-label="Brief summary">
+    <div class="summary" id="summary">
+      <h3>Your brief so far</h3>
+      <div class="row empty" data-row="name"><b>Contact</b><span>Not filled in yet</span></div>
+      <div class="row empty" data-row="projecttype"><b>Project</b><span>Not chosen yet</span></div>
+      <div class="row empty" data-row="pages"><b>Size</b><span>—</span></div>
+      <div class="row empty" data-row="features"><b>Needs</b><span>—</span></div>
+      <div class="row empty" data-row="timeline"><b>Timeline</b><span>—</span></div>
+      <div class="row empty" data-row="budget"><b>Budget</b><span>—</span></div>
+      <div class="row empty" data-row="custom"><b>Custom request</b><span>None yet</span></div>
+      <div class="note">Pricing is quoted by a person, not a formula. <b>You'll get a fixed price by email</b> — not a range.</div>
+    </div>
+    <div class="submit-card" id="desktopSubmit">
+      <h3>Send your brief</h3>
+      <p>We reply by email with a fixed price within one business day.</p>
+      <button class="button" type="submit" id="sendBtn">Send project brief <span>↗</span></button>
+      <div class="status" aria-live="polite" data-status></div>
+    </div>
+    <div class="alt-contact">Prefer email? <a href="mailto:bcwebcreator@gmail.com?subject=Website%20project%20inquiry">bcwebcreator@gmail.com</a></div>
+  </aside>
+
+  <div id="donePanel" style="display:none;grid-column:1/-1"></div>
+</form>
+</div></main>
+
+<footer style="border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12.5px"><div class="wrap" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+  <span><strong style="color:var(--ink)">BC Web Creator</strong> · Web design &amp; development · Abbotsford, British Columbia</span>
+  <span>Serving BC, Canada, the US &amp; UK · © <span id="year"></span></span>
+</div></footer>
+
+<script>
+(()=>{
+const form=document.getElementById('briefForm');
+const ENDPOINT="https://formsubmit.co/ajax/bcwebcreator@gmail.com"; // swap for your own endpoint if preferred
+const TO=ENDPOINT;
+
+const $=s=>document.querySelector(s);
+const $$=s=>[...document.querySelectorAll(s)];
+$('#year').textContent=new Date().getFullYear();
+
+/* ---------- summary ---------- */
+const rows={};
+$$('.summary .row').forEach(r=>{rows[r.dataset.row]=r});
+const val=n=>{const el=form.querySelector(`[name="${n}"]:checked`);return el?el.value:''};
+const many=n=>$$(`[name="${n}"]:checked`).map(e=>e.value);
+function setRow(key,text){
+  const r=rows[key];if(!r)return;
+  const v=r.querySelector('span');
+  if(text){r.classList.remove('empty');v.textContent=text.length>46?text.slice(0,44)+'…':text}
+  else{r.classList.add('empty')}
+}
+function refresh(){
+  const n=form.name.value.trim(),b=form.business.value.trim(),e=form.email.value.trim();
+  setRow('name', n? (b? `${n} · ${b}` : n) : (b?b:''));
+  if(!n&&!b) rows.name.querySelector('span').textContent='Not filled in yet';
+  setRow('projecttype', val('projecttype'));
+  setRow('pages', val('pages'));
+  const f=many('features'); setRow('features', f.length? f.length+' selected' : '');
+  setRow('timeline', val('timeline'));
+  setRow('budget', val('budget'));
+  const c=form.custom.value.trim(); setRow('custom', c? c.split('\n')[0] : '');
+  if(!c) rows.custom.querySelector('span').textContent='None yet';
+}
+form.addEventListener('input',refresh);
+form.addEventListener('change',()=>{refresh();clearErrors()});
+
+/* ---------- validation ---------- */
+function clearErrors(){
+  $$('.err').forEach(e=>e.textContent='');
+  $$('.field.error').forEach(e=>e.classList.remove('error'));
+  $$('.step-alert').forEach(e=>e.remove());
+  $$('.field.error').forEach(e=>e.classList.remove('error'));
+}
+function showErr(msg){
+  const step=form.querySelector('.step');
+  const banner=document.createElement('div');
+  banner.className='step-alert';
+  banner.textContent=msg;
+  step.insertBefore(banner,step.querySelector('.step-top')?.nextSibling||null);
+}
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  clearErrors();
+  const name=form.name.value.trim(), email=form.email.value.trim();
+  const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+  let first=null,msg=null;
+  if(!name){form.name.closest('.field').classList.add('error');msg=msg||'Please add your name.';first=first||form.name}
+  if(!emailOk){form.email.closest('.field').classList.add('error');msg=msg||'Please add a working email address, so we can reply with the price.';first=first||form.email}
+  if(!val('projecttype')){msg=msg||'Please pick a project type — or "something else" and describe it at the bottom.';first=first||form.querySelector('[name=projecttype]')}
+  if(first){showErr(msg);form.querySelector('.step').scrollIntoView({block:'center'});first.focus({preventScroll:true});return}
+  send();
+});
+
+/* ---------- send ---------- */
+function body(){
+  const L=[
+    ['Name',form.name.value.trim()],
+    ['Email',form.email.value.trim()],
+    ['Business',form.business.value.trim()||'—'],
+    ['Phone',form.phone.value.trim()||'—'],
+    ['Has website now',val('existingsite')||'—'],
+    ['Current site',form.siteurl.value.trim()||'—'],
+    ['PROJECT TYPE',val('projecttype')],
+    ['Pages',val('pages')||'—'],
+    ['Features needed',many('features').join(', ')||'—'],
+    ['DESIGN DIRECTION',val('design')||'—'],
+    ['Inspiration',form.inspiration.value.trim()||'—'],
+    ['Already has',many('assets').join(', ')||'—'],
+    ['TIMELINE',val('timeline')||'—'],
+    ['Hard deadline',form.deadline.value||'—'],
+    ['BUDGET',val('budget')||'—'],
+    ['After launch',val('support')||'—'],
+    ['Found us via',val('source')||'—'],
+    ['CUSTOM REQUEST',form.custom.value.trim()||'None'],
+    ['What it must do',form.goals.value.trim()||'—'],
+    ['Location',form.location.value.trim()||'—'],
+    ['Reply preference',val('contactpref')||'Email'],
+    ['Submitted',new Date().toLocaleString('en-CA',{timeZone:'America/Vancouver'})+' (Pacific)']
+  ];
+  return L.map(([k,v])=>k+': '+v).join('\n');
+}
+function subject(){
+  const b=form.business.value.trim(), n=form.name.value.trim(), t=val('projecttype');
+  return `Project brief — ${b||n||'New enquiry'}${t?' · '+t:''}`;
+}
+function setStatus(msg,cls){
+  $$('[data-status]').forEach(s=>{s.textContent=msg;s.className='status '+(cls||'')});
+}
+
+async function send(){
+  const btn=$('#desktopSubmit button'), mbtn=$('#mobileSubmit button');
+  btn.disabled=mbtn.disabled=true;
+  btn.innerHTML='Sending…';
+  setStatus('Sending your brief…','');
+  if(form.company_website.value.trim()){return done(true)} // honeypot: pretend
+  try{
+    let ok=false;
+    try{
+      const r=await fetch(TO,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+        body:JSON.stringify({_subject:subject(),_template:'table',_captcha:'false',name:form.name.value.trim(),email:form.email.value.trim(),brief:body()})});
+      ok=r.ok;
+    }catch(_){ok=false}
+    done(ok);
+  }catch(err){fallback()}
+}
+function fallback(){
+  const url='mailto:bcwebcreator@gmail.com?subject='+encodeURIComponent(subject())+'&body='+encodeURIComponent(body());
+  window.location.href=url;
+  setStatus('Opening your email app with the brief — or email bcwebcreator@gmail.com directly.','bad');
+  $('#desktopSubmit button').disabled=false;$('#mobileSubmit button').disabled=false;
+  $('#desktopSubmit button').innerHTML='Send project brief <span>↗</span>';
+}
+function done(sent){
+  $('#desktopSubmit').style.display='none';
+  $('#mobileSubmit').style.display='none';
+  $$('.step').forEach(s=>s.style.display='none');
+  $$('details.help').forEach(s=>s.style.display='none');
+  $('#summary').style.display='none';
+  const p=$('#donePanel');
+  p.style.display='block';
+  p.innerHTML=`<div class="done">
+    <div class="eyebrow">Brief ${sent?'sent':'ready'}</div>
+    <h2>Got it — we'll email your price.</h2>
+    <p>${sent
+      ? 'Your brief landed in our inbox. We read every one and reply with a fixed price and exactly what it covers — within one business day.'
+      : 'We couldn\'t send it automatically from this browser. Your brief is below, ready to copy into an email.'}
+      ${!sent?'<br><br><a class="button" href="mailto:bcwebcreator@gmail.com?subject='+encodeURIComponent(subject())+'&body='+encodeURIComponent(body())+'">Open it in your email app ↗</a>':''}</p>
+    <p style="font-size:12px;margin-bottom:6px"><b>Sent subject:</b> ${escapeHtml(subject())}</p>
+    <pre id="briefText">${escapeHtml(body())}</pre>
+    <div class="row"><button class="button secondary" type="button" id="copyBtn">Copy the brief</button><a class="button secondary" href="/">Back to the site</a></div>
+    <div class="status" aria-live="polite" data-status style="margin-top:10px;color:#1d6a47"></div>
+  </div>`;
+  document.getElementById('copyBtn').addEventListener('click',()=>{
+    navigator.clipboard?.writeText(body()).then(()=>setStatus('Copied.','ok')).catch(()=>setStatus('Select the text above to copy.','bad'));
+  });
+  p.scrollIntoView({block:'start'});
+}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+refresh();
+})();
+</script>
+</body>
+</html>

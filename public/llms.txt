@@ -19,6 +19,7 @@
 ## Portfolio
 
 - [TyphoonHub](https://www.typhoonhub.ca/): independent film streaming platform
+- [Voraum](https://voraum.com/): searchable directory of Black-owned businesses and professionals across Canada
 - [Mango Micro Markets](https://mangomicromarkets.ca/): smart vending and micromarket provider
 - [J1S Audio](https://j1s-audio.firebaseapp.com/): audio production and web services
 - [Jhenley Customs](https://jhenleycustoms.com/): handcrafted knitwear e-commerce
