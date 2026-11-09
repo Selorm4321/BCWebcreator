@@ -476,7 +476,7 @@ function fallback(){
 }
 function done(sent){
   try{ if(window.gtag) gtag('event','generate_lead',{event_category:'project_brief',event_label:val('projecttype')||'unspecified',value:1,send_to:'G-620PWJ2YLC',delivery:sent?'api':'fallback'}); }catch(_){}
-  try{ if(window.gtag) gtag('event',sent?'brief_submitted':'brief_fallback','project_type':val('projecttype')||'unspecified',budget:val('budget')||'unspecified',timeline:val('timeline')||'unspecified'}); }catch(_){}
+  try{ if(window.gtag) gtag('event',(sent?'brief_submitted':'brief_fallback'),{project_type:(val('projecttype')||'unspecified'),budget:(val('budget')||'unspecified'),timeline:(val('timeline')||'unspecified'),delivery:(sent?'api':'fallback')}); }catch(_){}
   $('#desktopSubmit').style.display='none';
   $('#mobileSubmit').style.display='none';
   $$('.step').forEach(s=>s.style.display='none');
