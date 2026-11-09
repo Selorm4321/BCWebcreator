@@ -12,6 +12,7 @@
 ## Pages
 
 - [Home](https://bcwebcreator.com/): services, portfolio, process, FAQ
+- [Project brief](https://bcwebcreator.com/project-brief.html): quote request form — project type, pages, features, design direction, timeline, budget, plus a free-text custom request box; every brief is priced individually and answered by email within one business day
 - [Web design in Abbotsford](https://bcwebcreator.com/abbotsford-web-design.html): home base, Fraser Valley businesses
 - [Web design in Vancouver](https://bcwebcreator.com/vancouver-web-design.html): Vancouver, Burnaby, Richmond, Coquitlam, North Shore
 - [Web design in Surrey and Langley](https://bcwebcreator.com/surrey-langley-web-design.html): trades, shops and service businesses

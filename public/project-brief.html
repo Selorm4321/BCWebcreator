@@ -6,7 +6,13 @@
 <title>Project Brief — Start a Project | BC Web Creator</title>
 <meta name="description" content="Tell BC Web Creator about your website project. Pick what fits, add anything custom, and we reply by email with a fixed price within one business day.">
 <meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:image" content="https://bcwebcreator.com/og-image.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://bcwebcreator.com/project-brief.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-620PWJ2YLC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-620PWJ2YLC');</script>
+
 <meta property="og:title" content="Project Brief — BC Web Creator">
 <meta property="og:description" content="Answer a few questions about your website project and get a fixed price by email within one business day.">
 <meta property="og:type" content="website">
@@ -470,6 +476,8 @@ function fallback(){
   $('#desktopSubmit button').innerHTML='Send project brief <span>↗</span>';
 }
 function done(sent){
+  try{ if(window.gtag) gtag('event','generate_lead',{event_category:'project_brief',event_label:val('projecttype')||'unspecified',value:1,send_to:'G-620PWJ2YLC',delivery:sent?'api':'fallback'}); }catch(_){}
+  try{ if(window.gtag) gtag('event',sent?'brief_submitted':'brief_fallback','project_type':val('projecttype')||'unspecified',budget:val('budget')||'unspecified',timeline:val('timeline')||'unspecified'}); }catch(_){}
   $('#desktopSubmit').style.display='none';
   $('#mobileSubmit').style.display='none';
   $$('.step').forEach(s=>s.style.display='none');
