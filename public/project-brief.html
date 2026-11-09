@@ -469,11 +469,10 @@ async function send(){
   }catch(err){fallback()}
 }
 function fallback(){
-  const url='mailto:bcwebcreator@gmail.com?subject='+encodeURIComponent(subject())+'&body='+encodeURIComponent(body());
-  window.location.href=url;
-  setStatus('Opening your email app with the brief — or email bcwebcreator@gmail.com directly.','bad');
+  // never yank the visitor out to their mail client unasked — show the brief and offer the handoff
   $('#desktopSubmit button').disabled=false;$('#mobileSubmit button').disabled=false;
   $('#desktopSubmit button').innerHTML='Send project brief <span>↗</span>';
+  done(false);
 }
 function done(sent){
   try{ if(window.gtag) gtag('event','generate_lead',{event_category:'project_brief',event_label:val('projecttype')||'unspecified',value:1,send_to:'G-620PWJ2YLC',delivery:sent?'api':'fallback'}); }catch(_){}
@@ -486,8 +485,8 @@ function done(sent){
   const p=$('#donePanel');
   p.style.display='block';
   p.innerHTML=`<div class="done">
-    <div class="eyebrow">Brief ${sent?'sent':'ready'}</div>
-    <h2>Got it — we'll email your price.</h2>
+    <div class="eyebrow">Brief ${sent?'sent':'ready to send'}</div>
+    <h2>${sent?"Got it — we'll email your price.":'One click and it\'s on its way.'}</h2>
     <p>${sent
       ? 'Your brief landed in our inbox. We read every one and reply with a fixed price and exactly what it covers — within one business day.'
       : 'We couldn\'t send it automatically from this browser. Your brief is below, ready to copy into an email.'}
