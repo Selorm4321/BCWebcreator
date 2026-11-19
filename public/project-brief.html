@@ -460,18 +460,13 @@ async function send(){
   if(form.company_website.value.trim()){return done(true)} // honeypot: pretend
   try{
     // FormSubmit classic endpoint: delivery from real browsers is proven (inbox-verified),
-    // but the RESPONSE often hangs — so we fire-and-forget and confirm optimistically.
-    // sendBeacon queues the POST and lets the browser finish it even if we stop waiting.
+    // but the RESPONSE often hangs — so fire-and-forget and confirm optimistically.
+    // NOTE: navigator.sendBeacon does NOT deliver to FormSubmit (tested Nov 19) —
+    // a plain no-cors POST with keepalive is the proven path.
     const fd=new URLSearchParams({_subject:subject(),_template:'table',_captcha:'false',
       name:form.name.value.trim(),email:form.email.value.trim(),brief:body()});
-    let queued=false;
-    try{
-      queued=navigator.sendBeacon(TO,new Blob([fd.toString()],{type:'application/x-www-form-urlencoded'}));
-    }catch(_){queued=false}
-    if(!queued){
-      fetch(TO,{method:'POST',mode:'no-cors',keepalive:true,
-        headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()}).catch(()=>{});
-    }
+    fetch(TO,{method:'POST',mode:'no-cors',keepalive:true,
+      headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()}).catch(()=>{});
     done(true);
   }catch(err){fallback()}
 }
