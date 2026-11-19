@@ -459,20 +459,20 @@ async function send(){
   setStatus('Sending your brief…','');
   if(form.company_website.value.trim()){return done(true)} // honeypot: pretend
   try{
-    let ok=false;
+    // FormSubmit classic endpoint: delivery from real browsers is proven (inbox-verified),
+    // but the RESPONSE often hangs — so we fire-and-forget and confirm optimistically.
+    // sendBeacon queues the POST and lets the browser finish it even if we stop waiting.
+    const fd=new URLSearchParams({_subject:subject(),_template:'table',_captcha:'false',
+      name:form.name.value.trim(),email:form.email.value.trim(),brief:body()});
+    let queued=false;
     try{
-      // classic endpoint + no-cors: fast, delivery-proven (the /ajax/ JSON path hangs).
-      // Response is opaque by design — completion without a throw means FormSubmit accepted it.
-      const ctrl=new AbortController();
-      const timer=setTimeout(()=>ctrl.abort(),15000);
-      const fd=new URLSearchParams({_subject:subject(),_template:'table',_captcha:'false',
-        name:form.name.value.trim(),email:form.email.value.trim(),brief:body()});
-      await fetch(TO,{method:'POST',mode:'no-cors',signal:ctrl.signal,
-        headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()});
-      clearTimeout(timer);
-      ok=true;
-    }catch(_){ok=false}
-    done(ok);
+      queued=navigator.sendBeacon(TO,new Blob([fd.toString()],{type:'application/x-www-form-urlencoded'}));
+    }catch(_){queued=false}
+    if(!queued){
+      fetch(TO,{method:'POST',mode:'no-cors',keepalive:true,
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()}).catch(()=>{});
+    }
+    done(true);
   }catch(err){fallback()}
 }
 function fallback(){
